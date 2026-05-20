@@ -1,6 +1,6 @@
 # AT-011 Relative Background Window Candidate Policy
 
-- Source commit: `2ed606e7f4ec26bff24cfb2980479f6dc96573dc`
+- Source commit: `937560b61fbd70fecc3c0534af6a2a37861d6fcc`
 - Dataset: `pipe_demo_longline_v1` shape `[2037, 90]`
 - Ground truth: `available`
 - GX-003 ROI is used as-is.

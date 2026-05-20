@@ -3,7 +3,7 @@
   "task_id": "AT-011_relative_background_window_policy",
   "source_repo": "https://github.com/CYberkra/MyGPR",
   "source_branch": "codex/research-gprmax-autotune",
-  "source_commit": "2ed606e7f4ec26bff24cfb2980479f6dc96573dc",
+  "source_commit": "937560b61fbd70fecc3c0534af6a2a37861d6fcc",
   "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
   "generated_at": "2026-05-20T15:38:36.699942+00:00",
   "dataset": {
