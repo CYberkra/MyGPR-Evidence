@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AT-006 Zero-Time Policy Fix</title>
+  <style>
+    body { font-family: "Segoe UI", "PingFang SC", sans-serif; margin: 24px; color: #1f2937; }
+    h1, h2 { margin-top: 1.2em; }
+    .card { border: 1px solid #d1d5db; border-radius: 8px; padding: 14px 16px; margin: 12px 0; background: #f9fafb; }
+    table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+    th, td { border: 1px solid #d1d5db; padding: 8px; text-align: left; }
+    code { background: #f3f4f6; padding: 1px 4px; border-radius: 4px; }
+    .warn { color: #b45309; }
+  </style>
+</head>
+<body>
+  <h1>AT-006 Zero-Time Policy Fix</h1>
+  <p>Source commit: <code>61ad8a3ac55d9e604f802b9c8ca8ddb3474b65ad</code></p>
+  <p>Dataset: <code>pipe_demo_longline_v1</code> (<code>native_gprmax_converted</code>) shape <code>[2037, 90]</code></p>
+  <p>Zero-time policy: <code>explicit_only_fixed_zero</code></p>
+
+  <h2>Root Cause</h2>
+  <div class="card">Validation branches that call set_zero_time with empty params fall back to method default new_zero_time=5.0 ns. On GX-003 dt this maps to ~423 samples and can collapse global energy.</div>
+
+  <h2>Fix</h2>
+  <div class="card">Validation runners now infer native_gprmax_converted context and apply zero_time_policy=explicit_only_fixed_zero, forcing missing zero-time params to 0.0 ns and disabling implicit tuning.</div>
+
+  <h2>Policy Checks</h2>
+  <table>
+    <thead><tr><th>Check</th><th>Status</th><th>Notes</th></tr></thead>
+    <tbody><tr><td><code>legacy_default_shift</code></td><td>warn</td><td>Legacy empty params path relies on method default (5.0 ns).</td></tr>
+<tr><td><code>guarded_policy_shift</code></td><td>ok</td><td>Validation guard enforces fixed-zero when zero-time is implicit.</td></tr>
+<tr><td><code>no_zerotime_preset_reusable</code></td><td>ok</td><td>AT-005A lane reused as formal no-zero-time validation preset.</td></tr></tbody>
+  </table>
+
+  <h2>Before / After</h2>
+  <div class="card">
+    <p>Legacy shift samples: <code>423</code>,
+       shift ns: <code>4.988554</code>,
+       global energy ratio: <code>0.002239</code></p>
+    <p>Guarded shift samples: <code>0</code>,
+       shift ns: <code>0.000000</code>,
+       global energy ratio: <code>1.000000</code></p>
+    <p class="warn">This task does not claim overall AutoTune superiority.</p>
+  </div>
+
+  <h2>No-Zero-Time Preset</h2>
+  <div class="card">
+    <p>Policy: <code>excluded</code></p>
+    <p>Markdown report: <code>..\MyGPR-Evidence\autotune\AT-006_zero_time_policy_fix\_no_zerotime_lane\reports\no_zerotime_gain_validation_report.md</code></p>
+    <p>HTML report: <code>..\MyGPR-Evidence\autotune\AT-006_zero_time_policy_fix\_no_zerotime_lane\reports\no_zerotime_gain_validation_report.html</code></p>
+  </div>
+
+  <h2>Next Step</h2>
+  <div class="card">Rerun AT-002 and AT-003 under the guarded policy, preserving prior conclusions as historical evidence.</div>
+</body>
+</html>

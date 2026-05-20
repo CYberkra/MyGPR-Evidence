@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AT-005A No-Zero-Time Gain Validation</title>
+  <style>
+    body { font-family: "Segoe UI", Arial, sans-serif; margin: 0; background: #f7f8fb; color: #172033; }
+    main { max-width: 1180px; margin: 0 auto; padding: 28px; }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    h2 { margin-top: 28px; border-bottom: 1px solid #d9e0ea; padding-bottom: 6px; }
+    .meta, .warning { background: #fff; border: 1px solid #d9e0ea; border-radius: 8px; padding: 14px 16px; margin: 14px 0; }
+    .warning { border-color: #f59e0b; background: #fffbeb; }
+    table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #d9e0ea; }
+    th, td { padding: 8px 10px; border-bottom: 1px solid #e6ebf2; text-align: left; font-size: 13px; }
+    th { background: #eef3f8; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+    figure { margin: 0; background: #fff; border: 1px solid #d9e0ea; border-radius: 8px; padding: 10px; }
+    figure img { width: 100%; display: block; }
+    figcaption { margin-top: 8px; color: #526179; font-size: 13px; }
+    code { background: #edf2f7; padding: 1px 4px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>AT-005A No-Zero-Time Gain Validation</h1>
+  <div class="meta">
+    <div><b>Source commit:</b> <code>61ad8a3ac55d9e604f802b9c8ca8ddb3474b65ad</code></div>
+    <div><b>Dataset:</b> pipe_demo_longline_v1 [2037, 90]</div>
+    <div><b>Zero-time:</b> excluded from this validation lane.</div>
+    <div><b>GX-003 ROI:</b> used as-is; candidate ROI is not substituted.</div>
+  </div>
+  <div class="warning"><b>Interpretation boundary:</b> AGC is display-oriented and non-amplitude-preserving. Field lane, if present, is heuristic visual QC only. AutoTune superiority is not claimed unless the lane table supports it.</div>
+
+  <h2>Conclusion</h2>
+  <ul>
+    <li>Best visual gain variant: <code>energy_decay_gain</code></li>
+    <li>Most conservative/interpretable gain: <code>energy_decay_gain</code></li>
+    <li>AutoTune status: <code>improved_on_roi_contrast_metric_only_not_overall_claim</code></li>
+    <li>Field lane: Field lane skipped: disabled_by_runner_argument.</li>
+    <li>100-round loop completed: <code>True</code></li>
+  </ul>
+
+  <h2>Key Figures</h2>
+  <div class="grid">
+    <figure><img src="../figures/input_bscan_roi_overlay.png"><figcaption>Input B-scan with GX-003 ROI.</figcaption></figure>
+    <figure><img src="../figures/background_suppression_only.png"><figcaption>Background suppression only.</figcaption></figure>
+    <figure><img src="../figures/sec_gain_comparison.png"><figcaption>Energy-decay gain comparison lane.</figcaption></figure>
+    <figure><img src="../figures/time_power_gain_comparison.png"><figcaption>Validation-local time-power gain lane.</figcaption></figure>
+    <figure><img src="../figures/agc_gain_comparison.png"><figcaption>AGC display gain lane.</figcaption></figure>
+    <figure><img src="../figures/gain_variant_summary.png"><figcaption>Gain variant metrics summary.</figcaption></figure>
+  </div>
+
+  <h2>Lane Summary</h2>
+  <table><thead><tr><th>Lane</th><th>Branch</th><th>Gain</th><th>ROI contrast</th><th>Clipping</th><th>Validity</th><th>Figure</th></tr></thead><tbody><tr><td>lane_0_raw_input</td><td>raw</td><td>none</td><td>133.9</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_0_raw_input.png'>figure</a></td></tr>
+<tr><td>lane_1_background_only</td><td>manual</td><td>none</td><td>20.24</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_1_background_only.png'>figure</a></td></tr>
+<tr><td>lane_2_background_energy_decay_gain</td><td>manual</td><td>energy_decay_gain</td><td>20.28</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_2_background_energy_decay_gain.png'>figure</a></td></tr>
+<tr><td>lane_2b_background_sec_gain</td><td>manual</td><td>sec_gain</td><td>17.6</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_2b_background_sec_gain.png'>figure</a></td></tr>
+<tr><td>lane_3_background_time_power_gain</td><td>manual</td><td>time_power_gain_local</td><td>17.14</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_3_background_time_power_gain.png'>figure</a></td></tr>
+<tr><td>lane_4_background_agc_gain</td><td>manual</td><td>agcGain</td><td>4.025</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_4_background_agc_gain.png'>figure</a></td></tr>
+<tr><td>lane_5_dewow256_background_energy_decay</td><td>diagnostic</td><td>energy_decay_gain</td><td>14.15</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_5_dewow256_background_energy_decay.png'>figure</a></td></tr>
+<tr><td>lane_6_dewow512_background_energy_decay</td><td>diagnostic</td><td>energy_decay_gain</td><td>19.93</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_6_dewow512_background_energy_decay.png'>figure</a></td></tr>
+<tr><td>lane_7_filter_background_energy_decay</td><td>diagnostic</td><td>energy_decay_gain</td><td>12.27</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_7_filter_background_energy_decay.png'>figure</a></td></tr>
+<tr><td>lane_8_dewow256_filter_background_energy_decay</td><td>diagnostic</td><td>energy_decay_gain</td><td>9.774</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_8_dewow256_filter_background_energy_decay.png'>figure</a></td></tr>
+<tr><td>lane_auto_background_energy_decay</td><td>auto_tuned</td><td>energy_decay_gain</td><td>45.25</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_auto_background_energy_decay.png'>figure</a></td></tr></tbody></table>
+
+  <h2>Gain Variant Table</h2>
+  <table><thead><tr><th>Gain</th><th>Semantics</th><th>ROI contrast</th><th>Clipping</th><th>Amplitude preservation</th></tr></thead><tbody><tr><td>energy_decay_gain</td><td>interpretable empirical energy-decay compensation</td><td>20.28</td><td>0.001004</td><td>more_interpretable_than_agc_but_not_physical_proof</td></tr>
+<tr><td>sec_gain</td><td>monotonic depth/time compensation</td><td>17.6</td><td>0.001004</td><td>more_interpretable_than_agc_but_not_physical_proof</td></tr>
+<tr><td>time_power_gain_local</td><td>validation-local monotonic time-power display/compensation</td><td>17.14</td><td>0.001004</td><td>limited_monotonic_gain_assumption</td></tr>
+<tr><td>agcGain</td><td>display-oriented non-amplitude-preserving local normalization</td><td>4.025</td><td>0.001004</td><td>invalid_for_amplitude_interpretation</td></tr>
+<tr><td>energy_decay_gain</td><td>interpretable empirical energy-decay compensation</td><td>14.15</td><td>0.001004</td><td>more_interpretable_than_agc_but_not_physical_proof</td></tr>
+<tr><td>energy_decay_gain</td><td>interpretable empirical energy-decay compensation</td><td>19.93</td><td>0.001004</td><td>more_interpretable_than_agc_but_not_physical_proof</td></tr>
+<tr><td>energy_decay_gain</td><td>interpretable empirical energy-decay compensation</td><td>12.27</td><td>0.001004</td><td>more_interpretable_than_agc_but_not_physical_proof</td></tr>
+<tr><td>energy_decay_gain</td><td>interpretable empirical energy-decay compensation</td><td>9.774</td><td>0.001004</td><td>more_interpretable_than_agc_but_not_physical_proof</td></tr>
+<tr><td>energy_decay_gain</td><td>interpretable empirical energy-decay compensation</td><td>45.25</td><td>0.001004</td><td>more_interpretable_than_agc_but_not_physical_proof</td></tr></tbody></table>
+
+  <h2>100-Round Micro-Iteration Loop</h2>
+  <p>Completed: <code>True</code>; code-changing iterations: <code>0</code>; evidence/report-only iterations: <code>1</code>; no-op inspection iterations: <code>99</code>. See <a href="hundred_round_iteration_summary.md">hundred_round_iteration_summary.md</a>.</p>
+
+  <h2>Next Recommended Task</h2>
+  <p>Fix gprMax/native zero-time default or no-zero-time lane policy first, then rerun AT-002/AT-003 with safer dewow windows before changing AutoTune scoring.</p>
+
+  <h2>Known Risks</h2>
+  <ul><li>Zero-time is intentionally excluded; this artifact does not repair zero-time correction.</li>
+<li>AGC is display-oriented and non-amplitude-preserving.</li>
+<li>Field lane is visual/heuristic QC only and has no ground-truth claims.</li>
+<li>GX-003 ROI is used as-is; candidate ROI from AT-004 is not substituted.</li></ul>
+</main>
+</body>
+</html>

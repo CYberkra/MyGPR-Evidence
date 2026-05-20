@@ -1,0 +1,35 @@
+{
+  "artifact_id": "AT-006",
+  "task_id": "AT-006_zero_time_policy_fix",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "61ad8a3ac55d9e604f802b9c8ca8ddb3474b65ad",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "evidence_commit": "pending_self_reference",
+  "generated_at": "2026-05-20T12:25:20.267651+00:00",
+  "command": "python scripts/auto_tune_validation/run_zero_time_policy_fix.py",
+  "dataset_name": "pipe_demo_longline_v1",
+  "dataset_shape": [
+    2037,
+    90
+  ],
+  "dataset_hash": "3f9ce35dce8de510a5a1cc54d96c0a8635fcd834cf1a69d8f455009d05ef40b1",
+  "ground_truth_available": true,
+  "metric_type": "ground_truth",
+  "artifacts": {
+    "summary": "manifests/zero_time_policy_summary.json",
+    "checks_csv": "tables/zero_time_policy_checks.csv",
+    "figure": "figures/zero_time_policy_before_after.png",
+    "markdown_report": "reports/zero_time_policy_fix_report.md",
+    "html_report": "reports/zero_time_policy_fix_report.html"
+  },
+  "limitations": [
+    "This task hardens validation policy only; it does not redesign set_zero_time algorithm behavior globally.",
+    "No claim of overall AutoTune superiority is made here.",
+    "Ground truth ROI is unchanged from GX-003 and not replaced."
+  ],
+  "known_risks": [
+    "User workflows outside validation runners still use configured set_zero_time behavior.",
+    "Policy inference relies on dataset metadata and may need explicit override for uncommon inputs."
+  ]
+}

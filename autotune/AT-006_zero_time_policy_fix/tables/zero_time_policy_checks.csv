@@ -1,0 +1,4 @@
+check_id,guarded_global_energy_ratio,guarded_shift_ns,guarded_shift_samples,legacy_global_energy_ratio,legacy_shift_ns,legacy_shift_samples,no_zerotime_policy,notes,status
+legacy_default_shift,,,,0.002238542523145978,4.988553922225582,423,,Legacy empty params path relies on method default (5.0 ns).,warn
+guarded_policy_shift,1.0,0.0,0,,,,,Validation guard enforces fixed-zero when zero-time is implicit.,ok
+no_zerotime_preset_reusable,,,,,,,excluded,AT-005A lane reused as formal no-zero-time validation preset.,ok

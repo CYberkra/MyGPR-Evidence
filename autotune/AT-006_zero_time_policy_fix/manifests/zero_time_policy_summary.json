@@ -1,0 +1,50 @@
+{
+  "artifact_id": "AT-006",
+  "task_id": "AT-006_zero_time_policy_fix",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "61ad8a3ac55d9e604f802b9c8ca8ddb3474b65ad",
+  "generated_at": "2026-05-20T12:25:20.266651+00:00",
+  "dataset_name": "pipe_demo_longline_v1",
+  "dataset_shape": [
+    2037,
+    90
+  ],
+  "dataset_hash": "3f9ce35dce8de510a5a1cc54d96c0a8635fcd834cf1a69d8f455009d05ef40b1",
+  "dataset_kind": "native_gprmax_converted",
+  "time_step_ns": 0.011793271683748418,
+  "zero_time_policy": "explicit_only_fixed_zero",
+  "legacy_default_behavior": {
+    "new_zero_time_param": null,
+    "effective_default_new_zero_time_ns": 5.0,
+    "shift_samples": 423,
+    "shift_ns": 4.988553922225582,
+    "global_energy_ratio": 0.002238542523145978,
+    "runtime_warnings": []
+  },
+  "guarded_behavior": {
+    "policy": "explicit_only_fixed_zero",
+    "effective_new_zero_time_ns": 0.0,
+    "shift_samples": 0,
+    "shift_ns": 0.0,
+    "global_energy_ratio": 1.0,
+    "runtime_warnings": [],
+    "policy_notes": [
+      "Zero-time missing in validation context; forced to fixed 0.0 ns to avoid implicit destructive defaults."
+    ]
+  },
+  "no_zerotime_preset": {
+    "reused_from": "AT-005A",
+    "zero_time_policy": "excluded",
+    "report_markdown": "..\\MyGPR-Evidence\\autotune\\AT-006_zero_time_policy_fix\\_no_zerotime_lane\\reports\\no_zerotime_gain_validation_report.md",
+    "report_html": "..\\MyGPR-Evidence\\autotune\\AT-006_zero_time_policy_fix\\_no_zerotime_lane\\reports\\no_zerotime_gain_validation_report.html"
+  },
+  "root_cause": "Validation branches that call set_zero_time with empty params fall back to method default new_zero_time=5.0 ns. On GX-003 dt this maps to ~423 samples and can collapse global energy.",
+  "fix": "Validation runners now infer native_gprmax_converted context and apply zero_time_policy=explicit_only_fixed_zero, forcing missing zero-time params to 0.0 ns and disabling implicit tuning.",
+  "recommended_next": "Rerun AT-002 and AT-003 under the guarded policy, preserving prior conclusions as historical evidence.",
+  "limitations": [
+    "This task hardens validation policy only; it does not redesign set_zero_time algorithm behavior globally.",
+    "No claim of overall AutoTune superiority is made here.",
+    "Ground truth ROI is unchanged from GX-003 and not replaced."
+  ]
+}

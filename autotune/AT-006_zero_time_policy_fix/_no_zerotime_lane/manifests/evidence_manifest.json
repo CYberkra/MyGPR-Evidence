@@ -1,0 +1,34 @@
+{
+  "artifact_id": "AT-005A",
+  "task_id": "AT-005A_no_zerotime_gain_validation",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "61ad8a3ac55d9e604f802b9c8ca8ddb3474b65ad",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "evidence_commit": "pending_self_reference",
+  "generated_at": "2026-05-20T12:25:19.084429+00:00",
+  "command": "python scripts/auto_tune_validation/run_no_zerotime_gain_validation.py",
+  "dataset_name": "pipe_demo_longline_v1",
+  "dataset_shape": [
+    2037,
+    90
+  ],
+  "dataset_hash": "3f9ce35dce8de510a5a1cc54d96c0a8635fcd834cf1a69d8f455009d05ef40b1",
+  "ground_truth_available": true,
+  "metric_type": "ground_truth_gain_validation_and_field_heuristic_qc",
+  "artifacts": {
+    "markdown_report": "reports/no_zerotime_gain_validation_report.md",
+    "html_report": "reports/no_zerotime_gain_validation_report.html",
+    "validation_summary": "manifests/validation_summary.json",
+    "lane_metrics": "tables/lane_metrics.csv",
+    "gain_variant_table": "tables/gain_variant_table.csv",
+    "iteration_log": "manifests/hundred_round_iteration_log.json"
+  },
+  "limitations": [
+    "Zero-time is intentionally excluded; this artifact does not repair zero-time correction.",
+    "AGC is display-oriented and non-amplitude-preserving.",
+    "Field lane is visual/heuristic QC only and has no ground-truth claims.",
+    "GX-003 ROI is used as-is; candidate ROI from AT-004 is not substituted."
+  ],
+  "evidence_commit_note": "The final Git commit hash is reported after committing because exact self-reference cannot be embedded without a follow-up metadata-only commit."
+}
