@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AT-010 ntraces Edge Check</title>
+  <style>
+    body { margin: 0; background: #f5f7fb; color: #162033; font-family: "Segoe UI", "PingFang SC", sans-serif; }
+    main { max-width: 1180px; margin: 0 auto; padding: 28px; }
+    .card { background: #fff; border: 1px solid #d9e2ee; border-radius: 8px; padding: 14px 16px; margin: 12px 0; }
+    .warning { border-color: #f59e0b; background: #fff9ea; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+    figure { margin: 0; background: #fff; border: 1px solid #d9e2ee; border-radius: 8px; padding: 10px; }
+    figure img { width: 100%; display: block; }
+    figcaption { margin-top: 6px; font-size: 13px; color: #495a75; }
+    code { background: #edf2f7; padding: 1px 4px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>AT-010 Background ntraces Edge Check</h1>
+  <div class="card">
+    <div><b>Source commit:</b> <code>ffb86822ccf273e5f38c26dd6a37d547b59ee4b8</code></div>
+    <div><b>Dataset:</b> pipe_demo_longline_v1 [2037, 90]</div>
+    <div><b>Zero-time policy:</b> <code>excluded</code></div>
+    <div><b>Dewow policy:</b> <code>excluded_primary</code></div>
+    <div><b>Extended domain:</b> <code>[57, 65, 73, 81, 89, 97, 105, 113, 121]</code></div>
+  </div>
+  <div class="card warning">
+    <b>Decision:</b> <code>not_ready_edge_limited</code> |
+    best ntraces=<code>97</code> |
+    recommended range=<code>89-121</code> |
+    73 supported=<code>False</code> |
+    flags=<code>false_positive_increase, monotonic_rightward_trend, multiple_near_optima</code>
+  </div>
+  <div class="grid">
+    <figure><img src="../figures/input_bscan_roi_overlay.png"><figcaption>Input with ROI</figcaption></figure>
+    <figure><img src="../figures/extended_ntraces_sweep_summary.png"><figcaption>Extended ntraces sweep</figcaption></figure>
+    <figure><img src="../figures/edge_risk_summary.png"><figcaption>Edge-risk summary</figcaption></figure>
+    <figure><img src="../figures/recommended_candidate_bscan.png"><figcaption>Recommended candidate B-scan</figcaption></figure>
+    <figure><img src="../figures/recommended_candidate_roi_crop.png"><figcaption>Recommended candidate ROI crop</figcaption></figure>
+  </div>
+  <h2>Known risks</h2><ul><li>Single native gprMax scene cannot establish broad preset generalization.</li>
+<li>Edge-check may still be domain-limited without wider scenario coverage.</li>
+<li>Dewow remains excluded only for this primary lane policy.</li></ul>
+</main>
+</body>
+</html>

@@ -1,0 +1,2 @@
+best_ntraces,edge_risk_flags,notes,ntraces_73_supported,preset_candidacy_classification,recommended_ntraces_range
+97,"[""false_positive_increase"", ""monotonic_rightward_trend"", ""multiple_near_optima""]","""Best candidate remains boundary-limited; extend domain or add scenes.""",false,"""not_ready_edge_limited""","""89-121"""

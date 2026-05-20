@@ -1,0 +1,33 @@
+{
+  "artifact_id": "AT-010",
+  "task_id": "AT-010_background_ntraces_edge_check",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "ffb86822ccf273e5f38c26dd6a37d547b59ee4b8",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "evidence_commit": "pending_self_reference",
+  "generated_at": "2026-05-20T15:09:16.668465+00:00",
+  "command": "python scripts/auto_tune_validation/run_background_ntraces_edge_check.py",
+  "dataset_name": "pipe_demo_longline_v1",
+  "dataset_shape": [
+    2037,
+    90
+  ],
+  "dataset_hash": "3f9ce35dce8de510a5a1cc54d96c0a8635fcd834cf1a69d8f455009d05ef40b1",
+  "ground_truth_available": true,
+  "metric_type": "ground_truth_ntraces_edge_check",
+  "zero_time_policy": "excluded",
+  "dewow_policy": "excluded_primary",
+  "artifacts": {
+    "markdown_report": "reports/background_ntraces_edge_check_report.md",
+    "html_report": "reports/background_ntraces_edge_check_report.html",
+    "summary": "manifests/background_ntraces_edge_check_summary.json",
+    "sweep_metrics": "tables/extended_ntraces_sweep_metrics.csv",
+    "preset_decision": "tables/preset_candidate_decision.csv"
+  },
+  "limitations": [
+    "Single native gprMax scene cannot establish broad preset generalization.",
+    "Edge-check may still be domain-limited without wider scenario coverage.",
+    "Dewow remains excluded only for this primary lane policy."
+  ]
+}
