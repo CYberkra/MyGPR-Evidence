@@ -1,0 +1,19 @@
+{
+  "schema": "mygpr_native_gprmax_csv_manifest_v1",
+  "scenario_id": "pipe_demo_longline_v1",
+  "data_file": "mygpr_bscan.csv",
+  "scenario_file": "scenario.json",
+  "model_file": "pipe_demo_longline_v1.in",
+  "preview_file": "preview.png",
+  "raw_out_path": "D:\\CDUT-UavGPR-Controller\\MyGPR\\output\\gprmax_datasets\\pipe_demo_longline_v1\\pipe_demo_longline_v1_merged.out",
+  "raw_out_hash": "5979b56f4d3ad3834f71732104bf218eadb0621f0679646d772a439332e66c42",
+  "csv_hash": "3f9ce35dce8de510a5a1cc54d96c0a8635fcd834cf1a69d8f455009d05ef40b1",
+  "receiver": "rx1",
+  "component": "Ez",
+  "converted_ground_truth_file": "ground_truth.json",
+  "ground_truth_file": "ground_truth.yaml",
+  "artifact_id": "GX-003",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "6507e2535815020d4b79d273db5de471e0045277"
+}

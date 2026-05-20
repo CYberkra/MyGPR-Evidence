@@ -1,0 +1,116 @@
+{
+  "schema": "mygpr_gprmax_package_audit_v1",
+  "package_dir": "D:\\CDUT-UavGPR-Controller\\MyGPR\\output\\gprmax_native_csv_packages\\GX-003_pipe_demo_longline_v1",
+  "source": {
+    "kind": "native_gprmax_converted",
+    "native_gprmax_verified": true,
+    "dt_source": "native gprMax .out"
+  },
+  "files": {
+    "scenario_json": "D:\\CDUT-UavGPR-Controller\\MyGPR\\output\\gprmax_native_csv_packages\\GX-003_pipe_demo_longline_v1\\scenario.json",
+    "model_in": "D:\\CDUT-UavGPR-Controller\\MyGPR\\output\\gprmax_native_csv_packages\\GX-003_pipe_demo_longline_v1\\pipe_demo_longline_v1.in",
+    "raw_out_files": [],
+    "raw_out_reference": "D:\\CDUT-UavGPR-Controller\\MyGPR\\output\\gprmax_datasets\\pipe_demo_longline_v1\\pipe_demo_longline_v1_merged.out",
+    "raw_out_hash": "5979b56f4d3ad3834f71732104bf218eadb0621f0679646d772a439332e66c42",
+    "raw_out_exists": true,
+    "mygpr_bscan_csv": "D:\\CDUT-UavGPR-Controller\\MyGPR\\output\\gprmax_native_csv_packages\\GX-003_pipe_demo_longline_v1\\mygpr_bscan.csv",
+    "ground_truth_json": "D:\\CDUT-UavGPR-Controller\\MyGPR\\output\\gprmax_native_csv_packages\\GX-003_pipe_demo_longline_v1\\ground_truth.json",
+    "ground_truth_yaml": "D:\\CDUT-UavGPR-Controller\\MyGPR\\output\\gprmax_native_csv_packages\\GX-003_pipe_demo_longline_v1\\ground_truth.yaml"
+  },
+  "geometry": {
+    "domain_m": [
+      1.2,
+      0.85,
+      0.005
+    ],
+    "dx_dy_dz_m": [
+      0.005,
+      0.005,
+      0.005
+    ],
+    "time_window_s": 2.4e-08,
+    "time_window_ns": 24.0,
+    "time_step_s": 1.1793271683748419e-11,
+    "dt_consistency": {
+      "available": true,
+      "scenario_time_step_s": 1.1793271683748419e-11,
+      "time_window_over_samples_s": 1.1782032400589102e-11,
+      "absolute_mismatch_s": 1.1239283159316677e-14,
+      "relative_mismatch": 0.0009539341581470029
+    },
+    "source_scan": {
+      "available": true,
+      "start_m": [
+        0.115,
+        0.7,
+        0.0
+      ],
+      "end_m": [
+        1.0050000000000001,
+        0.7,
+        0.0
+      ],
+      "step_m": [
+        0.01,
+        0.0,
+        0.0
+      ],
+      "trace_count": 90
+    },
+    "receiver_scan": {
+      "available": true,
+      "start_m": [
+        0.235,
+        0.7,
+        0.0
+      ],
+      "end_m": [
+        1.125,
+        0.7,
+        0.0
+      ],
+      "step_m": [
+        0.01,
+        0.0,
+        0.0
+      ],
+      "trace_count": 90
+    },
+    "pml_margin": {
+      "pml_cells": 10,
+      "pml_margin_m": [
+        0.05,
+        0.05,
+        0.05
+      ],
+      "risk_flags": [
+        "axis 2 domain 0.005 m is thinner than two default PML margins; treating it as a thin/2D dimension for margin screening"
+      ]
+    }
+  },
+  "shape": {
+    "expected_sample_count": 2037,
+    "expected_trace_count": 90,
+    "actual_sample_count": 2037,
+    "actual_trace_count": 90,
+    "shape_matches_expected": true
+  },
+  "ground_truth": {
+    "roi_exists": true,
+    "roi_inside_bscan": true,
+    "roi": {
+      "time_start_idx": 760,
+      "time_end_idx": 883,
+      "dist_start_idx": 38,
+      "dist_end_idx": 51
+    },
+    "warnings": []
+  },
+  "warnings": [
+    "native .out is externally referenced but not committed inside the package",
+    "axis 2 domain 0.005 m is thinner than two default PML margins; treating it as a thin/2D dimension for margin screening"
+  ],
+  "errors": [],
+  "paper_usable": true,
+  "recommendation": "usable as audited native gprMax evidence for limited claims"
+}

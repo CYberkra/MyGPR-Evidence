@@ -1,0 +1,193 @@
+{
+  "schema": "mygpr_gprmax_scenario_v1",
+  "scenario_id": "pipe_demo_longline_v1",
+  "description": "Native gprMax .out converted to MyGPR-compatible CSV.",
+  "source": {
+    "kind": "native_gprmax_converted",
+    "raw_out_path": "D:\\CDUT-UavGPR-Controller\\MyGPR\\output\\gprmax_datasets\\pipe_demo_longline_v1\\pipe_demo_longline_v1_merged.out",
+    "raw_out_hash": "5979b56f4d3ad3834f71732104bf218eadb0621f0679646d772a439332e66c42",
+    "raw_out_committed": false,
+    "receiver": "rx1",
+    "component": "Ez",
+    "conversion_command": "python scripts/gprmax_benchmark/prepare_native_gprmax_package.py --model-in output\\gprmax_datasets\\pipe_demo_longline_v1\\pipe_demo_longline_v1.in --out output\\gprmax_datasets\\pipe_demo_longline_v1\\pipe_demo_longline_v1_merged.out --output-dir output\\gprmax_native_csv_packages\\GX-003_pipe_demo_longline_v1 --receiver rx1 --component Ez --scenario-id pipe_demo_longline_v1 --ground-truth output\\gprmax_datasets\\pipe_demo_longline_v1\\ground_truth.yaml"
+  },
+  "simulation": {
+    "sample_count": 2037,
+    "trace_count": 90,
+    "time_step_s": 1.1793271683748419E-11,
+    "iterations": 2037,
+    "total_time_ns": 24.02289441979553,
+    "trace_step_m": 0.01
+  },
+  "domain_m": [
+    1.2,
+    0.85,
+    0.005
+  ],
+  "dx_dy_dz_m": [
+    0.005,
+    0.005,
+    0.005
+  ],
+  "antenna": {
+    "source_position_m": [
+      0.115,
+      0.7,
+      0.0
+    ],
+    "receiver_position_m": [
+      0.235,
+      0.7,
+      0.0
+    ],
+    "source_step_m": [
+      0.01,
+      0.0,
+      0.0
+    ],
+    "receiver_step_m": [
+      0.01,
+      0.0,
+      0.0
+    ]
+  },
+  "conversion": {
+    "created_at": "2026-05-20T15:49:51.120088+08:00",
+    "csv_file": "mygpr_bscan.csv",
+    "csv_hash": "3f9ce35dce8de510a5a1cc54d96c0a8635fcd834cf1a69d8f455009d05ef40b1",
+    "preview_file": "preview.png",
+    "hdf5_dataset": "/rxs/rx1/Ez",
+    "hdf5_metadata": {
+      "iterations": 2037,
+      "dt_s": 1.1793271683748419E-11,
+      "nx_ny_nz": [
+        240,
+        170,
+        1
+      ],
+      "raw_attrs": {
+        "Iterations": 2037,
+        "MergedModelCount": 90,
+        "MergedModelNumbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90
+        ],
+        "Title": "UAV-GPR raw B-scan for background removal and mild gain workflow",
+        "dt": 1.1793271683748419E-11,
+        "dx_dy_dz": [
+          0.005,
+          0.005,
+          0.005
+        ],
+        "gprMax": "3.1.6",
+        "nrx": 1,
+        "nsrc": 1,
+        "nx_ny_nz": [
+          240,
+          170,
+          1
+        ],
+        "rxsteps": [
+          2,
+          0,
+          0
+        ],
+        "srcsteps": [
+          2,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "artifact_id": "GX-003",
+  "source_commit": "6507e2535815020d4b79d273db5de471e0045277"
+}
