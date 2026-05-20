@@ -1,6 +1,6 @@
 # AT-010 Background ntraces Edge Check and Preset Candidate
 
-- Source commit: `ffb86822ccf273e5f38c26dd6a37d547b59ee4b8`
+- Source commit: `2ed606e7f4ec26bff24cfb2980479f6dc96573dc`
 - Dataset: `pipe_demo_longline_v1` shape `[2037, 90]`
 - Ground truth: `available`
 - Zero-time policy: `excluded`

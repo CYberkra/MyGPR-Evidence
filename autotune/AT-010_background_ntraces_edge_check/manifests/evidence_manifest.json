@@ -3,7 +3,7 @@
   "task_id": "AT-010_background_ntraces_edge_check",
   "source_repo": "https://github.com/CYberkra/MyGPR",
   "source_branch": "codex/research-gprmax-autotune",
-  "source_commit": "ffb86822ccf273e5f38c26dd6a37d547b59ee4b8",
+  "source_commit": "2ed606e7f4ec26bff24cfb2980479f6dc96573dc",
   "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
   "evidence_commit": "pending_self_reference",
   "generated_at": "2026-05-20T15:09:16.668465+00:00",
