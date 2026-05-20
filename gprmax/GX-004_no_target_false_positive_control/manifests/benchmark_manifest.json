@@ -2,24 +2,30 @@
   "schema": "mygpr_native_benchmark_manifest_v1",
   "artifact_id": "GX-004",
   "scenario_id": "gx004_no_target_false_positive_control_v1",
-  "generation_status": "pending_native_output",
+  "generation_status": "complete",
   "source_repo": "https://github.com/CYberkra/MyGPR",
   "source_branch": "codex/research-gprmax-autotune",
   "source_commit": "a423072be4c2a9ae29708aef18e165d4c2cd053d",
   "evidence_commit": "pending_self_reference",
-  "gprmax_version": null,
+  "gprmax_version": "3.1.6",
   "model_file": "model/model.in",
-  "model_hash": "4a6a18bf96e322298a62b5145204fc31a60e324734b8d6efa0f0dbe4ffcdbb57",
-  "native_output_file": null,
-  "native_output_hash": null,
-  "converted_csv_file": null,
-  "converted_csv_hash": null,
-  "source_shape": null,
-  "converted_shape": null,
+  "model_hash": "8d2adf52e5da2c2cf639393ac2fb1ad33e7066452ff4e2aaf73c2a47372b46e6",
+  "native_output_file": "native/model_merged.out",
+  "native_output_hash": "ca3c64e6afd1504c1fd7c32a1a91fe5f9e8ed2cc06b809f9b9f94cbad1fe7d6b",
+  "converted_csv_file": "converted/data.csv",
+  "converted_csv_hash": "585d1d8be9eccc7ef50c5047b5e209a4025fa94b4139bbe280a003295138c0c7",
+  "source_shape": [
+    4241,
+    105
+  ],
+  "converted_shape": [
+    4241,
+    105
+  ],
   "trace_count": 105,
-  "sample_count": null,
+  "sample_count": 4241,
   "trace_spacing_m": 0.01,
-  "time_window_ns": 20.0,
+  "time_window_ns": 20.006106084310822,
   "material_summary": [
     "soil_bg(er=9.0,sigma=0.01)",
     "soil_patch_a(er=8.6,sigma=0.012)",
@@ -35,8 +41,19 @@
     ]
   },
   "limitations": [
-    "native output missing in this task; package is pending_native_output",
-    "thin 2D z-dimension approximation",
-    "synthetic benchmark scene only"
+    "Synthetic gprMax benchmark scene, not field validation.",
+    "Thin 2D z-dimension approximation is used and must be disclosed in downstream claims."
+  ],
+  "completed_at": "2026-05-20T22:31:54.200640+00:00",
+  "receiver": "rx1",
+  "component": "Ez",
+  "commands": {
+    "gprmax_run": "E:\\gprMax\\gprMax-v.3.1.7\\.venv\\Scripts\\python.exe -m gprMax model.in -n 105",
+    "gprmax_merge": "E:\\gprMax\\gprMax-v.3.1.7\\.venv\\Scripts\\python.exe -m tools.outputfiles_merge <basefilename> --remove-files",
+    "conversion": "python scripts/gprmax_benchmark/prepare_native_gprmax_package.py --model-in D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-004_no_target_false_positive_control\\model\\model.in --out D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-004_no_target_false_positive_control\\model\\model_merged.out --output-dir D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-004_no_target_false_positive_control\\_conversion_tmp --receiver rx1 --component Ez --scenario-id gx004_no_target_false_positive_control_v1 --ground-truth D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-004_no_target_false_positive_control\\manifests\\ground_truth.json"
+  },
+  "runtime_warnings": [
+    "gprMax PML audit flags thin/2D z-dimension; disclosed limitation retained.",
+    "Current audit script expects target ROI and reports one error for no-target scenes; treat GX-004 as false-positive control with no buried target."
   ]
 }

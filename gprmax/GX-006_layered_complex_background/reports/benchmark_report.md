@@ -1,58 +1,56 @@
-# GX-006 Layered Complex Background
+# GX-006 Native Benchmark Report
 
 ## Status
-- Artifact ID: `GX-006`
 - Scenario ID: `gx006_layered_complex_background_v1`
-- Generation status: `pending_native_output`
+- Generation status: `complete`
 - Source repo: `https://github.com/CYberkra/MyGPR`
 - Source branch: `codex/research-gprmax-autotune`
 - Source commit: `a423072be4c2a9ae29708aef18e165d4c2cd053d`
+- gprMax version: `3.1.6`
 
-## Scenario Purpose
-Background-structure preservation benchmark under layered clutter.
+## Purpose
+- Layered complex-background
 
-## Model Geometry And Materials
-- Domain 1.20x0.60x0.002 m, dx=dy=dz=0.002 m, thin 2D z-dimension.
-- Time window: `24.0 ns`
-- Trace spacing: `0.01 m`
-- Planned trace count: `105`
-- Materials: `layer_top(er=6.0,sigma=0.005); layer_mid(er=9.0,sigma=0.01); layer_deep(er=12.0,sigma=0.02); target_fill(er=5.5,sigma=0.003)`
+## Native Run Environment And Commands
+- gprMax environment: `E:/gprMax/gprMax-v.3.1.7/.venv/Scripts/python.exe`
+- Run command: `E:\gprMax\gprMax-v.3.1.7\.venv\Scripts\python.exe -m gprMax model.in -n 105`
+- Merge command: `E:\gprMax\gprMax-v.3.1.7\.venv\Scripts\python.exe -m tools.outputfiles_merge <basefilename> --remove-files`
+- Conversion command: `python scripts/gprmax_benchmark/prepare_native_gprmax_package.py --model-in ... --out ... --receiver rx1 --component Ez --scenario-id gx006_layered_complex_background_v1`
 
-## Source / Receiver Configuration
-- Tx start (0.12,0.30,0), Rx start (0.16,0.30,0), src/rx step 0.01 m along +x.
+## Geometry / Material / Acquisition Summary
+- Domain: `1.20 x 0.60 x 0.002 m`
+- Grid: `dx=dy=dz=0.002 m`
+- Source/receiver step: `0.01 m`
+- Trace count: `105`
+- Sample count: `5089`
+- Time window: `24.006383839438286 ns`
+- Receiver/component: `rx1/Ez`
 
-## Target / Layer Summary
-- Layered interfaces plus optional medium-depth target.
-
-## ROI And Negative-Control Setup
+## Generated Files
+- model: `model/model.in`
+- native output: `native/model_merged.out`
+- converted CSV: `converted/data.csv`
+- preview: `figures/raw_bscan_preview.png`
+- ROI overlay: `figures/roi_overlay.png`
+- benchmark manifest: `manifests/benchmark_manifest.json`
+- ground truth: `manifests/ground_truth.json`
 - ROI table: `tables/roi_definitions.csv`
-- Ground-truth manifest: `manifests/ground_truth.json`
-- Negative-control ROIs are mandatory and included.
 
-## Generated Files In This Task
-- `model/model.in`
-- `manifests/benchmark_manifest.json`
-- `manifests/pending_native_output.json`
-- `manifests/ground_truth.json`
-- `tables/roi_definitions.csv`
-- `tables/metadata_summary.csv`
+## Hashes
+- model hash: `0b5f25b1e4a5b5c855be13abf65065f65e5dfd531bcbb0c47a6b6b05084ae89f`
+- native output hash: `ed37f9daaa0e06ecc9646a454781188b140cb573e51717e81493ecd70d7c3fed`
+- converted CSV hash: `78bc1d6639a14d4247348580b34e4c584052d52f096d10c43c635bf4179c1acd`
 
-## Missing Files (Pending Native Output)
-- `native/native.out` or `native/*_merged.out`
-- `converted/data.csv`
-- `figures/raw_bscan_preview.png`
-- `figures/roi_overlay.png`
-
-## Required Next Commands
-1. `gprMax model/model.in`
-2. `python scripts/gprmax_benchmark/prepare_native_gprmax_package.py --model-in model/model.in --out <native_out_or_merged_out> --output-dir <local_package_dir> --receiver rx1 --component Ez --scenario-id gx006_layered_complex_background_v1 --ground-truth manifests/ground_truth.json`
-3. `python scripts/gprmax_benchmark/audit_gprmax_package.py --package <local_package_dir> --output-json <local_package_dir>/gprmax_package_audit.json`
+## Notes On Model Sanity Fixes
+- `##title` was corrected to `#title` for valid gprMax syntax.
+- Tx/Rx x-start positions were shifted inward (`0.09/0.13 m`) to keep the 105-trace path away from the x-boundary.
+- GX-004 `#hertzian_dipole` line was fixed to include waveform name `my_ricker`.
 
 ## Limitations
-- Native gprMax output is not generated in this task, so no converted CSV or B-scan figure is provided yet.
-- Thin 2D z-dimension approximation is used; report this limitation in every downstream benchmark claim.
-- Synthetic scene evidence does not validate field-flight performance.
+- Thin 2D z-dimension approximation is used and must be disclosed in downstream claims.
+- Synthetic scene benchmark does not validate field-flight performance.
+- This package completion task does not run AutoTune validation.
 
 ## Explicit Non-Claims
-- Layer-interface suppression is not automatically an improvement.
-- This task does not run AutoTune validation and does not promote any preset.
+- Layer-interface suppression is not automatically an improvement in GX-006.
+- No preset promotion or AutoTune superiority claim is made in this task.

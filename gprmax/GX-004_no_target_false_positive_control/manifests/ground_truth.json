@@ -68,5 +68,6 @@
   "forbidden_claims": [
     "No target-preservation claim is allowed for GX-004 because no true target exists.",
     "Do not claim field-performance validation from this synthetic scene alone."
-  ]
+  ],
+  "targets": []
 }

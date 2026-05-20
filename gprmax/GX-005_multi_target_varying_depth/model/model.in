@@ -1,4 +1,4 @@
-##title: gx005_multi_target_varying_depth_v1
+#title: gx005_multi_target_varying_depth_v1
 #domain: 1.20 0.60 0.002
 #dx_dy_dz: 0.002 0.002 0.002
 #time_window: 2.4e-08
@@ -8,8 +8,8 @@
 #material: 6.2 0.004 1.0 0.0 target_fill_b
 
 #waveform: ricker 1 9.0e8 my_ricker
-#hertzian_dipole: z 0.12 0.30 0 my_ricker
-#rx: 0.16 0.30 0
+#hertzian_dipole: z 0.09 0.30 0 my_ricker
+#rx: 0.13 0.30 0
 #src_steps: 0.01 0 0
 #rx_steps: 0.01 0 0
 

@@ -92,5 +92,26 @@
   "forbidden_claims": [
     "Layer-interface suppression is not automatically an improvement.",
     "Do not claim field-performance validation from this synthetic scene alone."
-  ]
+  ],
+  "targets": [
+    {
+      "id": "target_A",
+      "roi": {
+        "time_start_idx": 330,
+        "time_end_idx": 860,
+        "dist_start_idx": 60,
+        "dist_end_idx": 84
+      }
+    }
+  ],
+  "target_roi": {
+    "sample_range": [
+      330,
+      859
+    ],
+    "trace_range": [
+      60,
+      83
+    ]
+  }
 }

@@ -86,5 +86,35 @@
   "forbidden_claims": [
     "A single blended metric is insufficient; target_A and target_B must be reported separately.",
     "Do not claim field-performance validation from this synthetic scene alone."
-  ]
+  ],
+  "targets": [
+    {
+      "id": "target_A",
+      "roi": {
+        "time_start_idx": 180,
+        "time_end_idx": 600,
+        "dist_start_idx": 20,
+        "dist_end_idx": 42
+      }
+    },
+    {
+      "id": "target_B",
+      "roi": {
+        "time_start_idx": 420,
+        "time_end_idx": 980,
+        "dist_start_idx": 58,
+        "dist_end_idx": 84
+      }
+    }
+  ],
+  "target_roi": {
+    "sample_range": [
+      180,
+      599
+    ],
+    "trace_range": [
+      20,
+      41
+    ]
+  }
 }
