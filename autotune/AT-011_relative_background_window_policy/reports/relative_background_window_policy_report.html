@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AT-011 Relative Background Window Policy</title>
+  <style>
+    body { margin: 0; background: #f5f7fb; color: #162033; font-family: "Segoe UI", "PingFang SC", sans-serif; }
+    main { max-width: 1200px; margin: 0 auto; padding: 28px; }
+    .card { background: #fff; border: 1px solid #d9e2ee; border-radius: 8px; padding: 14px 16px; margin: 12px 0; }
+    .warning { border-color: #f59e0b; background: #fff9ea; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 14px; }
+    figure { margin: 0; background: #fff; border: 1px solid #d9e2ee; border-radius: 8px; padding: 10px; }
+    figure img { width: 100%; display: block; }
+    figcaption { margin-top: 6px; font-size: 13px; color: #495a75; }
+    code { background: #edf2f7; padding: 1px 4px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>AT-011 Relative Background Window Candidate Policy</h1>
+  <div class="card">
+    <div><b>Source commit:</b> <code>2ed606e7f4ec26bff24cfb2980479f6dc96573dc</code></div>
+    <div><b>Dataset:</b> pipe_demo_longline_v1 [2037, 90]</div>
+    <div><b>Zero-time policy:</b> <code>excluded</code></div>
+    <div><b>Dewow policy:</b> <code>excluded_primary</code></div>
+    <div><b>Generated candidate ratios:</b> <code>[0.03333333333333333, 0.1, 0.18888888888888888, 0.3888888888888889, 0.7, 0.9888888888888889]</code></div>
+    <div><b>Generated ntraces:</b> <code>[3, 9, 17, 35, 63, 89]</code></div>
+  </div>
+  <div class="card warning">
+    <b>Interpretation:</b> AT-010 absolute ntraces values are single-scene values.
+    AT-011 reinterprets them as relative trace-count-aware behavior.
+    Best label: <code>near_full_line</code> |
+    favors large/near/full: <code>True</code>
+  </div>
+  <div class="grid">
+    <figure><img src="../figures/input_bscan_roi_overlay.png"><figcaption>Input with ROI</figcaption></figure>
+    <figure><img src="../figures/relative_candidate_sweep_summary.png"><figcaption>Relative candidate sweep</figcaption></figure>
+    <figure><img src="../figures/policy_label_metric_summary.png"><figcaption>Policy-label metric summary</figcaption></figure>
+    <figure><img src="../figures/best_relative_candidate_bscan.png"><figcaption>Best relative candidate B-scan</figcaption></figure>
+    <figure><img src="../figures/best_relative_candidate_roi_crop.png"><figcaption>Best relative candidate ROI crop</figcaption></figure>
+  </div>
+  <h2>Known risks</h2><ul><li>Single native gprMax scene cannot define universal policy defaults.</li>
+<li>Large-window preference may depend on this scene geometry/background.</li>
+<li>Multi-scene validation is required before preset finalization.</li></ul>
+</main>
+</body>
+</html>

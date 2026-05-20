@@ -1,0 +1,35 @@
+{
+  "artifact_id": "AT-011",
+  "task_id": "AT-011_relative_background_window_policy",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "2ed606e7f4ec26bff24cfb2980479f6dc96573dc",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "evidence_commit": "pending_self_reference",
+  "generated_at": "2026-05-20T15:38:36.699942+00:00",
+  "command": "python scripts/auto_tune_validation/run_relative_background_window_policy.py",
+  "dataset_name": "pipe_demo_longline_v1",
+  "dataset_shape": [
+    2037,
+    90
+  ],
+  "dataset_hash": "3f9ce35dce8de510a5a1cc54d96c0a8635fcd834cf1a69d8f455009d05ef40b1",
+  "ground_truth_available": true,
+  "metric_type": "ground_truth_relative_background_window_policy",
+  "candidate_policy": "relative_trace_count_aware",
+  "zero_time_policy": "excluded",
+  "dewow_policy": "excluded_primary",
+  "artifacts": {
+    "markdown_report": "reports/relative_background_window_policy_report.md",
+    "html_report": "reports/relative_background_window_policy_report.html",
+    "summary": "manifests/relative_background_window_policy_summary.json",
+    "candidate_policy_csv": "tables/generated_candidate_policy.csv",
+    "metrics_csv": "tables/gx003_relative_candidate_metrics.csv",
+    "label_summary_csv": "tables/policy_label_summary.csv"
+  },
+  "limitations": [
+    "Single native gprMax scene cannot define universal policy defaults.",
+    "Large-window preference may depend on this scene geometry/background.",
+    "Multi-scene validation is required before preset finalization."
+  ]
+}

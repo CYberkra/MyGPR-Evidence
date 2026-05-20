@@ -1,0 +1,2 @@
+best_label,best_ntraces,favors_large_or_near_full_or_full,note,reinterpret_at010_as_relative_behavior
+"""near_full_line""",89,true,"""AT-010 absolute values are interpreted as ratio/label behavior, not universal defaults.""",true
