@@ -1,0 +1,116 @@
+{
+  "schema": "mygpr_gprmax_package_audit_v1",
+  "package_dir": "D:\\CDUT-UavGPR-Controller\\MyGPR\\sample_data\\gprmax_benchmarks\\cylinder_single_v1",
+  "source": {
+    "kind": "synthetic_reference",
+    "native_gprmax_verified": false,
+    "dt_source": "synthetic fallback/scenario metadata"
+  },
+  "files": {
+    "scenario_json": "D:\\CDUT-UavGPR-Controller\\MyGPR\\sample_data\\gprmax_benchmarks\\cylinder_single_v1\\scenario.json",
+    "model_in": "D:\\CDUT-UavGPR-Controller\\MyGPR\\sample_data\\gprmax_benchmarks\\cylinder_single_v1\\model.in",
+    "raw_out_files": [],
+    "raw_out_exists": false,
+    "mygpr_bscan_csv": "D:\\CDUT-UavGPR-Controller\\MyGPR\\sample_data\\gprmax_benchmarks\\cylinder_single_v1\\mygpr_bscan.csv",
+    "ground_truth_json": "D:\\CDUT-UavGPR-Controller\\MyGPR\\sample_data\\gprmax_benchmarks\\cylinder_single_v1\\ground_truth.json"
+  },
+  "geometry": {
+    "domain_m": [
+      0.24,
+      0.21,
+      0.002
+    ],
+    "dx_dy_dz_m": [
+      0.002,
+      0.002,
+      0.002
+    ],
+    "time_window_s": 1.8e-08,
+    "time_window_ns": 18.0,
+    "time_step_s": 8.181818181818183e-11,
+    "dt_consistency": {
+      "available": true,
+      "scenario_time_step_s": 8.181818181818183e-11,
+      "time_window_over_samples_s": 8.181818181818182e-11,
+      "absolute_mismatch_s": 1.2924697071141057e-26,
+      "relative_mismatch": 1.5796851975839072e-16
+    },
+    "source_scan": {
+      "available": true,
+      "start_m": [
+        0.04,
+        0.17,
+        0.0
+      ],
+      "end_m": [
+        0.2,
+        0.17,
+        0.0
+      ],
+      "step_m": [
+        0.002,
+        0.0,
+        0.0
+      ],
+      "trace_count": 81
+    },
+    "receiver_scan": {
+      "available": true,
+      "start_m": [
+        0.08,
+        0.17,
+        0.0
+      ],
+      "end_m": [
+        0.24,
+        0.17,
+        0.0
+      ],
+      "step_m": [
+        0.002,
+        0.0,
+        0.0
+      ],
+      "trace_count": 81
+    },
+    "pml_margin": {
+      "pml_cells": 10,
+      "pml_margin_m": [
+        0.02,
+        0.02,
+        0.02
+      ],
+      "risk_flags": [
+        "axis 2 domain 0.002 m is thinner than two default PML margins; treating it as a thin/2D dimension for margin screening",
+        "receiver end_m axis 0 at 0.24 m is inside/near upper PML margin 0.22 m"
+      ]
+    }
+  },
+  "shape": {
+    "expected_sample_count": 220,
+    "expected_trace_count": 81,
+    "actual_sample_count": 220,
+    "actual_trace_count": 81,
+    "shape_matches_expected": true
+  },
+  "ground_truth": {
+    "roi_exists": true,
+    "roi_inside_bscan": true,
+    "roi": {
+      "time_start_idx": 49,
+      "time_end_idx": 149,
+      "dist_start_idx": 16,
+      "dist_end_idx": 65
+    },
+    "warnings": []
+  },
+  "warnings": [
+    "source.kind is synthetic_reference; this package is suitable for smoke/contract tests only.",
+    "No native gprMax .out file found in the package.",
+    "axis 2 domain 0.002 m is thinner than two default PML margins; treating it as a thin/2D dimension for margin screening",
+    "receiver end_m axis 0 at 0.24 m is inside/near upper PML margin 0.22 m"
+  ],
+  "errors": [],
+  "paper_usable": false,
+  "recommendation": "use for smoke/contract tests only; regenerate native gprMax package before paper claims"
+}
