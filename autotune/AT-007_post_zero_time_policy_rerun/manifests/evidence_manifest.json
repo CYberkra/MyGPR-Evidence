@@ -1,0 +1,39 @@
+{
+  "artifact_id": "AT-007",
+  "task_id": "AT-007_post_zero_time_policy_rerun",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "b8cc89d3f026c858beab888cb3cbecd93192b723",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "evidence_commit": "pending_self_reference",
+  "generated_at": "2026-05-20T13:11:32.049755+00:00",
+  "dataset_name": "pipe_demo_longline_v1",
+  "dataset_shape": [
+    2037,
+    90
+  ],
+  "dataset_hash": "3f9ce35dce8de510a5a1cc54d96c0a8635fcd834cf1a69d8f455009d05ef40b1",
+  "ground_truth_available": true,
+  "metric_type": "ground_truth_with_heuristic_diagnostics",
+  "zero_time_policy": "explicit_only_fixed_zero",
+  "artifacts": {
+    "markdown_report": "reports/post_zero_time_policy_rerun_report.md",
+    "html_report": "reports/post_zero_time_policy_rerun_report.html",
+    "post_fix_ablation_summary": "manifests/post_fix_ablation_summary.json",
+    "post_fix_signal_loss_summary": "manifests/post_fix_signal_loss_summary.json",
+    "post_fix_ablation_table": "tables/post_fix_ablation_table.csv",
+    "post_fix_step_diagnostics": "tables/post_fix_step_diagnostics.csv",
+    "before_after_validity": "tables/before_after_validity_comparison.csv",
+    "before_after_metric": "tables/before_after_metric_comparison.csv"
+  },
+  "limitations": [
+    "Post-fix rerun evaluates policy impact; it does not redesign AutoTune scoring.",
+    "Historical AT-002/AT-003 are preserved as pre-fix references.",
+    "No field-data ground-truth claim is made."
+  ],
+  "known_risks": [
+    "Single native gprMax scene is insufficient for broad claim changes.",
+    "Ground-truth metrics and heuristic QC can disagree under aggressive denoising.",
+    "Historical AT-002/AT-003 remain valid pre-fix records and must not be reinterpreted as post-fix."
+  ]
+}

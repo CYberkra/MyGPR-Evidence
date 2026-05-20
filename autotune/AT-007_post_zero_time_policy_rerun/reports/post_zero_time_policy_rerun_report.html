@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AT-007 Post Zero-Time Policy Rerun</title>
+  <style>
+    body { font-family: "Segoe UI", "PingFang SC", sans-serif; margin: 24px; color: #1f2937; }
+    h1, h2 { margin-top: 1.2em; }
+    .card { border: 1px solid #d1d5db; border-radius: 8px; padding: 12px 14px; background: #f9fafb; margin-top: 8px; }
+    code { background: #f3f4f6; padding: 1px 4px; border-radius: 4px; }
+    ul { line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <h1>AT-007 Post Zero-Time Policy Rerun</h1>
+  <div class="card">
+    <div><b>Source commit:</b> <code>b8cc89d3f026c858beab888cb3cbecd93192b723</code></div>
+    <div><b>Dataset:</b> <code>pipe_demo_longline_v1</code></div>
+    <div><b>Ground truth:</b> <code>True</code></div>
+    <div><b>Zero-time policy:</b> <code>explicit_only_fixed_zero</code></div>
+  </div>
+  <h2>Key Findings</h2>
+  <ul>
+    <li>Implicit 423-sample shift eliminated: <code>True</code></li>
+    <li>Branch validity before - after: <code>0</code> -> <code>0</code></li>
+    <li>First failing step before: <code>set_zero_time</code></li>
+    <li>First failing step after: <code>dewow</code></li>
+    <li>AutoTune status: <code>remains_inconclusive</code></li>
+    <li>Next bottleneck: <code>dewow parameter-domain refinement</code></li>
+  </ul>
+  <h2>Claim Boundary</h2>
+  <ul>
+    <li>No overall AutoTune superiority claim is made.</li>
+    <li>GX-003 ground-truth metrics and heuristic diagnostics are separated.</li>
+    <li>Historical AT-002/AT-003 remain pre-fix evidence.</li>
+  </ul>
+  <h2>Next Task</h2>
+  <div class="card"><code>dewow_parameter_domain_refinement</code></div>
+</body>
+</html>

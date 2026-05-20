@@ -1,0 +1,124 @@
+{
+  "artifact_id": "AT-007",
+  "task_id": "AT-007_post_zero_time_policy_rerun",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "b8cc89d3f026c858beab888cb3cbecd93192b723",
+  "mode": "normal",
+  "zero_time_policy": "explicit_only_fixed_zero",
+  "dataset": {
+    "name": "pipe_demo_longline_v1",
+    "path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-003_audited_native_gprmax_benchmark\\tables\\mygpr_bscan.csv",
+    "shape": [
+      2037,
+      90
+    ],
+    "hash": "3f9ce35dce8de510a5a1cc54d96c0a8635fcd834cf1a69d8f455009d05ef40b1",
+    "source_evidence": "gprmax/GX-003_audited_native_gprmax_benchmark/"
+  },
+  "historical_pre_fix": {
+    "at002_summary": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\autotune\\AT-002_native_ablation\\manifests\\ablation_summary.json",
+    "at003_summary": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\autotune\\AT-003_signal_loss_diagnosis\\manifests\\step_diagnostics.json",
+    "first_failing_step": {
+      "branch": "safe_default",
+      "step_index": 1,
+      "method_key": "set_zero_time",
+      "reason": "zero-time/effective signal energy nearly disappeared",
+      "roi_energy_ratio": 1.0,
+      "global_energy_ratio": 0.002238542523145978
+    }
+  },
+  "post_fix": {
+    "first_failing_step": {
+      "branch": "auto_tuned",
+      "step_index": 2,
+      "method_key": "dewow",
+      "reason": "zero-time/effective signal energy nearly disappeared",
+      "roi_energy_ratio": 0.0004947755816483761,
+      "global_energy_ratio": 0.0005273606889103358
+    },
+    "branch_first_failures": {
+      "auto_tuned": {
+        "step_index": 2,
+        "method_key": "dewow",
+        "reason": "zero-time/effective signal energy nearly disappeared",
+        "zero_time_shift_samples": 0,
+        "roi_energy_ratio": 0.0004947755816483761,
+        "global_energy_ratio": 0.0005273606889103358
+      },
+      "expert_manual": {
+        "step_index": 2,
+        "method_key": "dewow",
+        "reason": "zero-time/effective signal energy nearly disappeared",
+        "zero_time_shift_samples": 0,
+        "roi_energy_ratio": 0.003705444048374955,
+        "global_energy_ratio": 0.003958094500453025
+      },
+      "only_background_suppression_auto_tuned": {
+        "step_index": 2,
+        "method_key": "dewow",
+        "reason": "zero-time/effective signal energy nearly disappeared",
+        "zero_time_shift_samples": 0,
+        "roi_energy_ratio": 0.003705444048374955,
+        "global_energy_ratio": 0.003958094500453025
+      },
+      "only_dewow_auto_tuned": {
+        "step_index": 2,
+        "method_key": "dewow",
+        "reason": "zero-time/effective signal energy nearly disappeared",
+        "zero_time_shift_samples": 0,
+        "roi_energy_ratio": 0.0004947755816483761,
+        "global_energy_ratio": 0.0005273606889103358
+      },
+      "only_frequency_filter_1d_auto_tuned": {
+        "step_index": 2,
+        "method_key": "dewow",
+        "reason": "zero-time/effective signal energy nearly disappeared",
+        "zero_time_shift_samples": 0,
+        "roi_energy_ratio": 0.003705444048374955,
+        "global_energy_ratio": 0.003958094500453025
+      },
+      "only_gain_auto_tuned": {
+        "step_index": 2,
+        "method_key": "dewow",
+        "reason": "zero-time/effective signal energy nearly disappeared",
+        "zero_time_shift_samples": 0,
+        "roi_energy_ratio": 0.003705444048374955,
+        "global_energy_ratio": 0.003958094500453025
+      },
+      "safe_default": {
+        "step_index": 2,
+        "method_key": "dewow",
+        "reason": "zero-time/effective signal energy nearly disappeared",
+        "zero_time_shift_samples": 0,
+        "roi_energy_ratio": 0.003705444048374955,
+        "global_energy_ratio": 0.003958094500453025
+      }
+    },
+    "likely_root_cause": {
+      "likely_cause": "dewow_signal_loss_or_sanity_threshold",
+      "evidence": {
+        "branch": "auto_tuned",
+        "step_index": 2,
+        "method_key": "dewow",
+        "reason": "zero-time/effective signal energy nearly disappeared",
+        "roi_energy_ratio": 0.0004947755816483761,
+        "global_energy_ratio": 0.0005273606889103358
+      },
+      "note": "Dewow is the first step where target ROI energy collapses under the current sanity thresholds.",
+      "zero_time_shifted_branches": [],
+      "dewow_roi_collapse_branches": [
+        "expert_manual",
+        "safe_default",
+        "auto_tuned",
+        "only_dewow_auto_tuned",
+        "only_frequency_filter_1d_auto_tuned",
+        "only_background_suppression_auto_tuned",
+        "only_gain_auto_tuned"
+      ],
+      "background_roi_collapse_branches": [],
+      "at002_conclusion": "inconclusive"
+    }
+  },
+  "zero_time_shift_eliminated": true
+}

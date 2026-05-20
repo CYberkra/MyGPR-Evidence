@@ -1,0 +1,37 @@
+{
+  "artifact_id": "AT-002",
+  "task_id": "AT-002_native_benchmark_autotune_ablation",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "b8cc89d3f026c858beab888cb3cbecd93192b723",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "evidence_commit": "pending",
+  "generated_at": "2026-05-20T13:10:59.547400+00:00",
+  "command": "python scripts/auto_tune_validation/run_native_ablation.py",
+  "dataset_name": "pipe_demo_longline_v1",
+  "dataset_shape": [
+    2037,
+    90
+  ],
+  "dataset_hash": "3f9ce35dce8de510a5a1cc54d96c0a8635fcd834cf1a69d8f455009d05ef40b1",
+  "ground_truth_available": true,
+  "metric_type": "ground_truth",
+  "artifacts": {
+    "ablation_report": "reports/ablation_report.md",
+    "ablation_summary": "manifests/ablation_summary.json",
+    "stage_ablation_table": "tables/stage_ablation_table.csv",
+    "trial_table": "tables/trial_table.csv",
+    "input_bscan": "figures/input_bscan.png",
+    "manual_vs_auto": "figures/manual_vs_auto_side_by_side.png"
+  },
+  "limitations": [
+    "AT-002 diagnoses stage-level behavior on one native gprMax benchmark; it is not a global AutoTune redesign.",
+    "AutoTune scoring is unchanged; ground truth is used only after selection for validation and evidence.",
+    "pipe_demo_longline_v1 is paper-usable for limited native gprMax claims, not field-data generalization."
+  ],
+  "known_risks": [
+    "A stage can improve heuristic QC while degrading ground-truth target preservation.",
+    "Manual-vs-auto conclusions are invalid if branch sanity warnings indicate early signal loss.",
+    "One 90-trace pipe scenario is insufficient to redesign scoring without more scenes."
+  ]
+}

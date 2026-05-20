@@ -1,0 +1,8 @@
+branch,branch_invalid_reason_after,branch_invalid_reason_before,delta_truth_score_after_minus_before,truth_score_after,truth_score_before,valid_after,valid_before
+auto_tuned,zero-time/effective signal energy nearly disappeared,zero-time/effective signal energy nearly disappeared,0.010374462399833195,1.727664782460927,1.7172903200610938,False,False
+expert_manual,zero-time/effective signal energy nearly disappeared,zero-time/effective signal energy nearly disappeared,0.0,2.0020342580490498,2.0020342580490498,False,False
+only_background_suppression_auto_tuned,zero-time/effective signal energy nearly disappeared,zero-time/effective signal energy nearly disappeared,0.0,1.7169217464903124,1.7169217464903124,False,False
+only_dewow_auto_tuned,zero-time/effective signal energy nearly disappeared,zero-time/effective signal energy nearly disappeared,0.0,2.0093145732265887,2.0093145732265887,False,False
+only_frequency_filter_1d_auto_tuned,zero-time/effective signal energy nearly disappeared,zero-time/effective signal energy nearly disappeared,0.0,2.029538504160349,2.029538504160349,False,False
+only_gain_auto_tuned,zero-time/effective signal energy nearly disappeared,zero-time/effective signal energy nearly disappeared,0.0,2.0020342580490498,2.0020342580490498,False,False
+safe_default,zero-time/effective signal energy nearly disappeared,zero-time/effective signal energy nearly disappeared,-0.7009582583489151,1.3010759997001347,2.0020342580490498,False,False

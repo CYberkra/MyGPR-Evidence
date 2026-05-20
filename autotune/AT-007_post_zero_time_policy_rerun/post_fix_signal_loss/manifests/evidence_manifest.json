@@ -1,0 +1,30 @@
+{
+  "artifact_id": "AT-003",
+  "task_id": "AT-003_signal_loss_diagnosis",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "b8cc89d3f026c858beab888cb3cbecd93192b723",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "evidence_commit": "pending",
+  "generated_at": "2026-05-20T13:11:31.253591+00:00",
+  "command": "python scripts/auto_tune_validation/run_signal_loss_diagnosis.py",
+  "dataset_name": "pipe_demo_longline_v1",
+  "dataset_shape": [
+    2037,
+    90
+  ],
+  "dataset_hash": "3f9ce35dce8de510a5a1cc54d96c0a8635fcd834cf1a69d8f455009d05ef40b1",
+  "ground_truth_available": true,
+  "metric_type": "ground_truth_and_heuristic_diagnostics",
+  "zero_time_policy": "explicit_only_fixed_zero",
+  "artifacts": {
+    "report": "reports/signal_loss_diagnosis_report.md",
+    "step_diagnostics": "manifests/step_diagnostics.json",
+    "step_diagnostics_csv": "tables/step_diagnostics.csv",
+    "input_overlay": "figures/input_bscan_roi_overlay.png"
+  },
+  "known_risks": [
+    "ROI-following diagnostics infer zero-time shifts from method metadata; they do not alter processing outputs.",
+    "Energy-ratio thresholds diagnose AT-002 invalidation and are not a replacement for visual review."
+  ]
+}
