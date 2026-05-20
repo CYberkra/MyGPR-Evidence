@@ -1,0 +1,29 @@
+{
+  "artifact_id": "AT-004",
+  "task_id": "AT-004_roi_zerotime_dewow_triage",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "df5abc89ba6ee51675df745fdd465fc62930ebd6",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "evidence_commit": "pending",
+  "generated_at": "2026-05-20T09:43:55.180029+00:00",
+  "command": "python scripts/auto_tune_validation/run_roi_zerotime_dewow_triage.py",
+  "dataset_name": "pipe_demo_longline_v1",
+  "dataset_shape": [
+    2037,
+    90
+  ],
+  "dataset_hash": "3f9ce35dce8de510a5a1cc54d96c0a8635fcd834cf1a69d8f455009d05ef40b1",
+  "ground_truth_available": true,
+  "metric_type": "ground_truth_roi_and_heuristic_qc_triage",
+  "artifacts": {
+    "report": "reports/roi_zerotime_dewow_triage_report.md",
+    "summary": "manifests/triage_summary.json",
+    "csv": "tables/triage_results.csv",
+    "input_overlay": "figures/input_bscan_roi_overlay.png"
+  },
+  "limitations": [
+    "Candidate ROI is diagnostic only and does not replace GX-003 ground truth.",
+    "No AutoTune scoring, motion compensation, or processing_engine behavior is changed."
+  ]
+}

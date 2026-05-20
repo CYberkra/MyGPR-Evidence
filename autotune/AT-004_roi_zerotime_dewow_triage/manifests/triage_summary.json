@@ -1,0 +1,1158 @@
+{
+  "artifact_id": "AT-004",
+  "task_id": "AT-004_roi_zerotime_dewow_triage",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "df5abc89ba6ee51675df745fdd465fc62930ebd6",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "generated_at": "2026-05-20T09:43:55.180029+00:00",
+  "dataset": {
+    "name": "pipe_demo_longline_v1",
+    "path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-003_audited_native_gprmax_benchmark\\tables\\mygpr_bscan.csv",
+    "shape": [
+      2037,
+      90
+    ],
+    "hash": "3f9ce35dce8de510a5a1cc54d96c0a8635fcd834cf1a69d8f455009d05ef40b1",
+    "source_evidence": "gprmax/GX-003_audited_native_gprmax_benchmark/"
+  },
+  "gx003_roi": {
+    "time_start_idx": 760,
+    "time_end_idx": 883,
+    "dist_start_idx": 38,
+    "dist_end_idx": 51
+  },
+  "candidate_roi": {
+    "time_start_idx": 788,
+    "time_end_idx": 911,
+    "dist_start_idx": 38,
+    "dist_end_idx": 51
+  },
+  "roi_review": {
+    "gx003": {
+      "roi": {
+        "time_start_idx": 760,
+        "time_end_idx": 883,
+        "dist_start_idx": 38,
+        "dist_end_idx": 51
+      },
+      "roi_energy": 977.6275159727811,
+      "global_energy": 18483.34775358647,
+      "roi_to_global_energy_ratio": 0.05289234012183125,
+      "local_background_roi": {
+        "time_start_idx": 913,
+        "time_end_idx": 1036,
+        "dist_start_idx": 38,
+        "dist_end_idx": 51
+      },
+      "local_background_energy": 7.303452360461965,
+      "roi_to_local_background_contrast": 133.85827246101778
+    },
+    "candidate": {
+      "roi": {
+        "time_start_idx": 788,
+        "time_end_idx": 911,
+        "dist_start_idx": 38,
+        "dist_end_idx": 51
+      },
+      "roi_energy": 1096.6023122256972,
+      "global_energy": 18483.34775358647,
+      "roi_to_global_energy_ratio": 0.05932920414879468,
+      "local_background_roi": {
+        "time_start_idx": 941,
+        "time_end_idx": 1064,
+        "dist_start_idx": 38,
+        "dist_end_idx": 51
+      },
+      "local_background_energy": 1.5291213449005039,
+      "roi_to_local_background_contrast": 717.1453827930512
+    },
+    "candidate_is_recommended": false
+  },
+  "experiments": [
+    {
+      "experiment_id": "no_zero_time_no_dewow",
+      "description": "Raw data only; isolates GX-003 ROI definition before processing.",
+      "steps": [],
+      "input_shape": [
+        2037,
+        90
+      ],
+      "output_shape": [
+        2037,
+        90
+      ],
+      "zero_time_shift_samples": 0,
+      "zero_time_shift_ns": 0.0,
+      "tracked_roi_after": {
+        "time_start_idx": 760,
+        "time_end_idx": 883,
+        "dist_start_idx": 38,
+        "dist_end_idx": 51
+      },
+      "gx003_roi_input": {
+        "roi": {
+          "time_start_idx": 760,
+          "time_end_idx": 883,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 977.6275159727811,
+        "global_energy": 18483.34775358647,
+        "roi_to_global_energy_ratio": 0.05289234012183125,
+        "local_background_roi": {
+          "time_start_idx": 913,
+          "time_end_idx": 1036,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 7.303452360461965,
+        "roi_to_local_background_contrast": 133.85827246101778
+      },
+      "gx003_roi_output": {
+        "roi": {
+          "time_start_idx": 760,
+          "time_end_idx": 883,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 977.6275159727811,
+        "global_energy": 18483.34775358647,
+        "roi_to_global_energy_ratio": 0.05289234012183125,
+        "local_background_roi": {
+          "time_start_idx": 913,
+          "time_end_idx": 1036,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 7.303452360461965,
+        "roi_to_local_background_contrast": 133.85827246101778
+      },
+      "candidate_roi_output": {
+        "roi": {
+          "time_start_idx": 788,
+          "time_end_idx": 911,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 1096.6023122256972,
+        "global_energy": 18483.34775358647,
+        "roi_to_global_energy_ratio": 0.05932920414879468,
+        "local_background_roi": {
+          "time_start_idx": 941,
+          "time_end_idx": 1064,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 1.5291213449005039,
+        "roi_to_local_background_contrast": 717.1453827930512
+      },
+      "roi_energy_ratio": 1.0,
+      "global_energy_ratio": 1.0,
+      "roi_local_background_contrast": 133.85827246101778,
+      "candidate_roi_local_background_contrast": 717.1453827930512,
+      "overlay_png": "figures/no_zero_time_no_dewow_roi_overlay.png",
+      "roi_crop_png": "figures/no_zero_time_no_dewow_gx003_roi_crop.png",
+      "candidate_roi_crop_png": "figures/no_zero_time_no_dewow_candidate_roi_crop.png"
+    },
+    {
+      "experiment_id": "zero_time_fixed_0_dewow_off",
+      "description": "Zero-time correction fixed at 0 ns, with dewow disabled.",
+      "steps": [
+        {
+          "method_key": "set_zero_time",
+          "params": {
+            "new_zero_time": 0.0,
+            "time_step_s": 1.179327168374842e-11
+          },
+          "metadata": {
+            "method_id": "set_zero_time",
+            "method": "set_zero_time",
+            "new_zero_time": 0.0,
+            "shift_samples": 0,
+            "time_step_s": 1.179327168374842e-11
+          }
+        }
+      ],
+      "input_shape": [
+        2037,
+        90
+      ],
+      "output_shape": [
+        2037,
+        90
+      ],
+      "zero_time_shift_samples": 0,
+      "zero_time_shift_ns": 0.0,
+      "tracked_roi_after": {
+        "time_start_idx": 760,
+        "time_end_idx": 883,
+        "dist_start_idx": 38,
+        "dist_end_idx": 51
+      },
+      "gx003_roi_input": {
+        "roi": {
+          "time_start_idx": 760,
+          "time_end_idx": 883,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 977.6275159727811,
+        "global_energy": 18483.34775358647,
+        "roi_to_global_energy_ratio": 0.05289234012183125,
+        "local_background_roi": {
+          "time_start_idx": 913,
+          "time_end_idx": 1036,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 7.303452360461965,
+        "roi_to_local_background_contrast": 133.85827246101778
+      },
+      "gx003_roi_output": {
+        "roi": {
+          "time_start_idx": 760,
+          "time_end_idx": 883,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 977.6275159727811,
+        "global_energy": 18483.34775358647,
+        "roi_to_global_energy_ratio": 0.05289234012183125,
+        "local_background_roi": {
+          "time_start_idx": 913,
+          "time_end_idx": 1036,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 7.303452360461965,
+        "roi_to_local_background_contrast": 133.85827246101778
+      },
+      "candidate_roi_output": {
+        "roi": {
+          "time_start_idx": 788,
+          "time_end_idx": 911,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 1096.6023122256972,
+        "global_energy": 18483.34775358647,
+        "roi_to_global_energy_ratio": 0.05932920414879468,
+        "local_background_roi": {
+          "time_start_idx": 941,
+          "time_end_idx": 1064,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 1.5291213449005039,
+        "roi_to_local_background_contrast": 717.1453827930512
+      },
+      "roi_energy_ratio": 1.0,
+      "global_energy_ratio": 1.0,
+      "roi_local_background_contrast": 133.85827246101778,
+      "candidate_roi_local_background_contrast": 717.1453827930512,
+      "overlay_png": "figures/zero_time_fixed_0_dewow_off_roi_overlay.png",
+      "roi_crop_png": "figures/zero_time_fixed_0_dewow_off_gx003_roi_crop.png",
+      "candidate_roi_crop_png": "figures/zero_time_fixed_0_dewow_off_candidate_roi_crop.png"
+    },
+    {
+      "experiment_id": "safe_default_zero_time_only",
+      "description": "Registry default zero-time behavior isolated from dewow.",
+      "steps": [
+        {
+          "method_key": "set_zero_time",
+          "params": {
+            "time_step_s": 1.179327168374842e-11
+          },
+          "metadata": {
+            "method_id": "set_zero_time",
+            "method": "set_zero_time",
+            "new_zero_time": 5.0,
+            "shift_samples": 423,
+            "time_step_s": 1.179327168374842e-11
+          }
+        }
+      ],
+      "input_shape": [
+        2037,
+        90
+      ],
+      "output_shape": [
+        2037,
+        90
+      ],
+      "zero_time_shift_samples": 423,
+      "zero_time_shift_ns": 4.988553922225582,
+      "tracked_roi_after": {
+        "time_start_idx": 337,
+        "time_end_idx": 460,
+        "dist_start_idx": 38,
+        "dist_end_idx": 51
+      },
+      "gx003_roi_input": {
+        "roi": {
+          "time_start_idx": 760,
+          "time_end_idx": 883,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 977.6275159727811,
+        "global_energy": 18483.34775358647,
+        "roi_to_global_energy_ratio": 0.05289234012183125,
+        "local_background_roi": {
+          "time_start_idx": 913,
+          "time_end_idx": 1036,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 7.303452360461965,
+        "roi_to_local_background_contrast": 133.85827246101778
+      },
+      "gx003_roi_output": {
+        "roi": {
+          "time_start_idx": 337,
+          "time_end_idx": 460,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 977.6275159727811,
+        "global_energy": 41.375759916498,
+        "roi_to_global_energy_ratio": 23.628025634955552,
+        "local_background_roi": {
+          "time_start_idx": 490,
+          "time_end_idx": 613,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 7.303452360461965,
+        "roi_to_local_background_contrast": 133.85827246101778
+      },
+      "candidate_roi_output": {
+        "roi": {
+          "time_start_idx": 788,
+          "time_end_idx": 911,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 4.839021356196755,
+        "global_energy": 41.375759916498,
+        "roi_to_global_energy_ratio": 0.11695305091586401,
+        "local_background_roi": {
+          "time_start_idx": 941,
+          "time_end_idx": 1064,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 1.8198624486596748,
+        "roi_to_local_background_contrast": 2.659003904256987
+      },
+      "roi_energy_ratio": 1.0,
+      "global_energy_ratio": 0.002238542523145978,
+      "roi_local_background_contrast": 133.85827246101778,
+      "candidate_roi_local_background_contrast": 2.659003904256987,
+      "overlay_png": "figures/safe_default_zero_time_only_roi_overlay.png",
+      "roi_crop_png": "figures/safe_default_zero_time_only_gx003_roi_crop.png",
+      "candidate_roi_crop_png": "figures/safe_default_zero_time_only_candidate_roi_crop.png"
+    },
+    {
+      "experiment_id": "zero0_dewow_window_5",
+      "description": "Zero-time fixed at 0 ns, then dewow window=5.",
+      "steps": [
+        {
+          "method_key": "set_zero_time",
+          "params": {
+            "new_zero_time": 0.0,
+            "time_step_s": 1.179327168374842e-11
+          },
+          "metadata": {
+            "method_id": "set_zero_time",
+            "method": "set_zero_time",
+            "new_zero_time": 0.0,
+            "shift_samples": 0,
+            "time_step_s": 1.179327168374842e-11
+          }
+        },
+        {
+          "method_key": "dewow",
+          "params": {
+            "window": 5
+          },
+          "metadata": {
+            "method_id": "dewow",
+            "method": "dewow",
+            "window": 5
+          }
+        }
+      ],
+      "input_shape": [
+        2037,
+        90
+      ],
+      "output_shape": [
+        2037,
+        90
+      ],
+      "zero_time_shift_samples": 0,
+      "zero_time_shift_ns": 0.0,
+      "tracked_roi_after": {
+        "time_start_idx": 760,
+        "time_end_idx": 883,
+        "dist_start_idx": 38,
+        "dist_end_idx": 51
+      },
+      "gx003_roi_input": {
+        "roi": {
+          "time_start_idx": 760,
+          "time_end_idx": 883,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 977.6275159727811,
+        "global_energy": 18483.34775358647,
+        "roi_to_global_energy_ratio": 0.05289234012183125,
+        "local_background_roi": {
+          "time_start_idx": 913,
+          "time_end_idx": 1036,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 7.303452360461965,
+        "roi_to_local_background_contrast": 133.85827246101778
+      },
+      "gx003_roi_output": {
+        "roi": {
+          "time_start_idx": 760,
+          "time_end_idx": 883,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 0.02256198968000369,
+        "global_energy": 0.4542282306300475,
+        "roi_to_global_energy_ratio": 0.049671042349588385,
+        "local_background_roi": {
+          "time_start_idx": 913,
+          "time_end_idx": 1036,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 0.0005888752198561738,
+        "roi_to_local_background_contrast": 38.31370198514076
+      },
+      "candidate_roi_output": {
+        "roi": {
+          "time_start_idx": 788,
+          "time_end_idx": 911,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 0.020957620276573483,
+        "global_energy": 0.4542282306300475,
+        "roi_to_global_energy_ratio": 0.04613896465110445,
+        "local_background_roi": {
+          "time_start_idx": 941,
+          "time_end_idx": 1064,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 6.237140892328631e-05,
+        "roi_to_local_background_contrast": 336.01325732997793
+      },
+      "roi_energy_ratio": 2.307830877443496e-05,
+      "global_energy_ratio": 2.4574997813472942e-05,
+      "roi_local_background_contrast": 38.31370198514076,
+      "candidate_roi_local_background_contrast": 336.01325732997793,
+      "overlay_png": "figures/zero0_dewow_window_5_roi_overlay.png",
+      "roi_crop_png": "figures/zero0_dewow_window_5_gx003_roi_crop.png",
+      "candidate_roi_crop_png": "figures/zero0_dewow_window_5_candidate_roi_crop.png"
+    },
+    {
+      "experiment_id": "zero0_dewow_window_11",
+      "description": "Zero-time fixed at 0 ns, then dewow window=11.",
+      "steps": [
+        {
+          "method_key": "set_zero_time",
+          "params": {
+            "new_zero_time": 0.0,
+            "time_step_s": 1.179327168374842e-11
+          },
+          "metadata": {
+            "method_id": "set_zero_time",
+            "method": "set_zero_time",
+            "new_zero_time": 0.0,
+            "shift_samples": 0,
+            "time_step_s": 1.179327168374842e-11
+          }
+        },
+        {
+          "method_key": "dewow",
+          "params": {
+            "window": 11
+          },
+          "metadata": {
+            "method_id": "dewow",
+            "method": "dewow",
+            "window": 11
+          }
+        }
+      ],
+      "input_shape": [
+        2037,
+        90
+      ],
+      "output_shape": [
+        2037,
+        90
+      ],
+      "zero_time_shift_samples": 0,
+      "zero_time_shift_ns": 0.0,
+      "tracked_roi_after": {
+        "time_start_idx": 760,
+        "time_end_idx": 883,
+        "dist_start_idx": 38,
+        "dist_end_idx": 51
+      },
+      "gx003_roi_input": {
+        "roi": {
+          "time_start_idx": 760,
+          "time_end_idx": 883,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 977.6275159727811,
+        "global_energy": 18483.34775358647,
+        "roi_to_global_energy_ratio": 0.05289234012183125,
+        "local_background_roi": {
+          "time_start_idx": 913,
+          "time_end_idx": 1036,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 7.303452360461965,
+        "roi_to_local_background_contrast": 133.85827246101778
+      },
+      "gx003_roi_output": {
+        "roi": {
+          "time_start_idx": 760,
+          "time_end_idx": 883,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 0.2734461024184431,
+        "global_energy": 5.508655401720969,
+        "roi_to_global_energy_ratio": 0.04963935524683851,
+        "local_background_roi": {
+          "time_start_idx": 913,
+          "time_end_idx": 1036,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 0.007149984859349104,
+        "roi_to_local_background_contrast": 38.244291113552954
+      },
+      "candidate_roi_output": {
+        "roi": {
+          "time_start_idx": 788,
+          "time_end_idx": 911,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 0.25413928848487,
+        "global_energy": 5.508655401720969,
+        "roi_to_global_energy_ratio": 0.04613454099987338,
+        "local_background_roi": {
+          "time_start_idx": 941,
+          "time_end_idx": 1064,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 0.0007660124741871334,
+        "roi_to_local_background_contrast": 331.7691252411445
+      },
+      "roi_energy_ratio": 0.0002797037705575958,
+      "global_energy_ratio": 0.0002980334231201207,
+      "roi_local_background_contrast": 38.244291113552954,
+      "candidate_roi_local_background_contrast": 331.7691252411445,
+      "overlay_png": "figures/zero0_dewow_window_11_roi_overlay.png",
+      "roi_crop_png": "figures/zero0_dewow_window_11_gx003_roi_crop.png",
+      "candidate_roi_crop_png": "figures/zero0_dewow_window_11_candidate_roi_crop.png"
+    },
+    {
+      "experiment_id": "zero0_dewow_window_23",
+      "description": "Zero-time fixed at 0 ns, then dewow window=23.",
+      "steps": [
+        {
+          "method_key": "set_zero_time",
+          "params": {
+            "new_zero_time": 0.0,
+            "time_step_s": 1.179327168374842e-11
+          },
+          "metadata": {
+            "method_id": "set_zero_time",
+            "method": "set_zero_time",
+            "new_zero_time": 0.0,
+            "shift_samples": 0,
+            "time_step_s": 1.179327168374842e-11
+          }
+        },
+        {
+          "method_key": "dewow",
+          "params": {
+            "window": 23
+          },
+          "metadata": {
+            "method_id": "dewow",
+            "method": "dewow",
+            "window": 23
+          }
+        }
+      ],
+      "input_shape": [
+        2037,
+        90
+      ],
+      "output_shape": [
+        2037,
+        90
+      ],
+      "zero_time_shift_samples": 0,
+      "zero_time_shift_ns": 0.0,
+      "tracked_roi_after": {
+        "time_start_idx": 760,
+        "time_end_idx": 883,
+        "dist_start_idx": 38,
+        "dist_end_idx": 51
+      },
+      "gx003_roi_input": {
+        "roi": {
+          "time_start_idx": 760,
+          "time_end_idx": 883,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 977.6275159727811,
+        "global_energy": 18483.34775358647,
+        "roi_to_global_energy_ratio": 0.05289234012183125,
+        "local_background_roi": {
+          "time_start_idx": 913,
+          "time_end_idx": 1036,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 7.303452360461965,
+        "roi_to_local_background_contrast": 133.85827246101778
+      },
+      "gx003_roi_output": {
+        "roi": {
+          "time_start_idx": 760,
+          "time_end_idx": 883,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 3.622544060588933,
+        "global_energy": 73.15883709343139,
+        "roi_to_global_energy_ratio": 0.04951615149325802,
+        "local_background_roi": {
+          "time_start_idx": 913,
+          "time_end_idx": 1036,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 0.09539667425663907,
+        "roi_to_local_background_contrast": 37.973483759438544
+      },
+      "candidate_roi_output": {
+        "roi": {
+          "time_start_idx": 788,
+          "time_end_idx": 911,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 3.374226661792942,
+        "global_energy": 73.15883709343139,
+        "roi_to_global_energy_ratio": 0.04612192861244782,
+        "local_background_roi": {
+          "time_start_idx": 941,
+          "time_end_idx": 1064,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 0.010791160867885197,
+        "roi_to_local_background_contrast": 312.68430737926786
+      },
+      "roi_energy_ratio": 0.003705444048374955,
+      "global_energy_ratio": 0.003958094500453025,
+      "roi_local_background_contrast": 37.973483759438544,
+      "candidate_roi_local_background_contrast": 312.68430737926786,
+      "overlay_png": "figures/zero0_dewow_window_23_roi_overlay.png",
+      "roi_crop_png": "figures/zero0_dewow_window_23_gx003_roi_crop.png",
+      "candidate_roi_crop_png": "figures/zero0_dewow_window_23_candidate_roi_crop.png"
+    },
+    {
+      "experiment_id": "zero0_dewow_window_64",
+      "description": "Zero-time fixed at 0 ns, then dewow window=64.",
+      "steps": [
+        {
+          "method_key": "set_zero_time",
+          "params": {
+            "new_zero_time": 0.0,
+            "time_step_s": 1.179327168374842e-11
+          },
+          "metadata": {
+            "method_id": "set_zero_time",
+            "method": "set_zero_time",
+            "new_zero_time": 0.0,
+            "shift_samples": 0,
+            "time_step_s": 1.179327168374842e-11
+          }
+        },
+        {
+          "method_key": "dewow",
+          "params": {
+            "window": 64
+          },
+          "metadata": {
+            "method_id": "dewow",
+            "method": "dewow",
+            "window": 64
+          }
+        }
+      ],
+      "input_shape": [
+        2037,
+        90
+      ],
+      "output_shape": [
+        2037,
+        90
+      ],
+      "zero_time_shift_samples": 0,
+      "zero_time_shift_ns": 0.0,
+      "tracked_roi_after": {
+        "time_start_idx": 760,
+        "time_end_idx": 883,
+        "dist_start_idx": 38,
+        "dist_end_idx": 51
+      },
+      "gx003_roi_input": {
+        "roi": {
+          "time_start_idx": 760,
+          "time_end_idx": 883,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 977.6275159727811,
+        "global_energy": 18483.34775358647,
+        "roi_to_global_energy_ratio": 0.05289234012183125,
+        "local_background_roi": {
+          "time_start_idx": 913,
+          "time_end_idx": 1036,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 7.303452360461965,
+        "roi_to_local_background_contrast": 133.85827246101778
+      },
+      "gx003_roi_output": {
+        "roi": {
+          "time_start_idx": 760,
+          "time_end_idx": 883,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 121.47021081876925,
+        "global_energy": 2500.0205813607827,
+        "roi_to_global_energy_ratio": 0.048587684327243405,
+        "local_background_roi": {
+          "time_start_idx": 913,
+          "time_end_idx": 1036,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 3.346697996258881,
+        "roi_to_local_background_contrast": 36.29553994849705
+      },
+      "candidate_roi_output": {
+        "roi": {
+          "time_start_idx": 788,
+          "time_end_idx": 911,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 115.33387212768257,
+        "global_energy": 2500.0205813607827,
+        "roi_to_global_energy_ratio": 0.04613316905771446,
+        "local_background_roi": {
+          "time_start_idx": 941,
+          "time_end_idx": 1064,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 0.5607583756836714,
+        "roi_to_local_background_contrast": 205.6748095595872
+      },
+      "roi_energy_ratio": 0.12424999177514066,
+      "global_energy_ratio": 0.13525799626183432,
+      "roi_local_background_contrast": 36.29553994849705,
+      "candidate_roi_local_background_contrast": 205.6748095595872,
+      "overlay_png": "figures/zero0_dewow_window_64_roi_overlay.png",
+      "roi_crop_png": "figures/zero0_dewow_window_64_gx003_roi_crop.png",
+      "candidate_roi_crop_png": "figures/zero0_dewow_window_64_candidate_roi_crop.png"
+    },
+    {
+      "experiment_id": "zero0_dewow_window_128",
+      "description": "Zero-time fixed at 0 ns, then dewow window=128.",
+      "steps": [
+        {
+          "method_key": "set_zero_time",
+          "params": {
+            "new_zero_time": 0.0,
+            "time_step_s": 1.179327168374842e-11
+          },
+          "metadata": {
+            "method_id": "set_zero_time",
+            "method": "set_zero_time",
+            "new_zero_time": 0.0,
+            "shift_samples": 0,
+            "time_step_s": 1.179327168374842e-11
+          }
+        },
+        {
+          "method_key": "dewow",
+          "params": {
+            "window": 128
+          },
+          "metadata": {
+            "method_id": "dewow",
+            "method": "dewow",
+            "window": 128
+          }
+        }
+      ],
+      "input_shape": [
+        2037,
+        90
+      ],
+      "output_shape": [
+        2037,
+        90
+      ],
+      "zero_time_shift_samples": 0,
+      "zero_time_shift_ns": 0.0,
+      "tracked_roi_after": {
+        "time_start_idx": 760,
+        "time_end_idx": 883,
+        "dist_start_idx": 38,
+        "dist_end_idx": 51
+      },
+      "gx003_roi_input": {
+        "roi": {
+          "time_start_idx": 760,
+          "time_end_idx": 883,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 977.6275159727811,
+        "global_energy": 18483.34775358647,
+        "roi_to_global_energy_ratio": 0.05289234012183125,
+        "local_background_roi": {
+          "time_start_idx": 913,
+          "time_end_idx": 1036,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 7.303452360461965,
+        "roi_to_local_background_contrast": 133.85827246101778
+      },
+      "gx003_roi_output": {
+        "roi": {
+          "time_start_idx": 760,
+          "time_end_idx": 883,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 715.3513166133209,
+        "global_energy": 15500.99005504265,
+        "roi_to_global_energy_ratio": 0.04614875011681005,
+        "local_background_roi": {
+          "time_start_idx": 913,
+          "time_end_idx": 1036,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 20.83110054406525,
+        "roi_to_local_background_contrast": 34.34054360690624
+      },
+      "candidate_roi_output": {
+        "roi": {
+          "time_start_idx": 788,
+          "time_end_idx": 911,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 733.1657601513,
+        "global_energy": 15500.99005504265,
+        "roi_to_global_energy_ratio": 0.047297995647238855,
+        "local_background_roi": {
+          "time_start_idx": 941,
+          "time_end_idx": 1064,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 9.003160704760347,
+        "roi_to_local_background_contrast": 81.43426338748398
+      },
+      "roi_energy_ratio": 0.7317217497724743,
+      "global_energy_ratio": 0.8386462377755605,
+      "roi_local_background_contrast": 34.34054360690624,
+      "candidate_roi_local_background_contrast": 81.43426338748398,
+      "overlay_png": "figures/zero0_dewow_window_128_roi_overlay.png",
+      "roi_crop_png": "figures/zero0_dewow_window_128_gx003_roi_crop.png",
+      "candidate_roi_crop_png": "figures/zero0_dewow_window_128_candidate_roi_crop.png"
+    },
+    {
+      "experiment_id": "zero0_dewow_window_256",
+      "description": "Zero-time fixed at 0 ns, then dewow window=256.",
+      "steps": [
+        {
+          "method_key": "set_zero_time",
+          "params": {
+            "new_zero_time": 0.0,
+            "time_step_s": 1.179327168374842e-11
+          },
+          "metadata": {
+            "method_id": "set_zero_time",
+            "method": "set_zero_time",
+            "new_zero_time": 0.0,
+            "shift_samples": 0,
+            "time_step_s": 1.179327168374842e-11
+          }
+        },
+        {
+          "method_key": "dewow",
+          "params": {
+            "window": 256
+          },
+          "metadata": {
+            "method_id": "dewow",
+            "method": "dewow",
+            "window": 256
+          }
+        }
+      ],
+      "input_shape": [
+        2037,
+        90
+      ],
+      "output_shape": [
+        2037,
+        90
+      ],
+      "zero_time_shift_samples": 0,
+      "zero_time_shift_ns": 0.0,
+      "tracked_roi_after": {
+        "time_start_idx": 760,
+        "time_end_idx": 883,
+        "dist_start_idx": 38,
+        "dist_end_idx": 51
+      },
+      "gx003_roi_input": {
+        "roi": {
+          "time_start_idx": 760,
+          "time_end_idx": 883,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 977.6275159727811,
+        "global_energy": 18483.34775358647,
+        "roi_to_global_energy_ratio": 0.05289234012183125,
+        "local_background_roi": {
+          "time_start_idx": 913,
+          "time_end_idx": 1036,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 7.303452360461965,
+        "roi_to_local_background_contrast": 133.85827246101778
+      },
+      "gx003_roi_output": {
+        "roi": {
+          "time_start_idx": 760,
+          "time_end_idx": 883,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 1015.7367679839296,
+        "global_energy": 20591.566901814393,
+        "roi_to_global_energy_ratio": 0.04932780360169821,
+        "local_background_roi": {
+          "time_start_idx": 913,
+          "time_end_idx": 1036,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 30.348996097386234,
+        "roi_to_local_background_contrast": 33.46854586967404
+      },
+      "candidate_roi_output": {
+        "roi": {
+          "time_start_idx": 788,
+          "time_end_idx": 911,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 1167.4151779607607,
+        "global_energy": 20591.566901814393,
+        "roi_to_global_energy_ratio": 0.056693848677338676,
+        "local_background_roi": {
+          "time_start_idx": 941,
+          "time_end_idx": 1064,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 17.9720043640974,
+        "roi_to_local_background_contrast": 64.95742791454587
+      },
+      "roi_energy_ratio": 1.0389813619077897,
+      "global_energy_ratio": 1.1140604600602642,
+      "roi_local_background_contrast": 33.46854586967404,
+      "candidate_roi_local_background_contrast": 64.95742791454587,
+      "overlay_png": "figures/zero0_dewow_window_256_roi_overlay.png",
+      "roi_crop_png": "figures/zero0_dewow_window_256_gx003_roi_crop.png",
+      "candidate_roi_crop_png": "figures/zero0_dewow_window_256_candidate_roi_crop.png"
+    },
+    {
+      "experiment_id": "zero0_dewow_window_512",
+      "description": "Zero-time fixed at 0 ns, then dewow window=512.",
+      "steps": [
+        {
+          "method_key": "set_zero_time",
+          "params": {
+            "new_zero_time": 0.0,
+            "time_step_s": 1.179327168374842e-11
+          },
+          "metadata": {
+            "method_id": "set_zero_time",
+            "method": "set_zero_time",
+            "new_zero_time": 0.0,
+            "shift_samples": 0,
+            "time_step_s": 1.179327168374842e-11
+          }
+        },
+        {
+          "method_key": "dewow",
+          "params": {
+            "window": 512
+          },
+          "metadata": {
+            "method_id": "dewow",
+            "method": "dewow",
+            "window": 512
+          }
+        }
+      ],
+      "input_shape": [
+        2037,
+        90
+      ],
+      "output_shape": [
+        2037,
+        90
+      ],
+      "zero_time_shift_samples": 0,
+      "zero_time_shift_ns": 0.0,
+      "tracked_roi_after": {
+        "time_start_idx": 760,
+        "time_end_idx": 883,
+        "dist_start_idx": 38,
+        "dist_end_idx": 51
+      },
+      "gx003_roi_input": {
+        "roi": {
+          "time_start_idx": 760,
+          "time_end_idx": 883,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 977.6275159727811,
+        "global_energy": 18483.34775358647,
+        "roi_to_global_energy_ratio": 0.05289234012183125,
+        "local_background_roi": {
+          "time_start_idx": 913,
+          "time_end_idx": 1036,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 7.303452360461965,
+        "roi_to_local_background_contrast": 133.85827246101778
+      },
+      "gx003_roi_output": {
+        "roi": {
+          "time_start_idx": 760,
+          "time_end_idx": 883,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 981.5493430031203,
+        "global_energy": 18474.354129798347,
+        "roi_to_global_energy_ratio": 0.05313037392846784,
+        "local_background_roi": {
+          "time_start_idx": 913,
+          "time_end_idx": 1036,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 7.440727347301112,
+        "roi_to_local_background_contrast": 131.91577881954595
+      },
+      "candidate_roi_output": {
+        "roi": {
+          "time_start_idx": 788,
+          "time_end_idx": 911,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "roi_energy": 1099.652166344641,
+        "global_energy": 18474.354129798347,
+        "roi_to_global_energy_ratio": 0.0595231724269564,
+        "local_background_roi": {
+          "time_start_idx": 941,
+          "time_end_idx": 1064,
+          "dist_start_idx": 38,
+          "dist_end_idx": 51
+        },
+        "local_background_energy": 2.404780660650352,
+        "roi_to_local_background_contrast": 457.2775323497694
+      },
+      "roi_energy_ratio": 1.0040115759491863,
+      "global_energy_ratio": 0.9995134201927041,
+      "roi_local_background_contrast": 131.91577881954595,
+      "candidate_roi_local_background_contrast": 457.2775323497694,
+      "overlay_png": "figures/zero0_dewow_window_512_roi_overlay.png",
+      "roi_crop_png": "figures/zero0_dewow_window_512_gx003_roi_crop.png",
+      "candidate_roi_crop_png": "figures/zero0_dewow_window_512_candidate_roi_crop.png"
+    }
+  ],
+  "root_cause_classification": {
+    "roi_status": "usable_but_visual_review_required",
+    "zero_time_status": "problem",
+    "dewow_status": "parameter_domain_can_preserve_roi",
+    "recommended_next_fix": "zero_time_defaults",
+    "corrected_roi_recommended": false,
+    "candidate_roi": {
+      "time_start_idx": 788,
+      "time_end_idx": 911,
+      "dist_start_idx": 38,
+      "dist_end_idx": 51
+    },
+    "best_dewow_experiment": "zero0_dewow_window_256",
+    "best_dewow_roi_energy_ratio": 1.0389813619077897,
+    "safe_default_global_energy_ratio": 0.002238542523145978,
+    "findings": [
+      "GX-003 ROI is not clearly invalid by local contrast alone.",
+      "Registry default zero-time shifts a large sample interval and collapses global energy.",
+      "At least one dewow window preserves enough tracked ROI energy for further tuning."
+    ],
+    "at002_conclusion": "inconclusive"
+  },
+  "conclusion": "AT-002 remains inconclusive; AT-004 diagnoses candidate next fixes only."
+}
