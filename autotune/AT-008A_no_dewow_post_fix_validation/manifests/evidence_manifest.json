@@ -3,7 +3,7 @@
   "task_id": "AT-008A_no_dewow_post_fix_validation",
   "source_repo": "https://github.com/CYberkra/MyGPR",
   "source_branch": "codex/research-gprmax-autotune",
-  "source_commit": "b8cc89d3f026c858beab888cb3cbecd93192b723",
+  "source_commit": "13335f7e02834b19814ecb07aae01b6053ecc765",
   "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
   "evidence_commit": "pending_self_reference",
   "generated_at": "2026-05-20T13:46:14.889215+00:00",
