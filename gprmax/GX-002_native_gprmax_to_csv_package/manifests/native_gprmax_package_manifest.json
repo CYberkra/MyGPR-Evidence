@@ -1,15 +1,32 @@
 {
   "schema": "mygpr_native_gprmax_csv_manifest_v1",
-  "scenario_id": "pipe_demo_longline_v1",
-  "data_file": "mygpr_bscan.csv",
-  "scenario_file": "scenario.json",
-  "model_file": "pipe_demo_longline_v1.in",
-  "preview_file": "preview.png",
-  "raw_out_path": "D:\\CDUT-UavGPR-Controller\\MyGPR\\output\\gprmax_datasets\\pipe_demo_longline_v1\\pipe_demo_longline_v1_merged.out",
-  "raw_out_hash": "5979b56f4d3ad3834f71732104bf218eadb0621f0679646d772a439332e66c42",
-  "csv_hash": "3f9ce35dce8de510a5a1cc54d96c0a8635fcd834cf1a69d8f455009d05ef40b1",
-  "receiver": "rx1",
-  "component": "Ez",
-  "converted_ground_truth_file": "ground_truth.json",
-  "ground_truth_file": "ground_truth.yaml"
+  "artifact_id": "GX-002",
+  "scenario_id": "pending_native_out",
+  "status": "pending_native_out",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "b1fb5ce540ac00a6ac880ddf78c1feeffbb80a6f",
+  "tooling_added": [
+    "docs/gprmax_native_benchmark_package.md",
+    "scripts/gprmax_benchmark/prepare_native_gprmax_package.py",
+    "scripts/gprmax_benchmark/audit_gprmax_package.py",
+    "tests/test_prepare_native_gprmax_package.py"
+  ],
+  "paper_usable": false,
+  "native_gprmax_verified": false,
+  "converted_csv_available": false,
+  "raw_out_committed": false,
+  "required_missing_input": [
+    "native .out or _merged.out",
+    "exact model.in",
+    "ground_truth.yaml or ground_truth.json"
+  ],
+  "intended_receiver": "rx1",
+  "intended_component": "Ez",
+  "next_command_template": "python scripts/gprmax_benchmark/prepare_native_gprmax_package.py --model-in <model.in> --out <native_or_merged.out> --output-dir <package_dir> --receiver rx1 --component Ez --scenario-id <scenario_id> --ground-truth <ground_truth.yaml-or-json>",
+  "notes": [
+    "This is a pending bookkeeping record only.",
+    "Do not claim native gprMax paper usability from this artifact.",
+    "Do not fake native output; rerun the preparation tool with real gprMax output."
+  ]
 }

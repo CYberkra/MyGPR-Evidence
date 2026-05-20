@@ -1,42 +1,57 @@
-# GX-002 Native gprMax-to-CSV Package Report
+# GX-002 Native gprMax-to-CSV Package Preparation Record
 
 ## Summary
-- Scenario: `pipe_demo_longline_v1`
-- Status: `native_gprmax_converted`
-- Native gprMax verified: `True`
-- Paper usable: `True`
-- Recommendation: usable as audited native gprMax evidence for limited claims
+- Status: `pending_native_out`
+- Source repo: `https://github.com/CYberkra/MyGPR`
+- Source branch: `codex/research-gprmax-autotune`
+- Source commit: `b1fb5ce540ac00a6ac880ddf78c1feeffbb80a6f`
+- Evidence purpose: record that MyGPR now has tooling to prepare a native gprMax-to-CSV benchmark package.
 
-## Provenance
-- Native `.out`: `D:\CDUT-UavGPR-Controller\MyGPR\output\gprmax_datasets\pipe_demo_longline_v1\pipe_demo_longline_v1_merged.out`
-- Selected receiver/component: `/rxs/rx1/Ez`
-- Converted CSV shape: `[2037, 90]`
-- raw_out_hash: `5979b56f4d3ad3834f71732104bf218eadb0621f0679646d772a439332e66c42`
-- csv_hash: `3f9ce35dce8de510a5a1cc54d96c0a8635fcd834cf1a69d8f455009d05ef40b1`
-- raw `.out` committed in package: `False`
+## What GX-002 Added In MyGPR
+GX-002 added package-preparation tooling in MyGPR for the future native data chain:
 
-## Geometry And Timing
-- domain_m: `[1.2, 0.85, 0.005]`
-- dx_dy_dz_m: `[0.005, 0.005, 0.005]`
-- time_window_ns: `24.0`
-- time_step_s: `1.1793271683748419e-11`
-- dt source: `native gprMax .out`
-- shape matches metadata: `True`
+```text
+model.in / native .out or _merged.out
+-> selected /rxs/<receiver>/<component>
+-> MyGPR-compatible CSV
+-> scenario + manifest + ground truth
+-> audit
+-> Evidence repository
+```
 
-## PML / ROI Audit
-- PML flags: `['axis 2 domain 0.005 m is thinner than two default PML margins; treating it as a thin/2D dimension for margin screening']`
-- ROI exists: `True`
-- ROI inside B-scan: `True`
+The intended runner is:
 
-## Warnings
-- native .out is externally referenced but not committed inside the package
-- axis 2 domain 0.005 m is thinner than two default PML margins; treating it as a thin/2D dimension for margin screening
+```bash
+python scripts/gprmax_benchmark/prepare_native_gprmax_package.py \
+  --model-in <path/to/model.in> \
+  --out <path/to/native_or_merged.out> \
+  --output-dir <path/to/package_dir> \
+  --receiver rx1 \
+  --component Ez \
+  --scenario-id <scenario_id> \
+  --ground-truth <path/to/ground_truth.yaml-or-json>
+```
 
-## Errors
-- none
+## Current Evidence Status
+No paper-usable native gprMax package is recorded in this Evidence item yet.
+This GX-002 Evidence record is intentionally pending. It must not be cited as a
+native gprMax benchmark result.
+
+## Required Missing Input
+To complete GX-002 as native evidence, provide:
+
+- native gprMax `.out` or `_merged.out`;
+- exact `model.in` used to generate the output;
+- `ground_truth.yaml` or `ground_truth.json`;
+- selected receiver/component, normally `/rxs/rx1/Ez`;
+- generated CSV, preview, manifest, and audit produced by the MyGPR tool.
 
 ## Claim Boundary
-This package is traceable from native gprMax `.out` to a MyGPR CSV.
-The raw `.out` is referenced by path and SHA-256 rather than committed.
-Any paper claim must preserve that raw file or regenerate it with the same
-model and command.
+- Paper usability: `no`
+- Native gprMax provenance verified: `no`
+- Converted CSV available in this Evidence record: `no`
+- Raw `.out` committed: `no`
+
+Do not claim AutoTune or processing performance from this GX-002 record. The
+next step is to run `prepare_native_gprmax_package.py` locally with real gprMax
+output and then replace this pending record with a completed package audit.

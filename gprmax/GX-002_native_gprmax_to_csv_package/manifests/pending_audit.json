@@ -1,0 +1,32 @@
+{
+  "schema": "mygpr_gprmax_package_audit_v1",
+  "artifact_id": "GX-002",
+  "status": "pending_native_out",
+  "source": {
+    "kind": "pending_native_out",
+    "native_gprmax_verified": false,
+    "dt_source": "missing native .out"
+  },
+  "files": {
+    "model_in": null,
+    "raw_out_exists": false,
+    "raw_out_files": [],
+    "raw_out_reference": null,
+    "raw_out_hash": null,
+    "mygpr_bscan_csv": null,
+    "ground_truth_json": null,
+    "ground_truth_yaml": null
+  },
+  "paper_usable": false,
+  "warnings": [
+    "GX-002 currently records tooling and required inputs only.",
+    "No native .out or _merged.out has been audited in this Evidence record.",
+    "No converted MyGPR CSV has been accepted into this Evidence record."
+  ],
+  "errors": [
+    "missing native .out or _merged.out",
+    "missing exact model.in",
+    "missing ground_truth.yaml or ground_truth.json"
+  ],
+  "recommendation": "Run prepare_native_gprmax_package.py locally with real gprMax output before creating paper-usable evidence."
+}
