@@ -4,7 +4,7 @@
 - Scenario: `pipe_demo_longline_v1`
 - Shape: `[2037, 90]`
 - Source evidence: `gprmax/GX-003_audited_native_gprmax_benchmark/`
-- Source commit: `ee502475d5f456f9df77e0f4336d34211b0173e9`
+- Source commit: `ee502471d377fa8c60e8bb320c12208c2d6d8f39`
 - Ground truth available: `True`
 - Metric type: `ground_truth`
 
@@ -81,3 +81,4 @@ Ground truth metrics and heuristic QC are stored separately. Ground truth is not
 - A stage can improve heuristic QC while degrading ground-truth target preservation.
 - Manual-vs-auto conclusions are invalid if branch sanity warnings indicate early signal loss.
 - One 90-trace pipe scenario is insufficient to redesign scoring without more scenes.
+

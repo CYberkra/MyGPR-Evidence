@@ -3,9 +3,9 @@
   "task_id": "AT-002_native_benchmark_autotune_ablation",
   "source_repo": "https://github.com/CYberkra/MyGPR",
   "source_branch": "codex/research-gprmax-autotune",
-  "source_commit": "ee502475d5f456f9df77e0f4336d34211b0173e9",
+  "source_commit": "ee502471d377fa8c60e8bb320c12208c2d6d8f39",
   "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
-  "evidence_commit": "pending",
+  "evidence_commit": "ea88718426a3e03a58b4adddbd3fada2be7905e2",
   "generated_at": "2026-05-20T08:54:40.304871+00:00",
   "command": "python scripts/auto_tune_validation/run_native_ablation.py",
   "dataset_name": "pipe_demo_longline_v1",
@@ -33,5 +33,6 @@
     "A stage can improve heuristic QC while degrading ground-truth target preservation.",
     "Manual-vs-auto conclusions are invalid if branch sanity warnings indicate early signal loss.",
     "One 90-trace pipe scenario is insufficient to redesign scoring without more scenes."
-  ]
+  ],
+  "evidence_commit_note": "AT-002 metadata binding finalized by follow-up commit evidence: fix AT-002 metadata binding; exact self-referential commit hash is recorded in git history and ARTIFACT_INDEX after push."
 }
