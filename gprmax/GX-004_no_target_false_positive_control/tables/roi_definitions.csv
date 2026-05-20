@@ -1,0 +1,5 @@
+roi_id,roi_type,source,claim_level,sample_start_idx,sample_end_idx,trace_start_idx,trace_end_idx,associated_object_id,notes
+gx004_no_target_region,no_target_region,model_ground_truth,ground_truth_metric,150,900,10,95,,0.15-0.90 ns window in index units.
+gx004_negative_control_a,negative_control,model_ground_truth,ground_truth_metric,220,520,12,35,,Shallow-mid control window.
+gx004_negative_control_b,negative_control,model_ground_truth,ground_truth_metric,540,980,62,88,,Deep control window.
+gx004_local_background_a,local_background,model_ground_truth,ground_truth_metric,240,620,40,56,,Local background reference.

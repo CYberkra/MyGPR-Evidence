@@ -1,0 +1,6 @@
+roi_id,roi_type,source,claim_level,sample_start_idx,sample_end_idx,trace_start_idx,trace_end_idx,associated_object_id,notes
+gx005_target_A_roi,target,model_ground_truth,ground_truth_metric,180,600,20,42,target_A,Target A shallow ROI.
+gx005_target_B_roi,target,model_ground_truth,ground_truth_metric,420,980,58,84,target_B,Target B deeper ROI.
+gx005_local_background_A,local_background,model_ground_truth,ground_truth_metric,200,640,44,56,target_A,Target A local background.
+gx005_local_background_B,local_background,model_ground_truth,ground_truth_metric,430,980,44,57,target_B,Target B local background.
+gx005_negative_control,negative_control,model_ground_truth,ground_truth_metric,280,820,4,16,,No-target control region.

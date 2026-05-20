@@ -1,0 +1,6 @@
+roi_id,roi_type,source,claim_level,sample_start_idx,sample_end_idx,trace_start_idx,trace_end_idx,associated_object_id,notes
+gx006_layer_interface_top,layer_interface,model_ground_truth,ground_truth_metric,120,360,8,96,layer_top_mid,Top/mid interface band.
+gx006_layer_interface_mid,layer_interface,model_ground_truth,ground_truth_metric,300,620,8,96,layer_mid_deep,Mid/deep interface band.
+gx006_target_roi,target,model_ground_truth,ground_truth_metric,330,860,60,84,target_A,Optional target ROI.
+gx006_local_background,local_background,model_ground_truth,ground_truth_metric,360,900,32,46,,Local background reference.
+gx006_negative_control,negative_control,model_ground_truth,ground_truth_metric,500,980,10,24,,Complex-clutter no-target zone.

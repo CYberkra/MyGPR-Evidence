@@ -1,0 +1,42 @@
+{
+  "schema": "mygpr_native_benchmark_manifest_v1",
+  "artifact_id": "GX-004",
+  "scenario_id": "gx004_no_target_false_positive_control_v1",
+  "generation_status": "pending_native_output",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "a423072be4c2a9ae29708aef18e165d4c2cd053d",
+  "evidence_commit": "pending_self_reference",
+  "gprmax_version": null,
+  "model_file": "model/model.in",
+  "model_hash": "4a6a18bf96e322298a62b5145204fc31a60e324734b8d6efa0f0dbe4ffcdbb57",
+  "native_output_file": null,
+  "native_output_hash": null,
+  "converted_csv_file": null,
+  "converted_csv_hash": null,
+  "source_shape": null,
+  "converted_shape": null,
+  "trace_count": 105,
+  "sample_count": null,
+  "trace_spacing_m": 0.01,
+  "time_window_ns": 20.0,
+  "material_summary": [
+    "soil_bg(er=9.0,sigma=0.01)",
+    "soil_patch_a(er=8.6,sigma=0.012)",
+    "soil_patch_b(er=9.4,sigma=0.008)"
+  ],
+  "target_summary": "No buried discrete target",
+  "roi_summary": {
+    "total": 4,
+    "types": [
+      "local_background",
+      "negative_control",
+      "no_target_region"
+    ]
+  },
+  "limitations": [
+    "native output missing in this task; package is pending_native_output",
+    "thin 2D z-dimension approximation",
+    "synthetic benchmark scene only"
+  ]
+}

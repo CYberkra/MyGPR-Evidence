@@ -1,0 +1,42 @@
+{
+  "schema": "mygpr_native_benchmark_manifest_v1",
+  "artifact_id": "GX-005",
+  "scenario_id": "gx005_multi_target_varying_depth_v1",
+  "generation_status": "pending_native_output",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "a423072be4c2a9ae29708aef18e165d4c2cd053d",
+  "evidence_commit": "pending_self_reference",
+  "gprmax_version": null,
+  "model_file": "model/model.in",
+  "model_hash": "02292f374ffa2239dffcc060fc0e0f5b10a1eb2c89d8712278d24aeecaaf5599",
+  "native_output_file": null,
+  "native_output_hash": null,
+  "converted_csv_file": null,
+  "converted_csv_hash": null,
+  "source_shape": null,
+  "converted_shape": null,
+  "trace_count": 105,
+  "sample_count": null,
+  "trace_spacing_m": 0.01,
+  "time_window_ns": 24.0,
+  "material_summary": [
+    "soil_bg(er=9.0,sigma=0.01)",
+    "target_fill_a(er=5.0,sigma=0.002)",
+    "target_fill_b(er=6.2,sigma=0.004)"
+  ],
+  "target_summary": "Two pipe-like targets with different depth/scale.",
+  "roi_summary": {
+    "total": 5,
+    "types": [
+      "local_background",
+      "negative_control",
+      "target"
+    ]
+  },
+  "limitations": [
+    "native output missing in this task; package is pending_native_output",
+    "thin 2D z-dimension approximation",
+    "synthetic benchmark scene only"
+  ]
+}

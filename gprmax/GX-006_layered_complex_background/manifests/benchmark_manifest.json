@@ -1,0 +1,44 @@
+{
+  "schema": "mygpr_native_benchmark_manifest_v1",
+  "artifact_id": "GX-006",
+  "scenario_id": "gx006_layered_complex_background_v1",
+  "generation_status": "pending_native_output",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "a423072be4c2a9ae29708aef18e165d4c2cd053d",
+  "evidence_commit": "pending_self_reference",
+  "gprmax_version": null,
+  "model_file": "model/model.in",
+  "model_hash": "0d5289e8b1659f6686132cabfe1d0033ff1b7c32861f6c116b8e25667ed6fd29",
+  "native_output_file": null,
+  "native_output_hash": null,
+  "converted_csv_file": null,
+  "converted_csv_hash": null,
+  "source_shape": null,
+  "converted_shape": null,
+  "trace_count": 105,
+  "sample_count": null,
+  "trace_spacing_m": 0.01,
+  "time_window_ns": 24.0,
+  "material_summary": [
+    "layer_top(er=6.0,sigma=0.005)",
+    "layer_mid(er=9.0,sigma=0.01)",
+    "layer_deep(er=12.0,sigma=0.02)",
+    "target_fill(er=5.5,sigma=0.003)"
+  ],
+  "target_summary": "Layered interfaces plus optional medium-depth target.",
+  "roi_summary": {
+    "total": 5,
+    "types": [
+      "layer_interface",
+      "local_background",
+      "negative_control",
+      "target"
+    ]
+  },
+  "limitations": [
+    "native output missing in this task; package is pending_native_output",
+    "thin 2D z-dimension approximation",
+    "synthetic benchmark scene only"
+  ]
+}

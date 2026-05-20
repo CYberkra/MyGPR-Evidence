@@ -1,0 +1,96 @@
+{
+  "schema": "mygpr_ground_truth_v2",
+  "scenario_id": "gx006_layered_complex_background_v1",
+  "has_buried_target": true,
+  "objects": [
+    {
+      "object_id": "layer_top_mid",
+      "object_type": "layer_interface",
+      "claim_level": "ground_truth_metric",
+      "roi_id": "gx006_layer_interface_top"
+    },
+    {
+      "object_id": "layer_mid_deep",
+      "object_type": "layer_interface",
+      "claim_level": "ground_truth_metric",
+      "roi_id": "gx006_layer_interface_mid"
+    },
+    {
+      "object_id": "target_A",
+      "object_type": "target",
+      "claim_level": "ground_truth_metric",
+      "roi_id": "gx006_target_roi"
+    }
+  ],
+  "rois": [
+    {
+      "roi_id": "gx006_layer_interface_top",
+      "roi_type": "layer_interface",
+      "source": "model_ground_truth",
+      "claim_level": "ground_truth_metric",
+      "sample_start_idx": "120",
+      "sample_end_idx": "360",
+      "trace_start_idx": "8",
+      "trace_end_idx": "96",
+      "notes": "Top/mid interface band.",
+      "associated_object_id": "layer_top_mid"
+    },
+    {
+      "roi_id": "gx006_layer_interface_mid",
+      "roi_type": "layer_interface",
+      "source": "model_ground_truth",
+      "claim_level": "ground_truth_metric",
+      "sample_start_idx": "300",
+      "sample_end_idx": "620",
+      "trace_start_idx": "8",
+      "trace_end_idx": "96",
+      "notes": "Mid/deep interface band.",
+      "associated_object_id": "layer_mid_deep"
+    },
+    {
+      "roi_id": "gx006_target_roi",
+      "roi_type": "target",
+      "source": "model_ground_truth",
+      "claim_level": "ground_truth_metric",
+      "sample_start_idx": "330",
+      "sample_end_idx": "860",
+      "trace_start_idx": "60",
+      "trace_end_idx": "84",
+      "notes": "Optional target ROI.",
+      "associated_object_id": "target_A"
+    },
+    {
+      "roi_id": "gx006_local_background",
+      "roi_type": "local_background",
+      "source": "model_ground_truth",
+      "claim_level": "ground_truth_metric",
+      "sample_start_idx": "360",
+      "sample_end_idx": "900",
+      "trace_start_idx": "32",
+      "trace_end_idx": "46",
+      "notes": "Local background reference.",
+      "associated_object_id": ""
+    },
+    {
+      "roi_id": "gx006_negative_control",
+      "roi_type": "negative_control",
+      "source": "model_ground_truth",
+      "claim_level": "ground_truth_metric",
+      "sample_start_idx": "500",
+      "sample_end_idx": "980",
+      "trace_start_idx": "10",
+      "trace_end_idx": "24",
+      "notes": "Complex-clutter no-target zone.",
+      "associated_object_id": ""
+    }
+  ],
+  "negative_control_required": true,
+  "limitations": [
+    "Synthetic gprMax benchmark scene, not field validation.",
+    "Thin 2D z-dimension approximation is used and must be disclosed in downstream claims."
+  ],
+  "forbidden_claims": [
+    "Layer-interface suppression is not automatically an improvement.",
+    "Do not claim field-performance validation from this synthetic scene alone."
+  ]
+}

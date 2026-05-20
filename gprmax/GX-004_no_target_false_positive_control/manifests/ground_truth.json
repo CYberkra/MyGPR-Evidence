@@ -1,0 +1,72 @@
+{
+  "schema": "mygpr_ground_truth_v2",
+  "scenario_id": "gx004_no_target_false_positive_control_v1",
+  "has_buried_target": false,
+  "objects": [
+    {
+      "object_id": "gx004_no_target_region",
+      "object_type": "no_target_region",
+      "claim_level": "ground_truth_metric",
+      "roi_id": "gx004_no_target_region"
+    }
+  ],
+  "rois": [
+    {
+      "roi_id": "gx004_no_target_region",
+      "roi_type": "no_target_region",
+      "source": "model_ground_truth",
+      "claim_level": "ground_truth_metric",
+      "sample_start_idx": "150",
+      "sample_end_idx": "900",
+      "trace_start_idx": "10",
+      "trace_end_idx": "95",
+      "notes": "0.15-0.90 ns window in index units.",
+      "associated_object_id": ""
+    },
+    {
+      "roi_id": "gx004_negative_control_a",
+      "roi_type": "negative_control",
+      "source": "model_ground_truth",
+      "claim_level": "ground_truth_metric",
+      "sample_start_idx": "220",
+      "sample_end_idx": "520",
+      "trace_start_idx": "12",
+      "trace_end_idx": "35",
+      "notes": "Shallow-mid control window.",
+      "associated_object_id": ""
+    },
+    {
+      "roi_id": "gx004_negative_control_b",
+      "roi_type": "negative_control",
+      "source": "model_ground_truth",
+      "claim_level": "ground_truth_metric",
+      "sample_start_idx": "540",
+      "sample_end_idx": "980",
+      "trace_start_idx": "62",
+      "trace_end_idx": "88",
+      "notes": "Deep control window.",
+      "associated_object_id": ""
+    },
+    {
+      "roi_id": "gx004_local_background_a",
+      "roi_type": "local_background",
+      "source": "model_ground_truth",
+      "claim_level": "ground_truth_metric",
+      "sample_start_idx": "240",
+      "sample_end_idx": "620",
+      "trace_start_idx": "40",
+      "trace_end_idx": "56",
+      "notes": "Local background reference.",
+      "associated_object_id": ""
+    }
+  ],
+  "negative_control_required": true,
+  "limitations": [
+    "Synthetic gprMax benchmark scene, not field validation.",
+    "Thin 2D z-dimension approximation is used and must be disclosed in downstream claims."
+  ],
+  "forbidden_claims": [
+    "No target-preservation claim is allowed for GX-004 because no true target exists.",
+    "Do not claim field-performance validation from this synthetic scene alone."
+  ]
+}

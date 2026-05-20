@@ -1,0 +1,90 @@
+{
+  "schema": "mygpr_ground_truth_v2",
+  "scenario_id": "gx005_multi_target_varying_depth_v1",
+  "has_buried_target": true,
+  "objects": [
+    {
+      "object_id": "target_A",
+      "object_type": "target",
+      "claim_level": "ground_truth_metric",
+      "roi_id": "gx005_target_A_roi"
+    },
+    {
+      "object_id": "target_B",
+      "object_type": "target",
+      "claim_level": "ground_truth_metric",
+      "roi_id": "gx005_target_B_roi"
+    }
+  ],
+  "rois": [
+    {
+      "roi_id": "gx005_target_A_roi",
+      "roi_type": "target",
+      "source": "model_ground_truth",
+      "claim_level": "ground_truth_metric",
+      "sample_start_idx": "180",
+      "sample_end_idx": "600",
+      "trace_start_idx": "20",
+      "trace_end_idx": "42",
+      "notes": "Target A shallow ROI.",
+      "associated_object_id": "target_A"
+    },
+    {
+      "roi_id": "gx005_target_B_roi",
+      "roi_type": "target",
+      "source": "model_ground_truth",
+      "claim_level": "ground_truth_metric",
+      "sample_start_idx": "420",
+      "sample_end_idx": "980",
+      "trace_start_idx": "58",
+      "trace_end_idx": "84",
+      "notes": "Target B deeper ROI.",
+      "associated_object_id": "target_B"
+    },
+    {
+      "roi_id": "gx005_local_background_A",
+      "roi_type": "local_background",
+      "source": "model_ground_truth",
+      "claim_level": "ground_truth_metric",
+      "sample_start_idx": "200",
+      "sample_end_idx": "640",
+      "trace_start_idx": "44",
+      "trace_end_idx": "56",
+      "notes": "Target A local background.",
+      "associated_object_id": "target_A"
+    },
+    {
+      "roi_id": "gx005_local_background_B",
+      "roi_type": "local_background",
+      "source": "model_ground_truth",
+      "claim_level": "ground_truth_metric",
+      "sample_start_idx": "430",
+      "sample_end_idx": "980",
+      "trace_start_idx": "44",
+      "trace_end_idx": "57",
+      "notes": "Target B local background.",
+      "associated_object_id": "target_B"
+    },
+    {
+      "roi_id": "gx005_negative_control",
+      "roi_type": "negative_control",
+      "source": "model_ground_truth",
+      "claim_level": "ground_truth_metric",
+      "sample_start_idx": "280",
+      "sample_end_idx": "820",
+      "trace_start_idx": "4",
+      "trace_end_idx": "16",
+      "notes": "No-target control region.",
+      "associated_object_id": ""
+    }
+  ],
+  "negative_control_required": true,
+  "limitations": [
+    "Synthetic gprMax benchmark scene, not field validation.",
+    "Thin 2D z-dimension approximation is used and must be disclosed in downstream claims."
+  ],
+  "forbidden_claims": [
+    "A single blended metric is insufficient; target_A and target_B must be reported separately.",
+    "Do not claim field-performance validation from this synthetic scene alone."
+  ]
+}

@@ -1,0 +1,18 @@
+##title: gx004_no_target_false_positive_control_v1
+#domain: 1.20 0.60 0.002
+#dx_dy_dz: 0.002 0.002 0.002
+#time_window: 2.0e-08
+
+#material: 9.0 0.01 1.0 0.0 soil_bg
+#material: 8.6 0.012 1.0 0.0 soil_patch_a
+#material: 9.4 0.008 1.0 0.0 soil_patch_b
+
+#waveform: ricker 1 1.0e9 my_ricker
+#hertzian_dipole: z 0.12 0.30 0 my_ricker
+#rx: 0.16 0.30 0
+#src_steps: 0.01 0 0
+#rx_steps: 0.01 0 0
+
+#box: 0.00 0.00 0.00 1.20 0.60 0.002 soil_bg
+#box: 0.25 0.00 0.00 0.45 0.60 0.002 soil_patch_a
+#box: 0.70 0.00 0.00 0.90 0.60 0.002 soil_patch_b

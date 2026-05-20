@@ -1,0 +1,12 @@
+key,value
+artifact_id,GX-006
+scenario_id,gx006_layered_complex_background_v1
+source_commit,a423072be4c2a9ae29708aef18e165d4c2cd053d
+generation_status,pending_native_output
+domain_m,"1.20,0.60,0.002"
+dx_dy_dz_m,"0.002,0.002,0.002"
+trace_spacing_m,0.01
+trace_count,105
+time_window_ns,24.0
+has_buried_target,true
+thin_2d_limitation,true
