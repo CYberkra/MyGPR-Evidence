@@ -1,0 +1,43 @@
+# Large raw data and simulation outputs
+*.out
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.mat
+*.raw
+*.bin
+*.dat
+
+# Oversized bundles and archives
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+
+# Cache folders
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# Local temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+~$*
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Do not ignore committed evidence formats:
+# PNG, CSV, JSON, Markdown, HTML, and small manifests are allowed when curated.
+
