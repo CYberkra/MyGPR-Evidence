@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AT-008A No-Dewow Post-Fix Native Validation</title>
+  <style>
+    body { margin: 0; background: #f5f7fb; color: #162033; font-family: "Segoe UI", "PingFang SC", sans-serif; }
+    main { max-width: 1180px; margin: 0 auto; padding: 28px; }
+    .card { background: #fff; border: 1px solid #d9e2ee; border-radius: 8px; padding: 14px 16px; margin: 12px 0; }
+    .warning { border-color: #f59e0b; background: #fff9ea; }
+    table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #d9e2ee; }
+    th, td { font-size: 13px; padding: 8px 10px; border-bottom: 1px solid #e8edf5; text-align: left; }
+    th { background: #edf3fa; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; }
+    figure { margin: 0; background: #fff; border: 1px solid #d9e2ee; border-radius: 8px; padding: 10px; }
+    figure img { width: 100%; display: block; }
+    figcaption { margin-top: 6px; font-size: 13px; color: #495a75; }
+    code { background: #edf2f7; padding: 1px 4px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>AT-008A No-Dewow Post-Fix Native Validation</h1>
+  <div class="card">
+    <div><b>Source commit:</b> <code>b8cc89d3f026c858beab888cb3cbecd93192b723</code></div>
+    <div><b>Dataset:</b> pipe_demo_longline_v1 [2037, 90]</div>
+    <div><b>Zero-time policy:</b> <code>excluded</code></div>
+    <div><b>Dewow policy:</b> <code>excluded_primary_optional_diagnostic_side_lanes</code></div>
+    <div><b>Ground truth:</b> GX-003 ROI used as-is.</div>
+  </div>
+  <div class="card warning">
+    <b>Boundary:</b> Primary AT-008A lane excludes both zero-time and dewow. Dewow side lanes are diagnostic only. AGC is display-oriented and non-amplitude-preserving.
+  </div>
+  <div class="card">
+    <div><b>Primary validity:</b> <code>all_valid_with_caveats</code></div>
+    <div><b>Best gain variant:</b> <code>energy_decay_gain</code></div>
+    <div><b>AutoTune status:</b> <code>improved_on_limited_contrast_metric_only</code></div>
+  </div>
+
+  <h2>Key figures</h2>
+  <div class="grid">
+    <figure><img src="../figures/input_bscan_roi_overlay.png"><figcaption>Input with ROI overlay.</figcaption></figure>
+    <figure><img src="../figures/no_dewow_lane_summary.png"><figcaption>No-dewow primary lane summary.</figcaption></figure>
+    <figure><img src="../figures/energy_decay_gain_comparison.png"><figcaption>Energy-decay gain lane.</figcaption></figure>
+    <figure><img src="../figures/agc_gain_comparison.png"><figcaption>AGC lane (display-oriented).</figcaption></figure>
+    <figure><img src="../figures/gain_variant_summary.png"><figcaption>Gain variant metrics summary.</figcaption></figure>
+    <figure><img src="../figures/before_after_dewow_policy.png"><figcaption>AT-008A vs AT-007/AT-005A summary.</figcaption></figure>
+  </div>
+
+  <h2>Lane summary table</h2>
+  <table><thead><tr><th>Lane</th><th>Branch</th><th>Dewow policy</th><th>Gain</th><th>ROI contrast</th><th>Clipping</th><th>Validity</th><th>Figure</th></tr></thead><tbody><tr><td>lane_0_raw_input</td><td>raw</td><td>excluded_primary</td><td>none</td><td>133.9</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_0_raw_input.png'>figure</a></td></tr>
+<tr><td>lane_1_background_only</td><td>manual</td><td>excluded_primary</td><td>none</td><td>20.24</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_1_background_only.png'>figure</a></td></tr>
+<tr><td>lane_2_background_energy_decay_gain</td><td>manual</td><td>excluded_primary</td><td>energy_decay_gain</td><td>20.28</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_2_background_energy_decay_gain.png'>figure</a></td></tr>
+<tr><td>lane_3_background_sec_gain</td><td>manual</td><td>excluded_primary</td><td>sec_gain</td><td>17.6</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_3_background_sec_gain.png'>figure</a></td></tr>
+<tr><td>lane_4_background_time_power_gain</td><td>manual</td><td>excluded_primary</td><td>time_power_gain_local</td><td>17.14</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_4_background_time_power_gain.png'>figure</a></td></tr>
+<tr><td>lane_5_background_agc_gain</td><td>manual</td><td>excluded_primary</td><td>agcGain</td><td>4.025</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_5_background_agc_gain.png'>figure</a></td></tr>
+<tr><td>lane_auto_background_energy_decay</td><td>auto_tuned</td><td>excluded_primary</td><td>energy_decay_gain</td><td>45.25</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_auto_background_energy_decay.png'>figure</a></td></tr>
+<tr><td>lane_6_dewow256_background_energy_decay</td><td>diagnostic</td><td>fixed_diagnostic_window_256</td><td>energy_decay_gain</td><td>14.15</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_6_dewow256_background_energy_decay.png'>figure</a></td></tr>
+<tr><td>lane_7_dewow512_background_energy_decay</td><td>diagnostic</td><td>fixed_diagnostic_window_512</td><td>energy_decay_gain</td><td>19.93</td><td>0.001004</td><td>valid_with_caveats</td><td><a href='../figures/lane_7_dewow512_background_energy_decay.png'>figure</a></td></tr></tbody></table>
+
+  <h2>Before / after comparison</h2>
+  <table><thead><tr><th>Comparison</th><th>Before</th><th>After</th><th>Interpretation</th></tr></thead><tbody><tr><td>AT-007_first_failing_step</td><td>dewow</td><td>no_dewow_primary_lane</td><td>AT-007 first failing step was dewow; AT-008A primary lane excludes dewow.</td></tr>
+<tr><td>Best visual gain variant</td><td>energy_decay_gain</td><td>energy_decay_gain</td><td>Cross-check against AT-005A no-zero-time benchmark.</td></tr>
+<tr><td>Primary lane validity (AT-008A)</td><td>AT-007 validity remained 0-&gt;0</td><td>all_valid_with_caveats</td><td>Checks whether no-dewow primary lanes avoid AT-007 failure mode.</td></tr></tbody></table>
+
+  <h2>Known risks</h2>
+  <ul><li>Single native gprMax scene remains insufficient for broad generalization.</li>
+<li>Dewow is excluded in the primary lane for this artifact; this is not a global dewow deprecation.</li>
+<li>AGC visual clarity cannot be treated as physical amplitude correctness.</li></ul>
+</main>
+</body>
+</html>

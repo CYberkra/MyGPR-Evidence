@@ -1,0 +1,4 @@
+after,before,comparison,interpretation
+"""no_dewow_primary_lane""","""dewow""","""AT-007_first_failing_step""","""AT-007 first failing step was dewow; AT-008A primary lane excludes dewow."""
+"""energy_decay_gain""","""energy_decay_gain""","""Best visual gain variant""","""Cross-check against AT-005A no-zero-time benchmark."""
+"""all_valid_with_caveats""","""AT-007 validity remained 0->0""","""Primary lane validity (AT-008A)""","""Checks whether no-dewow primary lanes avoid AT-007 failure mode."""

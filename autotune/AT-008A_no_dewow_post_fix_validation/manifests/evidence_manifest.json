@@ -1,0 +1,34 @@
+{
+  "artifact_id": "AT-008A",
+  "task_id": "AT-008A_no_dewow_post_fix_validation",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "b8cc89d3f026c858beab888cb3cbecd93192b723",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "evidence_commit": "pending_self_reference",
+  "generated_at": "2026-05-20T13:46:14.889215+00:00",
+  "command": "python scripts/auto_tune_validation/run_no_dewow_post_fix_validation.py",
+  "dataset_name": "pipe_demo_longline_v1",
+  "dataset_shape": [
+    2037,
+    90
+  ],
+  "dataset_hash": "3f9ce35dce8de510a5a1cc54d96c0a8635fcd834cf1a69d8f455009d05ef40b1",
+  "ground_truth_available": true,
+  "metric_type": "ground_truth_plus_heuristic_qc_with_no_dewow_primary_lane",
+  "zero_time_policy": "excluded",
+  "dewow_policy": "excluded_primary_optional_diagnostic_side_lanes",
+  "artifacts": {
+    "markdown_report": "reports/no_dewow_post_fix_validation_report.md",
+    "html_report": "reports/no_dewow_post_fix_validation_report.html",
+    "validation_summary": "manifests/no_dewow_validation_summary.json",
+    "lane_metrics": "tables/lane_metrics.csv",
+    "gain_variant_table": "tables/gain_variant_table.csv",
+    "before_after": "tables/before_after_dewow_comparison.csv"
+  },
+  "limitations": [
+    "Single native gprMax scene remains insufficient for broad generalization.",
+    "Dewow is excluded in the primary lane for this artifact; this is not a global dewow deprecation.",
+    "AGC visual clarity cannot be treated as physical amplitude correctness."
+  ]
+}
