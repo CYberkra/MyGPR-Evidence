@@ -1,0 +1,40 @@
+{
+  "artifact_id": "AT-001",
+  "task_id": "AT-001_autotune_research_validation_baseline",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "70407ae3b6b112be05444a77fb4a7943033a1407",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "evidence_commit": "pending",
+  "generated_at": "2026-05-20T06:27:45.175962+00:00",
+  "command": "python scripts/auto_tune_validation/run_stepwise_validation.py",
+  "dataset_name": "cylinder_single_v1",
+  "dataset_shape": [
+    220,
+    81
+  ],
+  "dataset_hash": "9a691546267e26d3f3da232e32cd625e963ca8cae3ab5cd90493ab21f561db2e",
+  "ground_truth_available": true,
+  "metric_type": "ground_truth",
+  "evidence_type": "smoke",
+  "artifacts": {
+    "comparison_report": "reports/comparison_report.md",
+    "comparison_summary": "manifests/comparison_summary.json",
+    "stepwise_report": "manifests/stepwise_report.json",
+    "trial_table_csv": "tables/trial_table.csv",
+    "trial_table_json": "tables/trial_table.json",
+    "manual_bscan": "figures/manual_bscan.png",
+    "auto_bscan": "figures/auto_bscan.png",
+    "side_by_side": "figures/side_by_side.png"
+  },
+  "limitations": [
+    "This baseline validates one small deterministic fixture first; it is not a global workflow optimum claim.",
+    "AutoTune uses heuristic search during selection; ground truth is used only for validation/reporting.",
+    "Manual baseline is an experience-based baseline, not a visual expert session with interactive retuning."
+  ],
+  "known_risks": [
+    "Single-scene evidence may not generalize to field UAV-GPR data.",
+    "Heuristic QC can prefer visually cleaner images that are not geologically better.",
+    "Zero-time choices can invalidate later branch comparisons if early signal is removed."
+  ]
+}
