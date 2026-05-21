@@ -1,0 +1,2 @@
+gate_status,risk_flags,scene_best_labels,summary
+"""blocked""","[""synthetic_thin2d_scene_limit""]","{""GX-003"": ""local"", ""GX-004"": ""local"", ""GX-005"": ""local"", ""GX-006"": ""local""}","""AT-012 preset-finalization gate remains blocked unless cross-scene stability and safety flags clear."""

@@ -1,0 +1,139 @@
+{
+  "artifact_id": "AT-013",
+  "task_id": "AT-013_multi_scene_relative_policy_validation",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "a423072be4c2a9ae29708aef18e165d4c2cd053d",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "generated_at": "2026-05-21T04:44:41.287031+00:00",
+  "included_scenes": [
+    "GX-003",
+    "GX-004",
+    "GX-005",
+    "GX-006"
+  ],
+  "primary_lane_policy": {
+    "zero_time_policy": "excluded_or_fixed_zero",
+    "dewow_policy": "excluded_primary",
+    "background_policy": "AT-011 relative trace-count-aware policy unchanged",
+    "gain_policy": "energy_decay_gain conservative/interpretable lane"
+  },
+  "scene_summaries": [
+    {
+      "scene_id": "GX-003",
+      "trace_count": 90,
+      "candidate_count": 6,
+      "candidate_labels": [
+        "large",
+        "local",
+        "medium",
+        "near_full_line"
+      ],
+      "generated_ntraces": [
+        3,
+        9,
+        17,
+        35,
+        63,
+        89
+      ],
+      "best_candidate_label": "local",
+      "best_candidate_ntraces": 9,
+      "best_candidate_score": 0.9979926907761959,
+      "best_candidate_figure": "figures/gx-003_n9_local.png"
+    },
+    {
+      "scene_id": "GX-004",
+      "trace_count": 105,
+      "candidate_count": 6,
+      "candidate_labels": [
+        "full_line",
+        "large",
+        "local",
+        "medium",
+        "near_full_line"
+      ],
+      "generated_ntraces": [
+        5,
+        9,
+        21,
+        41,
+        73,
+        105
+      ],
+      "best_candidate_label": "local",
+      "best_candidate_ntraces": 5,
+      "best_candidate_score": 0.9989984392719596,
+      "best_candidate_figure": "figures/gx-004_n5_local.png"
+    },
+    {
+      "scene_id": "GX-005",
+      "trace_count": 105,
+      "candidate_count": 6,
+      "candidate_labels": [
+        "full_line",
+        "large",
+        "local",
+        "medium",
+        "near_full_line"
+      ],
+      "generated_ntraces": [
+        5,
+        9,
+        21,
+        41,
+        73,
+        105
+      ],
+      "best_candidate_label": "local",
+      "best_candidate_ntraces": 5,
+      "best_candidate_score": 5.590238554210404,
+      "best_candidate_figure": "figures/gx-005_n5_local.png"
+    },
+    {
+      "scene_id": "GX-006",
+      "trace_count": 105,
+      "candidate_count": 6,
+      "candidate_labels": [
+        "full_line",
+        "large",
+        "local",
+        "medium",
+        "near_full_line"
+      ],
+      "generated_ntraces": [
+        5,
+        9,
+        21,
+        41,
+        73,
+        105
+      ],
+      "best_candidate_label": "local",
+      "best_candidate_ntraces": 9,
+      "best_candidate_score": 11130.19823997672,
+      "best_candidate_figure": "figures/gx-006_n9_local.png"
+    }
+  ],
+  "gate_status": {
+    "gate_status": "blocked",
+    "risk_flags": [
+      "synthetic_thin2d_scene_limit"
+    ],
+    "scene_best_labels": {
+      "GX-003": "local",
+      "GX-004": "local",
+      "GX-005": "local",
+      "GX-006": "local"
+    },
+    "summary": "AT-012 preset-finalization gate remains blocked unless cross-scene stability and safety flags clear."
+  },
+  "claim_boundary": {
+    "overall_autotune_superiority": false,
+    "field_performance_claim": false,
+    "thin_2d_limitation_disclosed": true
+  },
+  "risk_flags": [
+    "synthetic_thin2d_scene_limit"
+  ]
+}

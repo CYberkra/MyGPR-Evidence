@@ -1,0 +1,4 @@
+candidate_label,generated_ntraces,scene_id,warnings
+"""medium""",21,"""GX-005""","[""low_roi_contrast""]"
+"""large""",41,"""GX-005""","[""low_roi_contrast""]"
+"""near_full_line""",73,"""GX-005""","[""low_roi_contrast""]"

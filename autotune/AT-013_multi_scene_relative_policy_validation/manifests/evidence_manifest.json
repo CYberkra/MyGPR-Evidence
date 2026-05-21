@@ -1,0 +1,26 @@
+{
+  "artifact_id": "AT-013",
+  "task_id": "AT-013_multi_scene_relative_policy_validation",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "a423072be4c2a9ae29708aef18e165d4c2cd053d",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "evidence_commit": "pending_self_reference",
+  "generated_at": "2026-05-21T04:44:41.287031+00:00",
+  "command": "python scripts/auto_tune_validation/run_multi_scene_relative_policy_validation.py",
+  "dataset_name": "GX-003/004/005/006 native benchmark scenes",
+  "dataset_shape": "multi-scene",
+  "dataset_hash": "multi-scene-manifest-driven",
+  "ground_truth_available": true,
+  "metric_type": "multi_scene_relative_policy_validation",
+  "artifacts": {
+    "markdown_report": "reports/multi_scene_relative_policy_validation_report.md",
+    "html_report": "reports/multi_scene_relative_policy_validation_report.html",
+    "summary": "manifests/multi_scene_validation_summary.json",
+    "scene_candidate_metrics_csv": "tables/scene_candidate_metrics.csv",
+    "scene_gate_status_csv": "tables/scene_gate_status.csv",
+    "per_target_metrics_csv": "tables/per_target_metrics.csv",
+    "false_positive_metrics_csv": "tables/false_positive_metrics.csv",
+    "warnings_and_risk_flags_csv": "tables/warnings_and_risk_flags.csv"
+  }
+}

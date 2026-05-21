@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AT-013 Multi-scene Relative Policy Validation</title>
+  <style>
+    body { margin: 0; background: #f3f6fb; color: #1d2a40; font-family: "Segoe UI", "PingFang SC", sans-serif; }
+    main { max-width: 1200px; margin: 0 auto; padding: 28px; }
+    .card { background: #fff; border: 1px solid #d8e1ee; border-radius: 8px; padding: 14px; margin: 12px 0; }
+    .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    img { width: 100%; border: 1px solid #d8e1ee; border-radius: 6px; background: #fff; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>AT-013 Multi-scene Relative Policy Validation</h1>
+  <div class="card">
+    <div><b>Source commit:</b> <code>a423072be4c2a9ae29708aef18e165d4c2cd053d</code></div>
+    <div><b>Included scenes:</b> [&#x27;GX-003&#x27;, &#x27;GX-004&#x27;, &#x27;GX-005&#x27;, &#x27;GX-006&#x27;]</div>
+    <div><b>Gate status:</b> <code>blocked</code></div>
+  </div>
+  <div class="card">
+    <h2>Scene best candidates</h2>
+    <ul><li>GX-003: best=local ntraces=9 trace_count=90</li><li>GX-004: best=local ntraces=5 trace_count=105</li><li>GX-005: best=local ntraces=5 trace_count=105</li><li>GX-006: best=local ntraces=9 trace_count=105</li></ul>
+  </div>
+  <div class="card">
+    <h2>Main risk flags</h2>
+    <ul><li>synthetic_thin2d_scene_limit</li></ul>
+  </div>
+  <div class="grid">
+    <img src="../figures/scene_candidate_overview.png" alt="scene candidate overview">
+    <img src="../figures/gx004_false_positive_map.png" alt="gx004 false positive map">
+    <img src="../figures/gx005_target_specific_comparison.png" alt="gx005 target specific comparison">
+    <img src="../figures/gx006_layer_interface_comparison.png" alt="gx006 layer interface comparison">
+  </div>
+</main>
+</body>
+</html>

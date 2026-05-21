@@ -1,0 +1,13 @@
+candidate_label,generated_ntraces,scene_id,target_id,target_preservation_proxy,target_roi_contrast_proxy,target_roi_energy_raw,warning
+"""local""",5,"""GX-005""","""target_A""",null,5.592241005810026,384.5114265230405,"""Target-specific processed ROI uses shared lane metrics proxy; check overlays for final interpretation."""
+"""local""",5,"""GX-005""","""target_B""",null,5.592241005810026,211.84184795537828,"""Target-specific processed ROI uses shared lane metrics proxy; check overlays for final interpretation."""
+"""local""",9,"""GX-005""","""target_A""",null,1.7345566737254037,384.5114265230405,"""Target-specific processed ROI uses shared lane metrics proxy; check overlays for final interpretation."""
+"""local""",9,"""GX-005""","""target_B""",null,1.7345566737254037,211.84184795537828,"""Target-specific processed ROI uses shared lane metrics proxy; check overlays for final interpretation."""
+"""medium""",21,"""GX-005""","""target_A""",null,0.7467747843275037,384.5114265230405,"""Target-specific processed ROI uses shared lane metrics proxy; check overlays for final interpretation."""
+"""medium""",21,"""GX-005""","""target_B""",null,0.7467747843275037,211.84184795537828,"""Target-specific processed ROI uses shared lane metrics proxy; check overlays for final interpretation."""
+"""large""",41,"""GX-005""","""target_A""",null,0.8936228098008856,384.5114265230405,"""Target-specific processed ROI uses shared lane metrics proxy; check overlays for final interpretation."""
+"""large""",41,"""GX-005""","""target_B""",null,0.8936228098008856,211.84184795537828,"""Target-specific processed ROI uses shared lane metrics proxy; check overlays for final interpretation."""
+"""near_full_line""",73,"""GX-005""","""target_A""",null,0.8339157326704314,384.5114265230405,"""Target-specific processed ROI uses shared lane metrics proxy; check overlays for final interpretation."""
+"""near_full_line""",73,"""GX-005""","""target_B""",null,0.8339157326704314,211.84184795537828,"""Target-specific processed ROI uses shared lane metrics proxy; check overlays for final interpretation."""
+"""full_line""",105,"""GX-005""","""target_A""",null,1.2679722320350466,384.5114265230405,"""Target-specific processed ROI uses shared lane metrics proxy; check overlays for final interpretation."""
+"""full_line""",105,"""GX-005""","""target_B""",null,1.2679722320350466,211.84184795537828,"""Target-specific processed ROI uses shared lane metrics proxy; check overlays for final interpretation."""
