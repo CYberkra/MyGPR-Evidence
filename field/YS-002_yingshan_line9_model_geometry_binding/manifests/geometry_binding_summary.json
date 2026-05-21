@@ -1,0 +1,28 @@
+{
+  "geometry_binding_status": "plausible",
+  "reason": "model references geometry h5 path but consistency is partial",
+  "supporting_lines": [
+    "0 0 0 F:\\gprMax-master\\user_models\\gprMax-Matlab-SFCW-radars-signal-processing-simulation-main\\NC9Line\\ex_h5\\png_color.h5 F:\\gprMax-master\\user_models\\gprMax-Matlab-SFCW-radars-signal-processing-simulation-main\\NC9Line\\ex_h5\\materials.txt"
+  ],
+  "references_unified_geometry_h5": false,
+  "geometry_is_material_grid_inference": "likely_geometry_or_material_index_grid_not_receiver_timeseries",
+  "consistency_checks_match": [
+    "grid_spacing_match"
+  ],
+  "consistency_checks_mismatch": [
+    "grid_counts_mismatch_domain_and_dxdyz"
+  ],
+  "h5_attrs_parsed": {
+    "nx": 7000,
+    "ny": 9000,
+    "nz": 2,
+    "dx": 0.005,
+    "dy": 0.005,
+    "dz": 0.002
+  },
+  "h5_data_shape": [
+    2,
+    9000,
+    7000
+  ]
+}

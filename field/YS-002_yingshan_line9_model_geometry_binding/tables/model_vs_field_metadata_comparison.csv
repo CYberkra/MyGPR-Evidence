@@ -1,0 +1,5 @@
+field_value,metric,model_value,note
+700.0,time_window_ns,29.999999999999996,basic metadata comparison only
+0.09093,trace_spacing_m,0.1,basic metadata comparison only
+2378,trace_count,175,model trace count approximated by domain/src_step
+501,sample_count,,simulation sample count depends on solver time sampling

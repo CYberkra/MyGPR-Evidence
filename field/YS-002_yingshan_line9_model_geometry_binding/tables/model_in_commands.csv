@@ -1,0 +1,12 @@
+command,line_no,raw_line,raw_value
+title,1,#title: impulse,impulse
+domain,2,#domain: 17.500 2.000 0.002,17.500 2.000 0.002
+dx_dy_dz,3,#dx_dy_dz: 0.005 0.005 0.002,0.005 0.005 0.002
+time_window,4,#time_window: 30e-9,30e-9
+waveform,6,#waveform:  ricker 1 1e9 mypulse,ricker 1 1e9 mypulse
+hertzian_dipole,7,#hertzian_dipole: z 0.000 1.800 0 mypulse,z 0.000 1.800 0 mypulse
+rx,8,#rx: 0.500 1.800 0,0.500 1.800 0
+src_steps,9,#src_steps: 0.1 0 0,0.1 0 0
+rx_steps,10,#rx_steps: 0.1 0 0,0.1 0 0
+geometry_objects_read,13,#geometry_objects_read: 0 0 0 F:\gprMax-master\user_models\gprMax-Matlab-SFCW-radars-signal-processing-simulation-main\NC9Line\ex_h5\png_color.h5 F:\gprMax-master\user_models\gprMax-Matlab-SFCW-radars-signal-processing-simulation-main\NC9Line\ex_h5\materials.txt,0 0 0 F:\gprMax-master\user_models\gprMax-Matlab-SFCW-radars-signal-processing-simulation-main\NC9Line\ex_h5\png_color.h5 F:\gprMax-master\user_models\gprMax-Matlab-SFCW-radars-signal-processing-simulation-main\NC9Line\ex_h5\materials.txt
+geometry_view,16,#geometry_view: 0 0 0 17.500 2.000 0.002 0.005 0.005 0.002 impulse n,0 0 0 17.500 2.000 0.002 0.005 0.005 0.002 impulse n

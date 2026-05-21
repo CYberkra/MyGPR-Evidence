@@ -1,0 +1,5 @@
+h5_value,metric,model_value,status
+n/a,model_domain_m,"[17.5, 2.0, 0.002]",info
+"[0.005, 0.005, 0.002]",model_dx_dy_dz_m,"[0.005, 0.005, 0.002]",match
+"[7000, 9000, 2]",expected_nx_ny_nz_from_model,"[3500, 400, 1]",mismatch
+"[2, 9000, 7000]",h5_data_shape,n/a,info

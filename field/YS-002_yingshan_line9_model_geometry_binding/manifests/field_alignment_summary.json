@@ -1,0 +1,17 @@
+{
+  "comparison_scope": "basic_metadata_only",
+  "model_time_window_ns": 29.999999999999996,
+  "field_time_window_ns": 700.0,
+  "model_trace_spacing_m": 0.1,
+  "field_trace_interval_m": 0.09093,
+  "model_trace_count_approx": 175,
+  "field_trace_count": 2378,
+  "field_sample_count": 501,
+  "axes_comparable_note": "possible_at_metadata_level_only_no_physical_alignment_claim",
+  "screenshot_provenance": {
+    "status": "informal_visual_context_only",
+    "plausible_link_to_model": true,
+    "reason": "geometry_view exists in model.in; plausible preview link but not formal provenance",
+    "ground_truth_claim_allowed": false
+  }
+}

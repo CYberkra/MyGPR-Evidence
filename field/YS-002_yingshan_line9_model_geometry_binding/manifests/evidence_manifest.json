@@ -1,0 +1,48 @@
+{
+  "artifact_id": "YS-002",
+  "task_id": "YS-002_yingshan_line9_model_geometry_binding",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "9e0a0c2001cdbc61d67015a37d9dabaf66455a3c",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "evidence_commit": "pending_self_reference",
+  "generated_at": "2026-05-21T07:47:49.330435+00:00",
+  "command": "evidence-only model geometry binding audit",
+  "dataset_name": "impulse2.in + unified_geometry.h5 + Line9origin(36).csv",
+  "dataset_shape": {
+    "h5_data_shape": [
+      2,
+      9000,
+      7000
+    ],
+    "field_bscan_shape": [
+      501,
+      2378
+    ]
+  },
+  "dataset_hash": {
+    "model_in_sha256": "5e2281f6ea0c406019bd98e91d09603a5e94953b16047380a74c77868fd62bc5",
+    "h5_sha256": "46b4ff7f7f95c532e45703ae68c2983846f5b9a95e586405465908115f6916f4",
+    "field_csv_sha256": "655f72f99de4cbcb22b1b9be64dc8ebdf2f156accbe9b27729c6862f6b1e172d"
+  },
+  "ground_truth_available": false,
+  "metric_type": "model_geometry_binding_audit",
+  "artifacts": {
+    "markdown_report": "reports/yingshan_line9_model_geometry_binding_report.md",
+    "html_report": "reports/yingshan_line9_model_geometry_binding_report.html",
+    "model_in_summary_json": "manifests/model_in_summary.json",
+    "geometry_binding_summary_json": "manifests/geometry_binding_summary.json",
+    "field_alignment_summary_json": "manifests/field_alignment_summary.json",
+    "model_in_commands_csv": "tables/model_in_commands.csv",
+    "materials_csv": "tables/materials.csv",
+    "source_receiver_csv": "tables/source_receiver_settings.csv",
+    "model_vs_h5_csv": "tables/model_vs_h5_consistency.csv",
+    "model_vs_field_csv": "tables/model_vs_field_metadata_comparison.csv",
+    "model_copy": "model/impulse2.in"
+  },
+  "limitations": [
+    "No native gprMax receiver output file for direct simulation-vs-field waveform comparison",
+    "Screenshots remain informal provenance without formal generated artifact chain",
+    "No target/layer annotation contract for ROI ground-truth validation"
+  ]
+}

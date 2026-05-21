@@ -1,0 +1,43 @@
+{
+  "file_exists": true,
+  "path": "C:\\Users\\17844\\Desktop\\02_Preprocessed_Standard\\2025-09_营山\\impulse2.in",
+  "size_bytes": 563,
+  "sha256": "5e2281f6ea0c406019bd98e91d09603a5e94953b16047380a74c77868fd62bc5",
+  "domain": [
+    17.5,
+    2.0,
+    0.002
+  ],
+  "dx_dy_dz": [
+    0.005,
+    0.005,
+    0.002
+  ],
+  "time_window_s": 3e-08,
+  "waveform": "ricker 1 1e9 mypulse",
+  "source_type": "hertzian_dipole",
+  "source_position": [
+    0.0,
+    1.8,
+    0.0
+  ],
+  "receiver_position": [
+    0.5,
+    1.8,
+    0.0
+  ],
+  "src_steps": [
+    0.1,
+    0.0,
+    0.0
+  ],
+  "rx_steps": [
+    0.1,
+    0.0,
+    0.0
+  ],
+  "geometry_objects_read": "0 0 0 F:\\gprMax-master\\user_models\\gprMax-Matlab-SFCW-radars-signal-processing-simulation-main\\NC9Line\\ex_h5\\png_color.h5 F:\\gprMax-master\\user_models\\gprMax-Matlab-SFCW-radars-signal-processing-simulation-main\\NC9Line\\ex_h5\\materials.txt",
+  "geometry_view": "0 0 0 17.500 2.000 0.002 0.005 0.005 0.002 impulse n",
+  "parse_warnings": [],
+  "unknown_commands": []
+}

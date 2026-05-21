@@ -1,0 +1,7 @@
+item,value
+source_type,hertzian_dipole
+source_position_m,"[0.0, 1.8, 0.0]"
+receiver_position_m,"[0.5, 1.8, 0.0]"
+src_steps_m,"[0.1, 0.0, 0.0]"
+rx_steps_m,"[0.1, 0.0, 0.0]"
+waveform,ricker 1 1e9 mypulse
