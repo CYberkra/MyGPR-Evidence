@@ -1,0 +1,9 @@
+{
+  "artifact_id": "DS-001_local_field_dataset_inventory",
+  "category": "field",
+  "status": "complete",
+  "source_commit": "9e0a0c2001cdbc61d67015a37d9dabaf66455a3c",
+  "evidence_commit": "pending_self_reference",
+  "generated_at": "2026-05-21T18:21:22.358841",
+  "notes": "Metadata-only local dataset inventory; no large raw data committed."
+}

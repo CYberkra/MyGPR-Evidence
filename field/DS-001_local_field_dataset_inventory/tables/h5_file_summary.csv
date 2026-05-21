@@ -1,0 +1,2 @@
+﻿relative_path,site,root_attrs_json,dataset_count,datasets_json,role_guess,parse_status,notes
+2025-09_营山\unified_geometry.h5,YingShan,"{""dx"": ""[0.005]"", ""dx_dy_dz"": ""[0.005 0.005 0.002]"", ""dy"": ""[0.005]"", ""dz"": ""[0.002]"", ""nx"": ""[7000.]"", ""ny"": ""[9000.]"", ""nz"": ""[2.]"", ""x0"": ""[0.]"", ""y0"": ""[0.]"", ""z0"": ""[0.]""}",1,"[{""name"": ""data"", ""shape"": [2, 9000, 7000], ""dtype"": ""int32"", ""attrs"": {}}]",h5_geometry_or_model,ok,

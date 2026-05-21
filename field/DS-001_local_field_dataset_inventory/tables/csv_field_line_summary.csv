@@ -1,0 +1,2 @@
+﻿relative_path,site,shape_raw,shape_bscan,dtype,delimiter,header_guess,nan_count,inf_count,amin,amax,p01,p05,p50,p95,p99,trace_count,sample_count,time_window_ns,trace_interval_m,line_length_m_est,usable_bscan,notes
+2025-09_营山\Line9origin(36).csv,YingShan,1191382x5,501x2378,float64,",",line9_sfcw_known_format,0,0,-0.068787515,0.075539112,-0.027182563979999973,-0.00420281115,-2.06e-07,0.003964094399999991,0.03010738303999987,2378,501,700.0,0.09093,216.14060999999998,True,targeted parser

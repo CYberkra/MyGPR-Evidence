@@ -1,0 +1,13 @@
+{
+  "task_id": "DS-001",
+  "generated_at": "2026-05-21T18:21:22.139644",
+  "dataset_root": "C:\\Users\\17844\\Desktop\\02_Preprocessed_Standard",
+  "total_files_scanned": 215172,
+  "csv_candidates": 215169,
+  "h5_files": 1,
+  "in_files": 1,
+  "out_files": 0,
+  "usable_csv_bscan_count": 1,
+  "preview_count_generated": 1720,
+  "claim_boundary": "inventory_qc_only_no_ground_truth_or_autotune_claims"
+}

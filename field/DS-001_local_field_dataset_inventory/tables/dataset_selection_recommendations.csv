@@ -1,0 +1,4 @@
+﻿use_case,dataset,reason
+field_visual_qc,2025-09_营山\Line9origin(36).csv,"known UAV-GPR SFCW line, reconstructs to 501x2378"
+simulation_vs_field_work,2025-09_营山 (impulse2.in + unified_geometry.h5 + Line9origin(36).csv),has model/geometry/field trio for provenance audit
+no_prior_qc_testing,2025-09_营山\Line9origin(36).csv,suitable for global no-prior warnings benchmarking
