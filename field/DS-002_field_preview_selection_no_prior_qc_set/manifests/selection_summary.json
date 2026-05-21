@@ -1,22 +1,31 @@
 {
   "task_id": "DS-002",
   "based_on": "DS-001R_scoped_yingshan_yaan_csv_inventory",
-  "selected_count": 3,
+  "selected_count": 6,
   "selected_lines": [
     {
       "site": "YingShan",
-      "relative_path": "Line9origin(20).csv",
-      "selection_role": "field_visual_QC"
+      "relative_path": "Line9origin(20).csv"
+    },
+    {
+      "site": "YingShan",
+      "relative_path": "Line9origin(30).csv"
+    },
+    {
+      "site": "YingShan",
+      "relative_path": "Line9origin(36).csv"
     },
     {
       "site": "YaAn",
-      "relative_path": "测线21-1_功率30dbm_高度11m.csv",
-      "selection_role": "no_prior_QC"
+      "relative_path": "测线21-1_功率30dbm_高度11m.csv"
     },
     {
       "site": "YaAn",
-      "relative_path": "测线21-1_功率36dbm_高度11m.csv",
-      "selection_role": "field_visual_QC"
+      "relative_path": "测线21-1_功率36dbm_高度11m.csv"
+    },
+    {
+      "site": "YingShan",
+      "relative_path": "Line3origin(20).csv"
     }
   ],
   "line9_recommendation": "YingShan Line9origin(36).csv as primary paper/no-prior candidate; 20/30 as contrast pair",
