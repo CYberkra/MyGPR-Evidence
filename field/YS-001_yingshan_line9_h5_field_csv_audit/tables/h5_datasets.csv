@@ -1,0 +1,2 @@
+attrs_json,dataset_path,dtype,ndim,shape,size
+{},/data,int32,3,"(2, 9000, 7000)",126000000

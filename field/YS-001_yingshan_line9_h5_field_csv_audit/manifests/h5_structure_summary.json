@@ -1,0 +1,32 @@
+{
+  "file_exists": true,
+  "path": "C:\\Users\\17844\\Desktop\\02_Preprocessed_Standard\\2025-09_营山\\unified_geometry.h5",
+  "size_bytes": 504001912,
+  "sha256": "46b4ff7f7f95c532e45703ae68c2983846f5b9a95e586405465908115f6916f4",
+  "root_attributes": {
+    "dx": "[0.005]",
+    "dx_dy_dz": "[0.005 0.005 0.002]",
+    "dy": "[0.005]",
+    "dz": "[0.002]",
+    "nx": "[7000.]",
+    "ny": "[9000.]",
+    "nz": "[2.]",
+    "x0": "[0.]",
+    "y0": "[0.]",
+    "z0": "[0.]"
+  },
+  "groups": [],
+  "datasets": [
+    {
+      "dataset_path": "/data",
+      "shape": "(2, 9000, 7000)",
+      "ndim": 3,
+      "dtype": "int32",
+      "size": 126000000,
+      "attrs_json": "{}"
+    }
+  ],
+  "likely_role": "unknown_or_custom_h5",
+  "radar_candidate_dataset": "/data",
+  "radar_candidate_orientation_note": "interpreted_as_samples_x_traces_tentative"
+}

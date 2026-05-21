@@ -1,0 +1,34 @@
+{
+  "file_exists": true,
+  "path": "C:\\Users\\17844\\Desktop\\02_Preprocessed_Standard\\2025-09_营山\\Line9origin(36).csv",
+  "size_bytes": 68794423,
+  "sha256": "655f72f99de4cbcb22b1b9be64dc8ebdf2f156accbe9b27729c6862f6b1e172d",
+  "delimiter": ",",
+  "shape_raw": [
+    1191378,
+    5
+  ],
+  "shape_bscan": [
+    501,
+    2378
+  ],
+  "dtype": "float64",
+  "header_lines": 4,
+  "header_info": {
+    "Number of Samples": "501",
+    "Time windows (ns)": "700",
+    "Number of Traces": "2378",
+    "Trace interval (m)": "0.09093"
+  },
+  "nan_count": 0,
+  "inf_count": 0,
+  "min": -0.068787515,
+  "max": 0.075539112,
+  "p01": -0.027182563979999973,
+  "p05": -0.00420281115,
+  "p50": -2.06e-07,
+  "p95": 0.003964094399999991,
+  "p99": 0.03010738303999987,
+  "orientation_note": "samples_x_traces_from_header_reshape",
+  "amplitude_column": "col_3_zero_based"
+}

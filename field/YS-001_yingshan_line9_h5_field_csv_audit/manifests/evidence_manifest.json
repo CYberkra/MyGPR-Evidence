@@ -1,0 +1,55 @@
+{
+  "artifact_id": "YS-001",
+  "task_id": "YS-001_yingshan_line9_h5_field_csv_audit",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "9e0a0c2001cdbc61d67015a37d9dabaf66455a3c",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "evidence_commit": "pending_self_reference",
+  "generated_at": "2026-05-21T07:31:02.092876+00:00",
+  "command": "python ad-hoc audit generation",
+  "dataset_name": "YingShan Line9 unified_geometry.h5 + Line9origin(36).csv",
+  "dataset_shape": {
+    "h5_candidate_shape": [
+      9000,
+      7000
+    ],
+    "field_csv_raw_shape": [
+      1191378,
+      5
+    ],
+    "field_bscan_shape": [
+      501,
+      2378
+    ]
+  },
+  "dataset_hash": {
+    "h5_sha256": "46b4ff7f7f95c532e45703ae68c2983846f5b9a95e586405465908115f6916f4",
+    "field_csv_sha256": "655f72f99de4cbcb22b1b9be64dc8ebdf2f156accbe9b27729c6862f6b1e172d"
+  },
+  "ground_truth_available": false,
+  "metric_type": "data_audit_pre_ground_truth",
+  "artifacts": {
+    "markdown_report": "reports/yingshan_line9_h5_field_csv_audit_report.md",
+    "html_report": "reports/yingshan_line9_h5_field_csv_audit_report.html",
+    "h5_summary_json": "manifests/h5_structure_summary.json",
+    "field_csv_summary_json": "manifests/field_csv_summary.json",
+    "data_availability_json": "manifests/data_availability.json",
+    "h5_datasets_csv": "tables/h5_datasets.csv",
+    "field_decay_csv": "tables/field_decay_profile.csv",
+    "h5_vs_field_csv": "tables/h5_vs_field_basic_comparison.csv",
+    "h5_preview_png": "figures/h5_preview.png",
+    "field_preview_png": "figures/field_csv_raw_preview.png",
+    "field_decay_png": "figures/field_decay_profile.png",
+    "panel_png": "figures/h5_vs_field_preview_panel.png"
+  },
+  "limitations": [
+    "model.in is missing so screenshot/proxy interpretation cannot be promoted to ground truth",
+    "no target/layer ROI annotation contract available for YingShan Line9 in this artifact",
+    "basic shape/decay/visual comparison only; no physical alignment claim"
+  ],
+  "known_risks": [
+    "h5 dataset orientation may be ambiguous without producer documentation",
+    "field csv channel semantics require contract confirmation"
+  ]
+}

@@ -1,0 +1,8 @@
+metric,value
+h5_shape,"[9000, 7000]"
+field_bscan_shape,"[501, 2378]"
+h5_p99_abs,3.0
+field_p99_abs,0.0459859289
+h5_deep_shallow_ratio,0.7866878989885282
+field_deep_shallow_ratio,0.0019781199734145625
+comparability_note,basic_shape_decay_visual_comparison_only_no_physical_alignment_claim
