@@ -1,0 +1,6 @@
+﻿template_id,chinese_text,usage
+warning_high_risk,当前数据触发高风险质控告警，建议先查看原始剖面并进行人工复核。,warning_first
+block_aggressive_auto,系统不会自动推荐激进背景抑制或默认参数。,auto_block
+display_only_notice,以下显示增强仅用于可视化，不代表幅值保真或目标识别。,display_only
+no_prior_limit,未提供目标区域或先验信息，因此本结果不构成地下目标判断。,claim_boundary
+manual_review_required,建议由有经验人员复核后再尝试任何参数化处理。,manual_review

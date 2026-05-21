@@ -1,0 +1,7 @@
+﻿claim_type,status,note
+target_detection_claim,blocked,No-prior pilot has no target prior or ground truth.
+underground_correctness_claim,blocked,Field truth is unavailable in this pilot.
+autotune_performance_claim,blocked,AutoTune not run.
+preset_promotion_claim,blocked,"Safety pilot only, no preset finalization."
+amplitude_preserving_gain_claim,blocked,Display transforms are not amplitude-preserving proofs.
+heuristic_thresholds,allowed_with_caution,Thresholds are heuristic and must be labeled as such.

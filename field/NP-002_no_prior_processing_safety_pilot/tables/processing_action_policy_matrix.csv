@@ -1,0 +1,11 @@
+﻿action,policy,reason,claim_boundary
+raw_preview,allowed,Baseline non-invasive view.,No target detection claim.
+contrast_clip_display,caution,Display-only contrast adjustment allowed.,"Display-only, not amplitude-preserving."
+conservative_energy_decay_gain_display,caution,Only as labeled display transform.,No amplitude-preserving claim.
+AGC_display_only,caution,Display aid with explicit warning labels.,Not amplitude-preserving; no target claim.
+background_suppression_conservative,caution,Only after warnings acknowledged and manual review.,No automatic recommendation.
+background_suppression_aggressive,blocked,High-risk no-prior baseline blocks aggressive auto path.,Blocked in pilot.
+dewow,blocked,Not validated for no-prior safety auto path here.,Blocked in pilot.
+migration,blocked,Out of no-prior safety pilot scope.,Blocked in pilot.
+AutoTune,blocked,AutoTune is out of scope for NP-002.,No AutoTune claim.
+preset_recommendation,blocked,Preset promotion forbidden under high-risk no-prior warnings.,No preset promotion claim.

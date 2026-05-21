@@ -1,0 +1,4 @@
+﻿site,file_name,no_prior_level,high_risk_warning_count,safe_auto_recommendation_allowed,aggressive_background_suppression_allowed,amplitude_claim_allowed,auto_gain_allowed,manual_review_required,recommended_initial_policy,explanation
+YingShan,,high_risk,4,False,False,False,False,True,conservative_display_only,High-risk no-prior warnings present; allow warning-first conservative preview only.
+YaAn,,high_risk,4,False,False,False,False,True,conservative_display_only,High-risk no-prior warnings present; allow warning-first conservative preview only.
+YaAn,,high_risk,4,False,False,False,False,True,conservative_display_only,High-risk no-prior warnings present; allow warning-first conservative preview only.

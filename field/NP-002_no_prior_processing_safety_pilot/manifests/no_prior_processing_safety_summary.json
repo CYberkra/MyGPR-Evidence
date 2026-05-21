@@ -1,0 +1,15 @@
+{
+  "task_id": "NP-002",
+  "based_on": [
+    "NP-001_no_prior_qc_metric_baseline",
+    "DS-002_field_preview_selection_no_prior_qc_set",
+    "DS-001R_scoped_yingshan_yaan_csv_inventory"
+  ],
+  "line_count": 3,
+  "all_safe_auto_recommendation_blocked": true,
+  "all_aggressive_background_blocked": true,
+  "all_manual_review_required": true,
+  "no_autotune_or_processing_pipeline_run": true,
+  "claim_boundary": "no target detection; no underground correctness; no AutoTune claim; no preset promotion; heuristic thresholds only",
+  "next_recommended_task": "NP-003 implement no-prior warning UI/spec in MyGPR"
+}
