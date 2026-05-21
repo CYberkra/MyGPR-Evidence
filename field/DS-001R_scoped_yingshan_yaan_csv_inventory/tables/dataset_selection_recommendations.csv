@@ -1,0 +1,56 @@
+﻿rank_group,site,relative_path,reason
+good_candidate_for_field_visual_QC,YaAn,测线21-1_功率30dbm_高度11m.csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YaAn,测线21-1_功率30dbm_高度11m.csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YaAn,测线21-2_功率30dbm_高度11m.csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YaAn,测线21-2_功率30dbm_高度11m.csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YaAn,测线21-1_功率36dbm_高度16m.csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YaAn,测线21-1_功率36dbm_高度16m.csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YaAn,测线21-1_功率30dbm_高度16m.csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YaAn,测线21-1_功率30dbm_高度16m.csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YaAn,测线21-2_功率30dbm_高度16m.csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YaAn,测线21-2_功率30dbm_高度16m.csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YaAn,测线21-2_功率36dbm_高度11m.csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YaAn,测线21-2_功率36dbm_高度11m.csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YaAn,mainred_40dbm_11m.csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YaAn,mainred_40dbm_11m.csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YaAn,测线21-1_功率36dbm_高度11m.csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YaAn,测线21-1_功率36dbm_高度11m.csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YingShan,Line9origin(20).csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YingShan,Line9origin(20).csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YingShan,Line9origin(30).csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YingShan,Line9origin(30).csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YingShan,Line9origin(36).csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YingShan,Line9origin(36).csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YingShan,LineL1origin(30).csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YingShan,LineL1origin(30).csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YingShan,LineL1origin(20).csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YingShan,LineL1origin(20).csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YingShan,Line3origin(20).csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YingShan,Line3origin(20).csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YingShan,LineL1origin(36).csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YingShan,LineL1origin(36).csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YingShan,Line7origin(20).csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YingShan,Line7origin(20).csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YingShan,Line7origin(30).csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YingShan,Line7origin(30).csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YingShan,Line3origin(30).csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YingShan,Line3origin(30).csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YingShan,Line3origin(36).csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YingShan,Line3origin(36).csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YingShan,Line6origin(36).csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YingShan,Line6origin(36).csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YingShan,Line7origin(36).csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YingShan,Line7origin(36).csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YingShan,Line6origin(30).csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YingShan,Line6origin(30).csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YingShan,Line6origin(20).csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YingShan,Line6origin(20).csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YingShan,LineX1origin(36).csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YingShan,LineX1origin(36).csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YingShan,LineX1origin(30).csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YingShan,LineX1origin(30).csv,raw decay profile available and no-ROI global QC compatible
+good_candidate_for_field_visual_QC,YingShan,LineX1origin(20).csv,successful reconstruction and interpretable raw preview
+good_candidate_for_no_prior_QC,YingShan,LineX1origin(20).csv,raw decay profile available and no-ROI global QC compatible
+possible_paper_figure_candidate,YingShan,Line9origin(20).csv,largest reconstructed line with stable preview
+possible_paper_figure_candidate,YaAn,测线21-1_功率30dbm_高度11m.csv,largest reconstructed line with stable preview
+needs_format_contract,YingShan,Line6origin(20)_csv_DATA.csv,reconstruction failed or metadata incomplete

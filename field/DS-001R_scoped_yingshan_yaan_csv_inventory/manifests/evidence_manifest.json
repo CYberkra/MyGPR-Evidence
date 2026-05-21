@@ -1,0 +1,8 @@
+{
+  "artifact_id": "DS-001R_scoped_yingshan_yaan_csv_inventory",
+  "source_commit": "9e0a0c2001cdbc61d67015a37d9dabaf66455a3c",
+  "evidence_commit": "pending_self_reference",
+  "status": "complete",
+  "scope": "scoped_rerun_csv_only",
+  "generated_at": "2026-05-21T19:52:59.736151"
+}

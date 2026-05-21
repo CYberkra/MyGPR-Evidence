@@ -1,0 +1,14 @@
+{
+  "task_id": "DS-001R",
+  "generated_at": "2026-05-21T19:52:59.734531",
+  "scope_folders": [
+    "C:\\Users\\17844\\Desktop\\02_Preprocessed_Standard\\2025-09_营山",
+    "C:\\Users\\17844\\Desktop\\02_Preprocessed_Standard\\2025-11_雅安"
+  ],
+  "include_pattern": "*.csv only",
+  "total_csv_files_found": 27,
+  "reconstructed_bscans": 26,
+  "yingshan_csv_count": 19,
+  "yaan_csv_count": 8,
+  "claim_boundary": "inventory_and_raw_qc_only_no_autotune_no_ground_truth_claim"
+}
