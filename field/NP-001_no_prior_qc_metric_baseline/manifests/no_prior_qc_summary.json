@@ -9,5 +9,9 @@
   "line_count": 3,
   "no_autotune_or_processing": true,
   "claim_boundary": "raw QC only; heuristic thresholds; no target/ground-truth claim",
-  "next_recommended_task": "NP-002 no-prior processing safety pilot on the same three lines"
+  "next_recommended_task": "NP-002 no-prior processing safety pilot on the same three lines",
+  "stress_baseline_line_count": 3,
+  "safe_auto_recommendation_line_count": 0,
+  "all_lines_high_risk": true,
+  "interpretation": "These lines are useful for testing no-prior QC warnings, but not for automatic safe parameter recommendation."
 }
