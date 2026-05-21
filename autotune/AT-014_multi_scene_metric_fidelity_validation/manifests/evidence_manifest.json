@@ -3,7 +3,7 @@
   "task_id": "AT-014_multi_scene_metric_fidelity_validation",
   "source_repo": "https://github.com/CYberkra/MyGPR",
   "source_branch": "codex/research-gprmax-autotune",
-  "source_commit": "7efd03ef02c91579a7990a7e48002355467ca65e",
+  "source_commit": "90e45fa5bb4cf857080d544149fe846c5af34ded",
   "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
   "evidence_commit": "pending_self_reference",
   "generated_at": "2026-05-21T05:11:06.538654+00:00",

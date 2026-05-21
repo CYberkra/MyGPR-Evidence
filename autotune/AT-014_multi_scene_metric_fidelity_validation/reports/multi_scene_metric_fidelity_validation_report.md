@@ -1,6 +1,6 @@
 # AT-014 Multi-scene Metric Fidelity Validation
 
-- Source commit: `7efd03ef02c91579a7990a7e48002355467ca65e`
+- Source commit: `90e45fa5bb4cf857080d544149fe846c5af34ded`
 - Included scenes: `['GX-003', 'GX-004', 'GX-005', 'GX-006']`
 - AT-011 policy unchanged: `True`
 - Gate reassessment: `blocked`
