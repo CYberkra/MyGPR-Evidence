@@ -55,5 +55,10 @@
   "runtime_warnings": [
     "gprMax PML audit flags thin/2D z-dimension; disclosed limitation retained.",
     "Current audit script expects target ROI and reports one error for no-target scenes; treat GX-004 as false-positive control with no buried target."
-  ]
+  ],
+  "raw_preview_file": "figures/raw_bscan_preview.png",
+  "roi_overlay_file": "figures/roi_overlay.png",
+  "usable_for_false_positive_control": true,
+  "target_preservation_usable": false,
+  "paper_usable_claim_level": "limited_no_target_false_positive_control"
 }

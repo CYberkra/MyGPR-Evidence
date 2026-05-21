@@ -54,5 +54,7 @@
   },
   "runtime_warnings": [
     "gprMax PML audit flags thin/2D z-dimension; disclosed limitation retained."
-  ]
+  ],
+  "raw_preview_file": "figures/raw_bscan_preview.png",
+  "roi_overlay_file": "figures/roi_overlay.png"
 }

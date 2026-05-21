@@ -4,13 +4,17 @@
   "source": {
     "kind": "native_gprmax_converted",
     "native_gprmax_verified": true,
-    "dt_source": "native gprMax .out"
+    "dt_source": "native gprMax .out",
+    "raw_out_committed_in_package": true,
+    "raw_out_committed_file": "native/model_merged.out"
   },
   "files": {
     "scenario_json": "C:\\Users\\17844\\AppData\\Local\\Temp\\audit_GX-006_layered_complex_background_yuv3z2f8\\scenario.json",
     "model_in": "C:\\Users\\17844\\AppData\\Local\\Temp\\audit_GX-006_layered_complex_background_yuv3z2f8\\model.in",
-    "raw_out_files": [],
-    "raw_out_reference": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-006_layered_complex_background\\model\\model_merged.out",
+    "raw_out_files": [
+      "native/model_merged.out"
+    ],
+    "raw_out_reference": "native/model_merged.out",
     "raw_out_hash": "ed37f9daaa0e06ecc9646a454781188b140cb573e51717e81493ecd70d7c3fed",
     "raw_out_exists": true,
     "mygpr_bscan_csv": "C:\\Users\\17844\\AppData\\Local\\Temp\\audit_GX-006_layered_complex_background_yuv3z2f8\\mygpr_bscan.csv",
@@ -107,7 +111,6 @@
     "warnings": []
   },
   "warnings": [
-    "native .out is externally referenced but not committed inside the package",
     "axis 2 domain 0.002 m is thinner than two default PML margins; treating it as a thin/2D dimension for margin screening"
   ],
   "errors": [],

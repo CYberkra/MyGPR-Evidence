@@ -54,3 +54,9 @@
 ## Explicit Non-Claims
 - A single blended metric is insufficient; target_A and target_B must be reported separately in later validation.
 - No preset promotion or AutoTune superiority claim is made in this task.
+
+## Provenance Path Semantics
+- `native/model_merged.out` is included in this Evidence package and is the canonical committed native output path.
+- `converted/data.csv` is the committed converted B-scan path.
+- `figures/raw_bscan_preview.png` and `figures/roi_overlay.png` are the committed visualization artifacts.
+- No AutoTune run was executed in this package-completion step, and no preset was promoted.
