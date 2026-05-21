@@ -1,0 +1,28 @@
+{
+  "artifact_id": "AT-016",
+  "task_id": "AT-016_risk_flag_scoring_diagnostics",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "9e0a0c2001cdbc61d67015a37d9dabaf66455a3c",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "evidence_commit": "pending_self_reference",
+  "generated_at": "2026-05-21T06:18:15.198164+00:00",
+  "command": "python scripts/auto_tune_validation/run_risk_flag_scoring_diagnostics.py",
+  "dataset_name": "AT-014 diagnostic tables",
+  "dataset_shape": "multi-scene tabular diagnostics",
+  "dataset_hash": "manifest-driven",
+  "ground_truth_available": true,
+  "metric_type": "risk_flag_scoring_diagnostics",
+  "artifacts": {
+    "markdown_report": "reports/risk_flag_scoring_diagnostics_report.md",
+    "html_report": "reports/risk_flag_scoring_diagnostics_report.html",
+    "summary_json": "manifests/risk_flag_scoring_diagnostics_summary.json",
+    "ranking_breakdown_csv": "tables/ranking_breakdown.csv",
+    "risk_vs_score_csv": "tables/risk_vs_score_matrix.csv",
+    "gx004_diag_csv": "tables/gx004_no_target_safety_diagnostics.csv",
+    "gx005_diag_csv": "tables/gx005_target_balance_diagnostics.csv",
+    "gx006_diag_csv": "tables/gx006_interface_suppression_diagnostics.csv",
+    "gate_explain_csv": "tables/gate_blocker_explanation.csv",
+    "recommended_next_actions_csv": "tables/recommended_next_actions.csv"
+  }
+}

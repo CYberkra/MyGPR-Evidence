@@ -1,0 +1,7 @@
+candidate_label,candidate_rank,candidate_score,clutter_false_positive_proxy,clutter_false_positive_risk,generated_ntraces,interface_suppression_common_across_candidates,interface_suppression_risk,layer_interface_energy_ratio,local_n9_candidate,scene_id
+"""local""",3,0.29173696222465645,0.11315543162304086,false,5,true,true,0.4068929739972262,false,"""GX-006"""
+"""local""",1,0.5540302271617978,0.08173498675981189,false,9,true,true,0.6377657940711385,true,"""GX-006"""
+"""medium""",2,0.3870691505127876,0.06664236564674857,false,21,true,true,0.45571209630906506,false,"""GX-006"""
+"""large""",4,0.2731746640307534,0.0330283741116383,false,41,true,true,0.30820361829192056,false,"""GX-006"""
+"""near_full_line""",5,0.23083959168786336,0.054117791406930876,false,73,true,true,0.2869579632443231,false,"""GX-006"""
+"""full_line""",6,0.047434516572981936,0.06054223251331975,false,105,true,true,0.10997732923583055,false,"""GX-006"""

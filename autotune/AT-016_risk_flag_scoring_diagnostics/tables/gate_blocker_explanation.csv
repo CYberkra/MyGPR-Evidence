@@ -1,0 +1,5 @@
+blocker,clear_evidence_needed,hard_blocker,meaning,present,why_blocking
+"""gx005_target_imbalance""","""Per-candidate and cross-scene target-balance metrics converge under accepted thresholds.""",true,"""Candidate behavior is imbalanced between target_A and target_B.""",true,"""Preset cannot be finalized if one target improves while the other degrades."""
+"""gx006_interface_suppression""","""Interface-aware safety rule or validated candidate domain preserving interface continuity.""",true,"""Layer/interface responses are over-suppressed in layered scenes.""",true,"""Structurally meaningful interfaces cannot be removed without safety controls."""
+"""synthetic_thin2d_scene_limit""","""Additional scene diversity and/or field no-prior QC evidence chain.""",true,"""Evidence base is synthetic thin-2D only.""",true,"""Preset finalization requires broader validity than current synthetic regime."""
+"""ranking_vs_gate_relation""","""Risk blockers cleared first, then ranking can support recommendation.""",false,"""Candidate ranking and gate safety are separate decision layers.""",true,"""Top score is insufficient when hard blockers remain."""

@@ -1,0 +1,5 @@
+priority,reason,recommended_now,scope_note,task
+1,"""AT-016 shows ranking alone cannot satisfy gate safety constraints.""",true,"""Design diagnostics-first weighting proposals without immediate semantic scoring switch.""","""AT-017 scoring/risk-penalty refinement design"""
+2,"""GX-006 interface suppression risk is broad across candidates.""",false,"""Candidate filtering/safety guard before preset promotion.""","""Interface-aware background suppression safety rule"""
+3,"""Thin-2D synthetic limitation remains a hard blocker.""",false,"""Use expanded scene diversity to reduce transfer risk.""","""Additional benchmark scene expansion"""
+4,"""Field-shallow/deep decay context can calibrate interpretation risk.""",false,"""No immediate scoring change; context-building for later claims.""","""DS-002 external decay-profile comparison"""

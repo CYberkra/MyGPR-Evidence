@@ -1,0 +1,112 @@
+{
+  "artifact_id": "AT-016",
+  "task_id": "AT-016_risk_flag_scoring_diagnostics",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "9e0a0c2001cdbc61d67015a37d9dabaf66455a3c",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "generated_at": "2026-05-21T06:18:15.198164+00:00",
+  "diagnostic_base_artifact": "AT-014_multi_scene_metric_fidelity_validation",
+  "at014_source_commit": "90e45fa5bb4cf857080d544149fe846c5af34ded",
+  "at014_rerun": false,
+  "scoring_changed": false,
+  "algorithms_changed": false,
+  "included_scenes": [
+    "GX-003",
+    "GX-004",
+    "GX-005",
+    "GX-006"
+  ],
+  "gate_status": "blocked",
+  "risk_flags": [
+    "gx005_target_imbalance",
+    "gx006_interface_suppression",
+    "synthetic_thin2d_scene_limit"
+  ],
+  "scene_best": {
+    "GX-003": {
+      "best_candidate_label": "local",
+      "best_candidate_ntraces": 9,
+      "best_candidate_score": 0.998996345388098,
+      "trace_count": 90,
+      "generated_ntraces": [
+        3,
+        9,
+        17,
+        35,
+        63,
+        89
+      ]
+    },
+    "GX-004": {
+      "best_candidate_label": "local",
+      "best_candidate_ntraces": 9,
+      "best_candidate_score": 0.9887287275226763,
+      "trace_count": 105,
+      "generated_ntraces": [
+        5,
+        9,
+        21,
+        41,
+        73,
+        105
+      ]
+    },
+    "GX-005": {
+      "best_candidate_label": "local",
+      "best_candidate_ntraces": 9,
+      "best_candidate_score": 9.773616120017676,
+      "trace_count": 105,
+      "generated_ntraces": [
+        5,
+        9,
+        21,
+        41,
+        73,
+        105
+      ]
+    },
+    "GX-006": {
+      "best_candidate_label": "local",
+      "best_candidate_ntraces": 9,
+      "best_candidate_score": 0.5540302271617978,
+      "trace_count": 105,
+      "generated_ntraces": [
+        5,
+        9,
+        21,
+        41,
+        73,
+        105
+      ]
+    }
+  },
+  "local_n9_interpretation": "local n=9 ranks best in AT-014 candidate scoring for all scenes, but gate blockers remain active and preset promotion is forbidden.",
+  "gx004_safety_summary": {
+    "artifact_risk_present": false,
+    "lowest_false_positive_candidate": {
+      "label": "local",
+      "ntraces": 9,
+      "false_positive_proxy": 0.00927039667309975
+    }
+  },
+  "gx005_balance_summary": {
+    "target_imbalance_common_across_candidates": false,
+    "local_n9_preservation_gap": 0.28198196186790736,
+    "max_preservation_gap": 0.28198196186790736
+  },
+  "gx006_interface_summary": {
+    "interface_suppression_common_across_candidates": true,
+    "local_n9_layer_interface_ratio": 0.6377657940711385,
+    "min_layer_interface_ratio": 0.10997732923583055,
+    "max_layer_interface_ratio": 0.6377657940711385
+  },
+  "diagnostic_conclusion": "Current issue is not explained by score ordering alone. Ranking and risk gate are intentionally separate; blockers indicate candidate-space and scene-safety constraints remain unresolved.",
+  "recommended_immediate_next_task": "AT-017 scoring/risk-penalty refinement (diagnostic design first, no semantic scoring switch yet)",
+  "claim_boundary": {
+    "preset_promotion": "forbidden",
+    "overall_autotune_superiority": "forbidden",
+    "field_performance_validation": "forbidden",
+    "thin_2d_limitation": "disclosed"
+  }
+}

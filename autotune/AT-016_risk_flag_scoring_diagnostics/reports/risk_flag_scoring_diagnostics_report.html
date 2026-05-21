@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AT-016 Risk-flag and Scoring Diagnostics</title>
+  <style>
+    body { margin: 0; background: #f3f6fb; color: #1d2a40; font-family: "Segoe UI", "PingFang SC", sans-serif; }
+    main { max-width: 1200px; margin: 0 auto; padding: 28px; }
+    .card { background: #fff; border: 1px solid #d8e1ee; border-radius: 8px; padding: 14px; margin: 12px 0; }
+    .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    img { width: 100%; border: 1px solid #d8e1ee; border-radius: 6px; background: #fff; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>AT-016 Risk-flag and Scoring Diagnostics</h1>
+  <div class="card">
+    <div><b>Source commit:</b> <code>9e0a0c2001cdbc61d67015a37d9dabaf66455a3c</code></div>
+    <div><b>Diagnostic base:</b> <code>AT-014_multi_scene_metric_fidelity_validation</code></div>
+    <div><b>Gate status:</b> <code>blocked</code></div>
+    <div><b>AT-014 rerun:</b> <code>False</code></div>
+    <div><b>Scoring changed:</b> <code>False</code></div>
+  </div>
+  <div class="card">
+    <h2>Active risk flags</h2>
+    <ul><li>gx005_target_imbalance</li><li>gx006_interface_suppression</li><li>synthetic_thin2d_scene_limit</li></ul>
+  </div>
+  <div class="card">
+    <h2>Scene best candidates (from AT-014 base)</h2>
+    <ul><li>GX-003: label=local n=9</li><li>GX-004: label=local n=9</li><li>GX-005: label=local n=9</li><li>GX-006: label=local n=9</li></ul>
+  </div>
+  <div class="card">
+    <h2>Interpretation</h2>
+    <p>Current issue is not explained by score ordering alone. Ranking and risk gate are intentionally separate; blockers indicate candidate-space and scene-safety constraints remain unresolved.</p>
+    <p><b>Recommended immediate next task:</b> AT-017 scoring/risk-penalty refinement (diagnostic design first, no semantic scoring switch yet)</p>
+  </div>
+  <div class="grid">
+    <img src="../figures/risk_vs_score_overview.png" alt="risk_vs_score_overview">
+    <img src="../figures/gx004_false_positive_proxy_vs_score.png" alt="gx004_false_positive_proxy_vs_score">
+    <img src="../figures/gx005_target_balance_vs_score.png" alt="gx005_target_balance_vs_score">
+    <img src="../figures/gx006_interface_ratio_vs_score.png" alt="gx006_interface_ratio_vs_score">
+  </div>
+</main>
+</body>
+</html>
