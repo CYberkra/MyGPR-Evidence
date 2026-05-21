@@ -1,0 +1,11 @@
+candidate_label,generated_ntraces,risk_flags,scene_id
+"""local""",5,"[""gx005_target_imbalance_risk""]","""GX-005"""
+"""local""",9,"[""gx005_target_imbalance_risk""]","""GX-005"""
+"""medium""",21,"[""gx005_target_imbalance_risk""]","""GX-005"""
+"""large""",41,"[""gx005_target_imbalance_risk""]","""GX-005"""
+"""local""",5,"[""gx006_interface_suppression_risk""]","""GX-006"""
+"""local""",9,"[""gx006_interface_suppression_risk""]","""GX-006"""
+"""medium""",21,"[""gx006_interface_suppression_risk""]","""GX-006"""
+"""large""",41,"[""gx006_interface_suppression_risk""]","""GX-006"""
+"""near_full_line""",73,"[""gx006_interface_suppression_risk""]","""GX-006"""
+"""full_line""",105,"[""gx006_interface_suppression_risk""]","""GX-006"""

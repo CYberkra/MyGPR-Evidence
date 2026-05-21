@@ -1,0 +1,2 @@
+gate_status,risk_flags,scene_best_labels,summary
+"""blocked""","[""gx005_target_imbalance"", ""gx006_interface_suppression"", ""synthetic_thin2d_scene_limit""]","{""GX-003"": ""local"", ""GX-004"": ""local"", ""GX-005"": ""local"", ""GX-006"": ""local""}","""AT-014 reassessment keeps gate blocked unless multi-scene risks and synthetic limits are cleared."""

@@ -1,0 +1,134 @@
+{
+  "artifact_id": "AT-014",
+  "task_id": "AT-014_multi_scene_metric_fidelity_validation",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "7efd03ef02c91579a7990a7e48002355467ca65e",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "generated_at": "2026-05-21T05:11:06.538654+00:00",
+  "included_scenes": [
+    "GX-003",
+    "GX-004",
+    "GX-005",
+    "GX-006"
+  ],
+  "at011_policy_unchanged": true,
+  "ratio_family": [
+    0.05,
+    0.1,
+    0.2,
+    0.4,
+    0.7,
+    1.0
+  ],
+  "lane_policy": {
+    "zero_time": "excluded_or_fixed_zero",
+    "dewow": "excluded_primary",
+    "background_policy": "AT-011 relative trace-count-aware",
+    "gain_policy": "energy_decay_gain conservative lane"
+  },
+  "scene_best": {
+    "GX-003": {
+      "best_candidate_label": "local",
+      "best_candidate_ntraces": 9,
+      "best_candidate_score": 0.998996345388098,
+      "trace_count": 90,
+      "generated_ntraces": [
+        3,
+        9,
+        17,
+        35,
+        63,
+        89
+      ]
+    },
+    "GX-004": {
+      "best_candidate_label": "local",
+      "best_candidate_ntraces": 9,
+      "best_candidate_score": 0.9887287275226763,
+      "trace_count": 105,
+      "generated_ntraces": [
+        5,
+        9,
+        21,
+        41,
+        73,
+        105
+      ]
+    },
+    "GX-005": {
+      "best_candidate_label": "local",
+      "best_candidate_ntraces": 9,
+      "best_candidate_score": 9.773616120017676,
+      "trace_count": 105,
+      "generated_ntraces": [
+        5,
+        9,
+        21,
+        41,
+        73,
+        105
+      ]
+    },
+    "GX-006": {
+      "best_candidate_label": "local",
+      "best_candidate_ntraces": 9,
+      "best_candidate_score": 0.5540302271617978,
+      "trace_count": 105,
+      "generated_ntraces": [
+        5,
+        9,
+        21,
+        41,
+        73,
+        105
+      ]
+    }
+  },
+  "gate_reassessment": {
+    "gate_status": "blocked",
+    "risk_flags": [
+      "gx005_target_imbalance",
+      "gx006_interface_suppression",
+      "synthetic_thin2d_scene_limit"
+    ],
+    "scene_best_labels": {
+      "GX-003": "local",
+      "GX-004": "local",
+      "GX-005": "local",
+      "GX-006": "local"
+    },
+    "summary": "AT-014 reassessment keeps gate blocked unless multi-scene risks and synthetic limits are cleared."
+  },
+  "gx004_findings": {
+    "status": "evaluated",
+    "best_candidate_label": "local",
+    "best_generated_ntraces": 9,
+    "min_false_positive_proxy": 0.00927039667309975,
+    "artifact_risk_present": false
+  },
+  "gx005_findings": {
+    "status": "evaluated",
+    "max_target_preservation_gap": 0.28198196186790736,
+    "target_imbalance_risk_present": true,
+    "note": "Strict per-target processed ROI metrics reported in gx005_per_target_processed_metrics.csv"
+  },
+  "gx006_findings": {
+    "status": "evaluated",
+    "interface_suppression_risk_present": true,
+    "clutter_false_positive_risk_present": false,
+    "note": "Layer/interface metrics are reported separately from clutter false-positive metrics."
+  },
+  "known_risks": [
+    "Synthetic thin-2D scenes cannot support preset promotion by themselves.",
+    "No field-performance claim is supported by AT-014.",
+    "AT-014 improves metric fidelity but does not change AutoTune scoring semantics."
+  ],
+  "claim_boundary": {
+    "preset_promotion": "forbidden",
+    "overall_autotune_superiority": "forbidden",
+    "field_performance_validation": "forbidden",
+    "thin_2d_limitation": "disclosed"
+  },
+  "at013_proxy_limitation_addressed": true
+}
