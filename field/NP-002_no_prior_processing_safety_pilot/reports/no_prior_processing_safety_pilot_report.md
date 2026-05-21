@@ -1,49 +1,48 @@
 # NP-002 No-prior Processing Safety Pilot
 
 ## Executive summary
-- NP-002 uses NP-001 high-risk warnings and DS-002 no-prior candidate set.
+- NP-002 uses NP-001 high-risk warnings and the DS-002 no-prior candidate set.
 - It defines safe behavior after no-prior warnings.
 - No AutoTune, gprMax, or processing pipeline was run.
 
 ## Why high-risk does not mean unusable
 - High-risk means automatic aggressive recommendations should be blocked.
-- Data can still be visually reviewed with warning-first workflow.
-- Manual review is required before any stronger processing.
+- Data can still be visually reviewed with a warning-first workflow.
+- Manual review is required before stronger parameterized processing.
 
-## Safety decision result
-    site file_name no_prior_level  high_risk_warning_count  safe_auto_recommendation_allowed  aggressive_background_suppression_allowed  amplitude_claim_allowed  auto_gain_allowed  manual_review_required recommended_initial_policy                                                                         explanation
-YingShan                high_risk                        4                             False                                      False                    False              False                    True  conservative_display_only High-risk no-prior warnings present; allow warning-first conservative preview only.
-    YaAn                high_risk                        4                             False                                      False                    False              False                    True  conservative_display_only High-risk no-prior warnings present; allow warning-first conservative preview only.
-    YaAn                high_risk                        4                             False                                      False                    False              False                    True  conservative_display_only High-risk no-prior warnings present; allow warning-first conservative preview only.
+## Safety decision result (line-specific)
+| Site | File | Level | Initial policy | Manual review |
+| --- | --- | --- | --- | --- |
+| YingShan | Line9origin(36).csv | high_risk | conservative_display_only | required |
+| YaAn | 测线21-1_功率30dbm_高度11m.csv | high_risk | conservative_display_only | required |
+| YaAn | 测线21-1_功率36dbm_高度11m.csv | high_risk | conservative_display_only | required |
+
+Common decision fields remain unchanged for all three lines:
+- `safe_auto_recommendation_allowed = False`
+- `aggressive_background_suppression_allowed = False`
+- `amplitude_claim_allowed = False`
+- `auto_gain_allowed = False`
+- `manual_review_required = True`
 
 ## Allowed vs blocked actions
-                                action  policy                                                        reason                             claim_boundary
-                           raw_preview allowed                                   Baseline non-invasive view.                 No target detection claim.
-                 contrast_clip_display caution                     Display-only contrast adjustment allowed.    Display-only, not amplitude-preserving.
-conservative_energy_decay_gain_display caution                            Only as labeled display transform.             No amplitude-preserving claim.
-                      AGC_display_only caution                     Display aid with explicit warning labels. Not amplitude-preserving; no target claim.
-   background_suppression_conservative caution           Only after warnings acknowledged and manual review.               No automatic recommendation.
-     background_suppression_aggressive blocked      High-risk no-prior baseline blocks aggressive auto path.                          Blocked in pilot.
-                                 dewow blocked             Not validated for no-prior safety auto path here.                          Blocked in pilot.
-                             migration blocked                           Out of no-prior safety pilot scope.                          Blocked in pilot.
-                              AutoTune blocked                          AutoTune is out of scope for NP-002.                         No AutoTune claim.
-                 preset_recommendation blocked Preset promotion forbidden under high-risk no-prior warnings.                 No preset promotion claim.
+- Allowed: raw preview.
+- Caution (display-only): contrast clip display, conservative energy-decay gain display, AGC display-only.
+- Blocked: aggressive background suppression, dewow (pilot scope), migration, AutoTune, preset recommendation.
 
 ## User-facing wording templates
-           template_id                    chinese_text          usage
-     warning_high_risk 当前数据触发高风险质控告警，建议先查看原始剖面并进行人工复核。  warning_first
- block_aggressive_auto            系统不会自动推荐激进背景抑制或默认参数。     auto_block
-   display_only_notice      以下显示增强仅用于可视化，不代表幅值保真或目标识别。   display_only
-        no_prior_limit    未提供目标区域或先验信息，因此本结果不构成地下目标判断。 claim_boundary
-manual_review_required          建议由有经验人员复核后再尝试任何参数化处理。  manual_review
+- 高风险告警提示：`当前数据触发高风险质控告警，建议先查看原始剖面并进行人工复核。`
+- 阻止激进自动推荐：`系统不会自动推荐激进背景抑制或默认参数。`
+- 显示增强免责声明：`以下显示增强仅用于可视化，不代表幅值保真或目标识别。`
+- 无先验限制：`未提供目标区域或先验信息，因此本结果不构成地下目标判断。`
+- 人工复核要求：`建议由有经验人员复核后再尝试任何参数化处理。`
 
 ## Claim boundary
-- no target detection
-- no underground correctness
-- no AutoTune performance claim
-- no preset promotion
-- display transforms are not amplitude-preserving claims
-- thresholds are heuristic
+- No target detection claim.
+- No underground correctness claim.
+- No AutoTune performance claim.
+- No preset promotion.
+- Display transforms are not amplitude-preserving claims.
+- Thresholds are heuristic.
 
 ## Next recommended task
 - NP-003 implement no-prior warning UI/spec in MyGPR.

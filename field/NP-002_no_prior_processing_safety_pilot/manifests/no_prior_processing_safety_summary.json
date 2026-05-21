@@ -5,6 +5,11 @@
     "DS-002_field_preview_selection_no_prior_qc_set",
     "DS-001R_scoped_yingshan_yaan_csv_inventory"
   ],
+  "selected_no_prior_lines": [
+    "YingShan Line9origin(36).csv",
+    "YaAn 测线21-1_功率30dbm_高度11m.csv",
+    "YaAn 测线21-1_功率36dbm_高度11m.csv"
+  ],
   "line_count": 3,
   "all_safe_auto_recommendation_blocked": true,
   "all_aggressive_background_blocked": true,
