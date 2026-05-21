@@ -1,6 +1,6 @@
 # AT-013 Multi-scene Relative Policy Validation
 
-- Source commit: `a423072be4c2a9ae29708aef18e165d4c2cd053d`
+- Source commit: `7efd03ef02c91579a7990a7e48002355467ca65e`
 - Included scenes: `['GX-003', 'GX-004', 'GX-005', 'GX-006']`
 - Gate status: `blocked`
 
