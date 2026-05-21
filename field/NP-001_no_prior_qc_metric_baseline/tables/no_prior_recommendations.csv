@@ -1,0 +1,4 @@
+﻿site,file_name,suitable_for_no_prior_qc_baseline,recommended_initial_processing_policy,explanation
+YingShan,Line9origin(36).csv,no,conservative_display_only; avoid_aggressive_background_suppression; avoid_amplitude_claims; require_manual_review,no_prior_level=high_risk; deep/shallow=0.002; trace_cov=0.033; dynamic_range_proxy=14715.49
+YaAn,测线21-1_功率30dbm_高度11m.csv,no,conservative_display_only; avoid_aggressive_background_suppression; avoid_amplitude_claims; require_manual_review,no_prior_level=high_risk; deep/shallow=0.004; trace_cov=0.019; dynamic_range_proxy=7130.05
+YaAn,测线21-1_功率36dbm_高度11m.csv,no,conservative_display_only; avoid_aggressive_background_suppression; avoid_amplitude_claims; require_manual_review,no_prior_level=high_risk; deep/shallow=0.005; trace_cov=0.020; dynamic_range_proxy=8448.03

@@ -1,0 +1,4 @@
+﻿site,file_name,data_integrity_warning,amplitude_scale_warning,extreme_dynamic_range_warning,shallow_dominance_warning,weak_deep_signal_warning,trace_instability_warning,possible_clipping_warning,no_prior_processing_caution
+YingShan,Line9origin(36).csv,ok,high_risk,high_risk,high_risk,high_risk,ok,ok,high_risk
+YaAn,测线21-1_功率30dbm_高度11m.csv,ok,high_risk,high_risk,high_risk,high_risk,ok,ok,high_risk
+YaAn,测线21-1_功率36dbm_高度11m.csv,ok,high_risk,high_risk,high_risk,high_risk,ok,ok,high_risk

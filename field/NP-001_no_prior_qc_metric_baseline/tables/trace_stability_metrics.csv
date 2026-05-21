@@ -1,0 +1,4 @@
+﻿site,file_name,trace_rms_median,trace_rms_cov,anomalous_trace_ratio,dead_trace_ratio,noisy_trace_ratio,horizontal_discontinuity_proxy,trace_stability_flag
+YingShan,Line9origin(36).csv,0.007833195788731531,0.0331808905357688,0.053406223717409586,0.0,0.0,0.050000125957592595,True
+YaAn,测线21-1_功率30dbm_高度11m.csv,0.008555086025233801,0.01875208263094604,0.04933463161311263,0.0,0.0,0.05,True
+YaAn,测线21-1_功率36dbm_高度11m.csv,0.003660294094854899,0.019895183500157714,0.031029619181946404,0.0,0.0,0.05000017601481341,True
