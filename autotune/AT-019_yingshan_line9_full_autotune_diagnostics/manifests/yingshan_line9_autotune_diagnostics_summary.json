@@ -1,0 +1,15 @@
+{
+  "artifact_id": "AT-019",
+  "generated_at": "2026-05-21T16:48:39.952259+00:00",
+  "source_commit": "d221b6e6ea4252e6a47748e1871ff28261c0743c",
+  "field_csv": "C:\\Users\\17844\\Desktop\\02_Preprocessed_Standard\\2025-09_营山\\Line9origin(36).csv",
+  "data_shape": [
+    501,
+    2378
+  ],
+  "first_warning_or_failure_stage": null,
+  "full_autotune_completed": true,
+  "dewow_window_256_clamped_to_250_expected": true,
+  "no_prior_level": "high_risk",
+  "claim_boundary": "diagnostic only; no target detection; no underground correctness; no preset promotion; no scoring change"
+}

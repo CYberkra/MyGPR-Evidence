@@ -1,0 +1,6 @@
+best_params,constraint_warning_count,method_key,risk_flags,selection_confidence,selection_margin,stage_index,status
+"{""new_zero_time"": 8.383233532934131}",0,set_zero_time,"[""low_selection_confidence"", ""multiple_near_optima"", ""best_params_at_edge""]",0.3915189565856537,0.02075947829282686,1,ok
+"{""window"": 26}",0,dewow,"[""low_selection_confidence"", ""multiple_near_optima""]",0.35,0.0,2,ok
+"{""filter_type"": ""bandpass"", ""low_freq_mhz"": 30.0, ""high_freq_mhz"": 268.3928571428571, ""taper_ratio"": 0.04}",0,frequency_filter_1d,"[""low_selection_confidence"", ""best_params_at_edge""]",0.4132446484371709,0.03162232421858545,3,ok
+"{""ntraces"": 676}",0,subtracting_average_2D,"[""low_selection_confidence"", ""multiple_near_optima"", ""best_params_at_edge""]",0.3569962949534609,0.003498147476730469,4,ok
+"{""strength"": 1.2, ""smoothing_samples"": 101, ""max_gain"": 12.0}",0,energy_decay_gain,"[""best_params_at_edge""]",0.48387423741739144,0.06693711870869573,5,ok

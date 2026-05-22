@@ -1,0 +1,10 @@
+{
+  "artifact_id": "AT-019",
+  "task_id": "AT-019_yingshan_line9_full_autotune_diagnostics",
+  "source_commit": "d221b6e6ea4252e6a47748e1871ff28261c0743c",
+  "artifacts": {
+    "report_md": "reports/yingshan_line9_full_autotune_diagnostics_report.md",
+    "report_html": "reports/yingshan_line9_full_autotune_diagnostics_report.html",
+    "summary_json": "manifests/yingshan_line9_autotune_diagnostics_summary.json"
+  }
+}
