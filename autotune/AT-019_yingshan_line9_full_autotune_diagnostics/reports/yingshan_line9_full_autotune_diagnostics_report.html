@@ -1,1 +1,55 @@
-<html><body><h1>AT-019</h1><p>See markdown report.</p></body></html>
+<html>
+<head><meta charset="utf-8"><title>AT-019 YingShan Line9 Full AutoTune Diagnostics</title></head>
+<body>
+<h1>AT-019 YingShan Line9 Full AutoTune Diagnostics</h1>
+<h2>Executive summary</h2>
+<ul>
+  <li>Full AutoTune completed on YingShan Line9 diagnostics lane.</li>
+  <li>Source commit: <code>d0337f97116c1d012770ce1ab6f07fd6a68a913d</code>.</li>
+  <li>No hard-fail was observed at dewow.</li>
+</ul>
+
+<h2>Data summary</h2>
+<ul>
+  <li>Field CSV: <code>C:\Users\17844\Desktop\02_Preprocessed_Standard\2025-09_营山\Line9origin(36).csv</code></li>
+  <li>Parsed shape: <code>(501, 2378)</code></li>
+  <li>ROI: none (no-prior diagnostics)</li>
+</ul>
+
+<h2>Dewow finding</h2>
+<ul>
+  <li>Full AutoTune completed; dewow did not hard-fail.</li>
+  <li>For 501 samples, requested window <code>256</code> is expected to constrain to <code>250</code> as a non-blocking behavior.</li>
+  <li>Best dewow candidate in diagnostics table is <code>window=26</code>.</li>
+  <li>Issue points to warning UX / candidate-constraint communication, not dewow algorithm failure.</li>
+</ul>
+
+<h2>Background suppression finding</h2>
+<ul>
+  <li>Selected method/params: <code>subtracting_average_2D</code>, <code>ntraces=676</code>.</li>
+  <li>Selected score is negative in diagnostics.</li>
+  <li>Risk signals: <code>local_saliency_preservation≈0.32</code>, <code>edge_preservation≈0.36</code>, <code>peak_ratio≈0.14</code>.</li>
+  <li>This indicates scoring/safety alignment risk; no-prior mode should not auto-recommend aggressive background suppression.</li>
+</ul>
+
+<h2>No-prior interpretation</h2>
+<ul>
+  <li><code>no_prior_level=high_risk</code>.</li>
+  <li>Diagnostic run is allowed.</li>
+  <li>UI aggressive automatic recommendation should remain blocked; manual review remains required.</li>
+  <li>No target detection or underground correctness claim.</li>
+</ul>
+
+<h2>Next recommended task</h2>
+<p>AT-020 Background scoring / no-prior safety what-if diagnostics (diagnostics-first; no immediate scoring change).</p>
+
+<h2>Claim boundary</h2>
+<ul>
+  <li>Diagnostic only.</li>
+  <li>No AutoTune superiority claim.</li>
+  <li>No preset promotion.</li>
+  <li>No target detection claim.</li>
+  <li>No underground correctness claim.</li>
+</ul>
+</body>
+</html>
