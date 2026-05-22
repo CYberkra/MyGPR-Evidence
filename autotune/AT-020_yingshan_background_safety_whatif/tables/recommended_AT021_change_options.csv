@@ -1,0 +1,5 @@
+name,option,reason,recommended,safety_rank
+UI block auto background recommendation under no_prior_high_risk,A,Fastest risk containment without changing production scoring.,True,1
+Candidate cap for no-prior background AutoTune (<=5% or <=10%),B,Prevents large-window dominance observed in AT-019.,True,2
+Scoring safety penalty (edge/saliency/peak/large-window/no-prior),C,Useful but should follow A/B guardrail validation.,False,3
+ROI-required background AutoTune for field data,D,"Highest conservatism, but may block practical no-prior workflows.",False,4

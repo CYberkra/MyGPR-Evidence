@@ -1,0 +1,8 @@
+action,decision,reason
+background_diagnostic_preview,allowed,Diagnostics-only preview is allowed under high-risk no-prior.
+conservative_background_preview,caution_manual_review,Preview may proceed with explicit warning and manual review.
+background_auto_recommendation,blocked,No-prior high-risk blocks automatic recommendation.
+aggressive_background_auto_recommendation,blocked,Aggressive window policies are unsafe under no-prior high-risk.
+preset_promotion,blocked,Preset promotion is forbidden in diagnostics-only field run.
+AutoTune_full_auto_on_no_prior,blocked_or_diagnostic_only,"Allowed for diagnostics evidence only, not for automatic field recommendation."
+manual_review_with_evidence,allowed_recommended,Manual review with report/figures is the required path.

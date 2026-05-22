@@ -1,0 +1,14 @@
+{
+  "artifact_id": "AT-020",
+  "task_id": "AT-020_yingshan_background_safety_whatif",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "codex/research-gprmax-autotune",
+  "source_commit": "d0337f97116c1d012770ce1ab6f07fd6a68a913d",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "generated_at": "2026-05-22T01:52:01.186517+00:00",
+  "artifacts": {
+    "report_md": "reports/yingshan_background_safety_whatif_report.md",
+    "report_html": "reports/yingshan_background_safety_whatif_report.html",
+    "summary_json": "manifests/yingshan_background_safety_whatif_summary.json"
+  }
+}

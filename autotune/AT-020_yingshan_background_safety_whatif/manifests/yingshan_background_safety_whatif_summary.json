@@ -1,0 +1,20 @@
+{
+  "artifact_id": "AT-020",
+  "generated_at": "2026-05-22T01:52:01.186517+00:00",
+  "source_commit": "d0337f97116c1d012770ce1ab6f07fd6a68a913d",
+  "based_on_at019_evidence_commit": "c391d8b2bae93281343e118e1be124d12a90b7a7",
+  "field_csv": "C:\\Users\\17844\\Desktop\\02_Preprocessed_Standard\\2025-09_营山\\Line9origin(36).csv",
+  "shape": [
+    501,
+    2378
+  ],
+  "no_prior_level": "high_risk",
+  "full_autotune_completed_from_at019": true,
+  "at019_selected_background": {
+    "method": "subtracting_average_2D",
+    "ntraces": 676
+  },
+  "diagnostic_only": true,
+  "production_scoring_changed": false,
+  "recommended_next_task": "AT-021"
+}

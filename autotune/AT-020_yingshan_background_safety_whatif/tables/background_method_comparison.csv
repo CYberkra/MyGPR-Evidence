@@ -1,0 +1,5 @@
+auto_recommendation_allowed,best_current_ntraces,best_current_params,best_current_score,best_safety_ntraces,best_safety_params,best_safety_score,diagnostic_preview_allowed,manual_review_required,method
+False,407.0,"{""ntraces"": 407, ""_seed_rank"": 1}",-1.6215999686289462,211.0,"{""ntraces"": 211, ""_seed_rank"": 1}",-1.64571452902053,True,True,median_background_2D
+True,3.0,"{""ntraces"": 3}",2.22873923322984,3.0,"{""ntraces"": 3}",2.22873923322984,True,True,running_average_2D
+False,676.0,"{""ntraces"": 676, ""_seed_rank"": 1}",-1.246579493160544,201.0,"{""ntraces"": 201}",-1.6589401538406037,True,True,subtracting_average_2D
+False,nan,"{""rank"": 1}",-1.6936020111014545,nan,"{""rank"": 1}",-1.6936020111014545,True,True,svd_bg
