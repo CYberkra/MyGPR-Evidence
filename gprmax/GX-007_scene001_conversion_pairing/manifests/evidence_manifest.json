@@ -1,0 +1,61 @@
+{
+  "artifact_id": "GX-007_scene001_conversion_pairing",
+  "source_repo": "CYberkra/MyGPR",
+  "source_branch": "main",
+  "source_commit": "69a9f5bbcb9d697c59d8c5d49012eae727906917",
+  "evidence_repo": "CYberkra/MyGPR-Evidence",
+  "evidence_branch": "main",
+  "scene_id": "scene_001_single_shallow_pipe",
+  "campaign_id": "GX-007_paired_background_benchmark",
+  "artifact_role": "synthetic_minimal_paired_conversion",
+  "source_shape_raw": [
+    936,
+    1
+  ],
+  "source_shape_background": [
+    936,
+    1
+  ],
+  "target_response_shape": [
+    936,
+    1
+  ],
+  "target_response_generated": true,
+  "preview_generated": true,
+  "real_gprmax_run": true,
+  "field_validation": false,
+  "autotune_evaluation": false,
+  "paper_candidate": false,
+  "claim_boundary": [
+    "synthetic minimal scene_001 only",
+    "single-trace / minimal output shape",
+    "not full 2D B-scan benchmark",
+    "not field validation",
+    "not AutoTune superiority evidence",
+    "ROI still placeholder"
+  ],
+  "files": [
+    "gprmax/GX-007_scene001_conversion_pairing/manifests/evidence_manifest.json",
+    "gprmax/GX-007_scene001_conversion_pairing/reports/gx007_scene001_conversion_pairing_report.md",
+    "gprmax/GX-007_scene001_conversion_pairing/reports/paired_target_response_report.md",
+    "gprmax/GX-007_scene001_conversion_pairing/reports/paired_report_summary.json",
+    "gprmax/GX-007_scene001_conversion_pairing/tables/paired_metrics.json",
+    "gprmax/GX-007_scene001_conversion_pairing/tables/paired_validation_summary.json",
+    "gprmax/GX-007_scene001_conversion_pairing/arrays/raw_bscan.npy",
+    "gprmax/GX-007_scene001_conversion_pairing/arrays/background_bscan.npy",
+    "gprmax/GX-007_scene001_conversion_pairing/arrays/target_response.npy",
+    "gprmax/GX-007_scene001_conversion_pairing/arrays/raw_bscan.csv",
+    "gprmax/GX-007_scene001_conversion_pairing/arrays/background_bscan.csv",
+    "gprmax/GX-007_scene001_conversion_pairing/arrays/target_response.csv",
+    "gprmax/GX-007_scene001_conversion_pairing/figures/raw_preview.png",
+    "gprmax/GX-007_scene001_conversion_pairing/figures/background_preview.png",
+    "gprmax/GX-007_scene001_conversion_pairing/figures/target_response_preview.png",
+    "gprmax/GX-007_scene001_conversion_pairing/figures/paired_preview_panel.png",
+    "gprmax/GX-007_scene001_conversion_pairing/logs/raw_run_manifest.json",
+    "gprmax/GX-007_scene001_conversion_pairing/logs/raw_stdout.log",
+    "gprmax/GX-007_scene001_conversion_pairing/logs/raw_stderr.log",
+    "gprmax/GX-007_scene001_conversion_pairing/logs/background_run_manifest.json",
+    "gprmax/GX-007_scene001_conversion_pairing/logs/background_stdout.log",
+    "gprmax/GX-007_scene001_conversion_pairing/logs/background_stderr.log"
+  ]
+}

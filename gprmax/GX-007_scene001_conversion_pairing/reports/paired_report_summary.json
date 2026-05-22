@@ -1,0 +1,45 @@
+{
+  "campaign_id": "GX-007_paired_background_benchmark",
+  "scene_id": "scene_001_single_shallow_pipe",
+  "status": "success",
+  "output_dir": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-007\\scene_001_single_shallow_pipe\\paired_outputs",
+  "raw_preview_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-007\\scene_001_single_shallow_pipe\\paired_outputs\\raw_preview.png",
+  "background_preview_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-007\\scene_001_single_shallow_pipe\\paired_outputs\\background_preview.png",
+  "target_response_preview_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-007\\scene_001_single_shallow_pipe\\paired_outputs\\target_response_preview.png",
+  "paired_preview_panel_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-007\\scene_001_single_shallow_pipe\\paired_outputs\\paired_preview_panel.png",
+  "report_md_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-007\\scene_001_single_shallow_pipe\\paired_outputs\\paired_target_response_report.md",
+  "summary_json_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-007\\scene_001_single_shallow_pipe\\paired_outputs\\paired_report_summary.json",
+  "issues": [],
+  "metrics": {
+    "raw_shape": [
+      936,
+      1
+    ],
+    "background_shape": [
+      936,
+      1
+    ],
+    "target_response_shape": [
+      936,
+      1
+    ],
+    "raw_min": -114.45905303955078,
+    "raw_max": 92.86666107177734,
+    "raw_mean": -0.0032089434064083923,
+    "raw_std": 16.528396301160107,
+    "background_min": -114.45905303955078,
+    "background_max": 92.86666107177734,
+    "background_mean": -0.003192389040992745,
+    "background_std": 16.52805553401388,
+    "target_response_min": -0.4805212654173374,
+    "target_response_max": 0.5474221473559737,
+    "target_response_mean": -1.6554365415647466e-05,
+    "target_response_std": 0.10613612370455072,
+    "raw_energy": 255703.86933204762,
+    "background_energy": 255693.32561147978,
+    "target_response_energy": 10.543924899213927,
+    "target_to_background_energy_ratio": 4.12366058988774e-05,
+    "abs_difference_mean": 0.04098428762437026,
+    "abs_difference_max": 0.5474221473559737
+  }
+}

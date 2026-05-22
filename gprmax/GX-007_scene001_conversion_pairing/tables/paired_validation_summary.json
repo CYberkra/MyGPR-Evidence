@@ -1,0 +1,14 @@
+{
+  "campaign_id": "GX-007_paired_background_benchmark",
+  "scene_id": "scene_001_single_shallow_pipe",
+  "status": "ready",
+  "issues": [],
+  "raw_shape": [
+    936,
+    1
+  ],
+  "background_shape": [
+    936,
+    1
+  ]
+}
