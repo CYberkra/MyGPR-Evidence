@@ -1,0 +1,32 @@
+{
+  "raw_shape": [
+    936,
+    21
+  ],
+  "background_shape": [
+    936,
+    21
+  ],
+  "target_response_shape": [
+    936,
+    21
+  ],
+  "raw_min": -114.45905303955078,
+  "raw_max": 92.86666107177734,
+  "raw_mean": -0.0032163748890060386,
+  "raw_std": 16.52913529295404,
+  "background_min": -114.45905303955078,
+  "background_max": 92.86666107177734,
+  "background_mean": -0.00319546345033658,
+  "background_std": 16.528055453112373,
+  "target_response_min": -1.4103558156639338,
+  "target_response_max": 1.685586018487811,
+  "target_response_mean": -2.091143866945842e-05,
+  "target_response_std": 0.18893600829935342,
+  "raw_energy": 5370261.438142946,
+  "background_energy": 5369559.785661268,
+  "target_response_energy": 701.656608797365,
+  "target_to_background_energy_ratio": 0.0001306730228930592,
+  "abs_difference_mean": 0.06523294634325322,
+  "abs_difference_max": 1.685586018487811
+}
