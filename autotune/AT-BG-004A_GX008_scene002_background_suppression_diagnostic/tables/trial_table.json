@@ -1,0 +1,488 @@
+[
+  {
+    "trial_id": "trial_003",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_mean",
+      "window_size": 5,
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "processed_output_path": null,
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "mae": 0.011964291100524606,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "outside_roi_clutter_proxy": null,
+    "target_distortion_warning": false,
+    "false_enhancement_warning": false,
+    "runtime_seconds": 0.014105900016147643,
+    "warnings": [],
+    "selected": true,
+    "recommendation_label": "recommended",
+    "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence"
+  },
+  {
+    "trial_id": "trial_001",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "global_mean",
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "processed_output_path": null,
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "mae": 0.011964291100524714,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "outside_roi_clutter_proxy": null,
+    "target_distortion_warning": false,
+    "false_enhancement_warning": false,
+    "runtime_seconds": 0.0009124999633058906,
+    "warnings": [],
+    "selected": false,
+    "recommendation_label": "acceptable_alternative",
+    "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence"
+  },
+  {
+    "trial_id": "trial_004",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_mean",
+      "window_size": 9,
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "processed_output_path": null,
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "mae": 0.01196429110052486,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "outside_roi_clutter_proxy": null,
+    "target_distortion_warning": false,
+    "false_enhancement_warning": false,
+    "runtime_seconds": 0.0010021000052802265,
+    "warnings": [],
+    "selected": false,
+    "recommendation_label": "acceptable_alternative",
+    "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence"
+  },
+  {
+    "trial_id": "trial_005",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_mean",
+      "window_size": 15,
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "processed_output_path": null,
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "mae": 0.011964291100525428,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "outside_roi_clutter_proxy": null,
+    "target_distortion_warning": false,
+    "false_enhancement_warning": false,
+    "runtime_seconds": 0.0006244999822229147,
+    "warnings": [],
+    "selected": false,
+    "recommendation_label": "acceptable_alternative",
+    "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence"
+  },
+  {
+    "trial_id": "trial_006",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_mean",
+      "window_size": 21,
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "processed_output_path": null,
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "mae": 0.011964291100525586,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "outside_roi_clutter_proxy": null,
+    "target_distortion_warning": false,
+    "false_enhancement_warning": false,
+    "runtime_seconds": 0.00030690000858157873,
+    "warnings": [],
+    "selected": false,
+    "recommendation_label": "acceptable_alternative",
+    "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence"
+  },
+  {
+    "trial_id": "trial_015",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "method": "svd_background_suppression",
+    "parameter_set": {
+      "remove_rank": 1
+    },
+    "candidate_group": "svd",
+    "processed_output_path": null,
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "mae": 0.011964291100525663,
+    "mse": 0.001364577648888009,
+    "rmse": 0.03694019015771317,
+    "psnr": 15.051817909562134,
+    "roi_energy_ratio": null,
+    "outside_roi_clutter_proxy": null,
+    "target_distortion_warning": false,
+    "false_enhancement_warning": false,
+    "runtime_seconds": 0.01977959997020662,
+    "warnings": [],
+    "selected": false,
+    "recommendation_label": "acceptable_alternative",
+    "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence"
+  },
+  {
+    "trial_id": "trial_016",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "method": "svd_background_suppression",
+    "parameter_set": {
+      "remove_rank": 2
+    },
+    "candidate_group": "svd",
+    "processed_output_path": null,
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "mae": 0.011964291100525678,
+    "mse": 0.001364577648888009,
+    "rmse": 0.03694019015771317,
+    "psnr": 15.051817909562134,
+    "roi_energy_ratio": null,
+    "outside_roi_clutter_proxy": null,
+    "target_distortion_warning": false,
+    "false_enhancement_warning": false,
+    "runtime_seconds": 0.005587299994658679,
+    "warnings": [],
+    "selected": false,
+    "recommendation_label": "acceptable_alternative",
+    "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence"
+  },
+  {
+    "trial_id": "trial_017",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "method": "svd_background_suppression",
+    "parameter_set": {
+      "remove_rank": 3
+    },
+    "candidate_group": "svd",
+    "processed_output_path": null,
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "mae": 0.01196429110052572,
+    "mse": 0.001364577648888009,
+    "rmse": 0.03694019015771317,
+    "psnr": 15.051817909562134,
+    "roi_energy_ratio": null,
+    "outside_roi_clutter_proxy": null,
+    "target_distortion_warning": false,
+    "false_enhancement_warning": false,
+    "runtime_seconds": 0.005727200012188405,
+    "warnings": [],
+    "selected": false,
+    "recommendation_label": "acceptable_alternative",
+    "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence"
+  },
+  {
+    "trial_id": "trial_007",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_mean",
+      "window_size": 31,
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "processed_output_path": null,
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "mae": 0.011964291100526181,
+    "mse": 0.0013645776488880096,
+    "rmse": 0.03694019015771318,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "outside_roi_clutter_proxy": null,
+    "target_distortion_warning": false,
+    "false_enhancement_warning": false,
+    "runtime_seconds": 0.00029469997389242053,
+    "warnings": [],
+    "selected": false,
+    "recommendation_label": "acceptable_alternative",
+    "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence"
+  },
+  {
+    "trial_id": "trial_008",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_mean",
+      "window_size": 41,
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "processed_output_path": null,
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "mae": 0.011964291100526506,
+    "mse": 0.0013645776488880098,
+    "rmse": 0.03694019015771318,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "outside_roi_clutter_proxy": null,
+    "target_distortion_warning": false,
+    "false_enhancement_warning": false,
+    "runtime_seconds": 0.0003179000341333449,
+    "warnings": [],
+    "selected": false,
+    "recommendation_label": "acceptable_alternative",
+    "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence"
+  },
+  {
+    "trial_id": "trial_002",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "global_median",
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "processed_output_path": null,
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "mae": 0.011964291100524571,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "outside_roi_clutter_proxy": null,
+    "target_distortion_warning": false,
+    "false_enhancement_warning": false,
+    "runtime_seconds": 0.0005239999736659229,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "selected": false,
+    "recommendation_label": "acceptable_alternative",
+    "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence"
+  },
+  {
+    "trial_id": "trial_009",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_median",
+      "window_size": 5,
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "processed_output_path": null,
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "mae": 0.011964291100524571,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "outside_roi_clutter_proxy": null,
+    "target_distortion_warning": false,
+    "false_enhancement_warning": false,
+    "runtime_seconds": 0.0011463999981060624,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "selected": false,
+    "recommendation_label": "acceptable_alternative",
+    "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence"
+  },
+  {
+    "trial_id": "trial_010",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_median",
+      "window_size": 9,
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "processed_output_path": null,
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "mae": 0.011964291100524571,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "outside_roi_clutter_proxy": null,
+    "target_distortion_warning": false,
+    "false_enhancement_warning": false,
+    "runtime_seconds": 0.001097199972718954,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "selected": false,
+    "recommendation_label": "acceptable_alternative",
+    "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence"
+  },
+  {
+    "trial_id": "trial_011",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_median",
+      "window_size": 15,
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "processed_output_path": null,
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "mae": 0.011964291100524571,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "outside_roi_clutter_proxy": null,
+    "target_distortion_warning": false,
+    "false_enhancement_warning": false,
+    "runtime_seconds": 0.0017249000375159085,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "selected": false,
+    "recommendation_label": "acceptable_alternative",
+    "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence"
+  },
+  {
+    "trial_id": "trial_012",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_median",
+      "window_size": 21,
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "processed_output_path": null,
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "mae": 0.011964291100524571,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "outside_roi_clutter_proxy": null,
+    "target_distortion_warning": false,
+    "false_enhancement_warning": false,
+    "runtime_seconds": 0.001725899986922741,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "selected": false,
+    "recommendation_label": "acceptable_alternative",
+    "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence"
+  },
+  {
+    "trial_id": "trial_013",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_median",
+      "window_size": 31,
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "processed_output_path": null,
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "mae": 0.011964291100524571,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "outside_roi_clutter_proxy": null,
+    "target_distortion_warning": false,
+    "false_enhancement_warning": false,
+    "runtime_seconds": 0.002498099987860769,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "selected": false,
+    "recommendation_label": "acceptable_alternative",
+    "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence"
+  },
+  {
+    "trial_id": "trial_014",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_median",
+      "window_size": 41,
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "processed_output_path": null,
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "mae": 0.011964291100524571,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "outside_roi_clutter_proxy": null,
+    "target_distortion_warning": false,
+    "false_enhancement_warning": false,
+    "runtime_seconds": 0.0039391000173054636,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "selected": false,
+    "recommendation_label": "acceptable_alternative",
+    "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence"
+  }
+]

@@ -80,3 +80,32 @@ Standardized metrics:
 - still not AutoTune evaluation
 - still not field validation
 
+## AT-BG-004A_GX008_scene002_background_suppression_diagnostic
+
+Path:
+autotune/AT-BG-004A_GX008_scene002_background_suppression_diagnostic/
+
+Role:
+synthetic_background_suppression_autotune_diagnostic
+
+Parent:
+gprmax/GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic/
+
+Source commit:
+12848a580aa0b8086576ecb946a7beef138349de
+
+Scope:
+background_suppression_only
+
+Candidate methods:
+mean / median / SVD
+
+Trial count:
+17
+
+Selected trial:
+trial_003
+
+Claim boundary:
+synthetic paired diagnostic only; background suppression only; not full AutoTune; not production scoring; not field validation; not AutoTune superiority evidence.
+

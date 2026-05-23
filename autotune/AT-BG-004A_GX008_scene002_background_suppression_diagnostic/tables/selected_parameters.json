@@ -1,0 +1,33 @@
+{
+  "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+  "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+  "selected": {
+    "trial_id": "trial_003",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_mean",
+      "window_size": 5,
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "processed_output_path": null,
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "mae": 0.011964291100524606,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "outside_roi_clutter_proxy": null,
+    "target_distortion_warning": false,
+    "false_enhancement_warning": false,
+    "runtime_seconds": 0.014105900016147643,
+    "warnings": [],
+    "selected": true,
+    "recommendation_label": "recommended",
+    "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence"
+  },
+  "scoring_rule": "primary mae asc, tie rmse asc, then psnr desc, with warning penalties and optional ROI preservation penalty",
+  "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence"
+}

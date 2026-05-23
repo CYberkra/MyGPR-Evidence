@@ -1,0 +1,171 @@
+{
+  "source_commit": "12848a580aa0b8086576ecb946a7beef138349de",
+  "script_name": "scripts/autotune_background_suppression_diagnostic.py",
+  "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+  "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+  "input_paths": {
+    "raw": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic\\arrays\\raw_bscan.csv",
+    "target_response": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic\\arrays\\target_response.csv",
+    "background": "",
+    "roi_json": ""
+  },
+  "output_files": [
+    "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\scratch\\AT-BG-004A\\GX-008_scene002\\trial_table.json",
+    "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\scratch\\AT-BG-004A\\GX-008_scene002\\trial_table.csv",
+    "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\scratch\\AT-BG-004A\\GX-008_scene002\\selected_parameters.json",
+    "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\scratch\\AT-BG-004A\\GX-008_scene002\\background_suppression_autotune_report.md",
+    "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\scratch\\AT-BG-004A\\GX-008_scene002\\background_suppression_autotune_manifest.json"
+  ],
+  "candidate_grid": [
+    {
+      "method": "mean_background_subtraction",
+      "parameter_set": {
+        "mode": "global_mean",
+        "axis": "trace"
+      },
+      "candidate_group": "mean"
+    },
+    {
+      "method": "median_background_subtraction",
+      "parameter_set": {
+        "mode": "global_median",
+        "axis": "trace"
+      },
+      "candidate_group": "median"
+    },
+    {
+      "method": "mean_background_subtraction",
+      "parameter_set": {
+        "mode": "moving_window_mean",
+        "window_size": 5,
+        "axis": "trace"
+      },
+      "candidate_group": "mean"
+    },
+    {
+      "method": "mean_background_subtraction",
+      "parameter_set": {
+        "mode": "moving_window_mean",
+        "window_size": 9,
+        "axis": "trace"
+      },
+      "candidate_group": "mean"
+    },
+    {
+      "method": "mean_background_subtraction",
+      "parameter_set": {
+        "mode": "moving_window_mean",
+        "window_size": 15,
+        "axis": "trace"
+      },
+      "candidate_group": "mean"
+    },
+    {
+      "method": "mean_background_subtraction",
+      "parameter_set": {
+        "mode": "moving_window_mean",
+        "window_size": 21,
+        "axis": "trace"
+      },
+      "candidate_group": "mean"
+    },
+    {
+      "method": "mean_background_subtraction",
+      "parameter_set": {
+        "mode": "moving_window_mean",
+        "window_size": 31,
+        "axis": "trace"
+      },
+      "candidate_group": "mean"
+    },
+    {
+      "method": "mean_background_subtraction",
+      "parameter_set": {
+        "mode": "moving_window_mean",
+        "window_size": 41,
+        "axis": "trace"
+      },
+      "candidate_group": "mean"
+    },
+    {
+      "method": "median_background_subtraction",
+      "parameter_set": {
+        "mode": "moving_window_median",
+        "window_size": 5,
+        "axis": "trace"
+      },
+      "candidate_group": "median"
+    },
+    {
+      "method": "median_background_subtraction",
+      "parameter_set": {
+        "mode": "moving_window_median",
+        "window_size": 9,
+        "axis": "trace"
+      },
+      "candidate_group": "median"
+    },
+    {
+      "method": "median_background_subtraction",
+      "parameter_set": {
+        "mode": "moving_window_median",
+        "window_size": 15,
+        "axis": "trace"
+      },
+      "candidate_group": "median"
+    },
+    {
+      "method": "median_background_subtraction",
+      "parameter_set": {
+        "mode": "moving_window_median",
+        "window_size": 21,
+        "axis": "trace"
+      },
+      "candidate_group": "median"
+    },
+    {
+      "method": "median_background_subtraction",
+      "parameter_set": {
+        "mode": "moving_window_median",
+        "window_size": 31,
+        "axis": "trace"
+      },
+      "candidate_group": "median"
+    },
+    {
+      "method": "median_background_subtraction",
+      "parameter_set": {
+        "mode": "moving_window_median",
+        "window_size": 41,
+        "axis": "trace"
+      },
+      "candidate_group": "median"
+    },
+    {
+      "method": "svd_background_suppression",
+      "parameter_set": {
+        "remove_rank": 1
+      },
+      "candidate_group": "svd"
+    },
+    {
+      "method": "svd_background_suppression",
+      "parameter_set": {
+        "remove_rank": 2
+      },
+      "candidate_group": "svd"
+    },
+    {
+      "method": "svd_background_suppression",
+      "parameter_set": {
+        "remove_rank": 3
+      },
+      "candidate_group": "svd"
+    }
+  ],
+  "scoring_rule": "primary mae asc, tie rmse asc, then psnr desc, with warning penalties and optional ROI preservation penalty",
+  "claim_boundary": "diagnostic-only background suppression autotune; not production scoring; not AutoTune superiority evidence; not field ground-truth correctness evidence",
+  "diagnostic_only": true,
+  "write_arrays": false,
+  "max_preview_candidates": null
+}

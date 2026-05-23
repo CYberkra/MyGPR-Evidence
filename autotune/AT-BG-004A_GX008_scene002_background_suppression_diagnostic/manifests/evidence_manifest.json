@@ -1,0 +1,41 @@
+{
+  "artifact_id": "AT-BG-004A_GX008_scene002_background_suppression_diagnostic",
+  "artifact_role": "synthetic_background_suppression_autotune_diagnostic",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "main",
+  "source_commit": "12848a580aa0b8086576ecb946a7beef138349de",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "evidence_branch": "main",
+  "parent_artifact": "gprmax/GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic/",
+  "parent_artifact_role": "synthetic_complete_2d_paired_diagnostic",
+  "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+  "input_shape": [
+    936,
+    41
+  ],
+  "target_reference": "target_response.csv",
+  "task_scope": "background_suppression_only",
+  "candidate_methods": [
+    "mean_background_subtraction",
+    "median_background_subtraction",
+    "svd_background_suppression"
+  ],
+  "trial_count": 17,
+  "selected_trial_id": "trial_003",
+  "production_scoring_changed": false,
+  "ui_integration": false,
+  "gprmax_rerun": false,
+  "field_validation": false,
+  "autotune_superiority_evidence": false,
+  "claim_boundary": [
+    "synthetic paired GX-008 scene_002 only",
+    "background suppression diagnostic only",
+    "fixed workflow parameter recommendation slice",
+    "not full AutoTune",
+    "not production scoring",
+    "not field validation",
+    "not no-prior truth correctness",
+    "not AutoTune superiority evidence",
+    "not paper-candidate benchmark"
+  ]
+}
