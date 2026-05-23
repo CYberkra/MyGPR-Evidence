@@ -40,5 +40,20 @@
     "not AutoTune superiority evidence",
     "not paper-candidate benchmark",
     "not representative CLT-GPR-style dataset replication"
-  ]
+  ],
+  "standard_metrics": {
+    "source_commit": "12848a580aa0b8086576ecb946a7beef138349de",
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "metrics_files": [
+      "tables/standard_paired_metrics.json",
+      "tables/standard_paired_metrics_summary.json",
+      "reports/standard_metrics_report.md"
+    ],
+    "claim_boundary": [
+      "metrics apply to synthetic paired data only",
+      "not valid as no-prior field ground truth",
+      "not AutoTune evaluation by itself",
+      "not AutoTune superiority evidence"
+    ]
+  }
 }

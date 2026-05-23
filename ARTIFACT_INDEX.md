@@ -73,3 +73,10 @@ Excluded native outputs:
 Claim boundary:
 synthetic scene_002 only; small-scale complete 2D paired diagnostic; not field validation; not AutoTune evaluation; not AutoTune superiority evidence; not paper-candidate benchmark; not full CLT-GPR dataset replication.
 
+Standardized metrics:
+- added: yes
+- metrics schema: synthetic_paired_metrics_v1
+- metrics source commit: 12848a580aa0b8086576ecb946a7beef138349de
+- still not AutoTune evaluation
+- still not field validation
+
