@@ -1,0 +1,45 @@
+{
+  "schema_version": "gprmax_campaign_run_manifest_v1",
+  "campaign_id": "GX-008_paper_inspired_mini_benchmark_draft",
+  "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+  "variant": "raw_with_target",
+  "model_path": "D:\\CDUT-UavGPR-Controller\\MyGPR\\experiments\\gprmax\\GX-008\\models\\scene_002_flat_damp_sand_pec_shallow\\raw_with_target.in",
+  "output_dir": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008\\scene_002_flat_damp_sand_pec_shallow\\raw_with_target",
+  "command": [
+    "E:\\gprMax\\gprMax-v.3.1.7\\.venv\\Scripts\\python.exe",
+    "-m",
+    "gprMax",
+    "D:\\CDUT-UavGPR-Controller\\MyGPR\\experiments\\gprmax\\GX-008\\models\\scene_002_flat_damp_sand_pec_shallow\\raw_with_target.in",
+    "-n",
+    "41",
+    "-gpu",
+    "0"
+  ],
+  "gprmax_python": "E:\\gprMax\\gprMax-v.3.1.7\\.venv\\Scripts\\python.exe",
+  "gprmax_command_mode": "python_module",
+  "status": "success",
+  "run_status": "success",
+  "return_code": 0,
+  "started_at": "2026-05-23T14:05:00.466516+00:00",
+  "ended_at": "2026-05-23T14:09:13.371651+00:00",
+  "runtime_seconds": 252.90630259999307,
+  "stdout_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008\\scene_002_flat_damp_sand_pec_shallow\\raw_with_target\\stdout.log",
+  "stderr_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008\\scene_002_flat_damp_sand_pec_shallow\\raw_with_target\\stderr.log",
+  "manifest_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008\\scene_002_flat_damp_sand_pec_shallow\\raw_with_target\\run_manifest.json",
+  "timeout_seconds": 1800.0,
+  "requested_num_runs": 41,
+  "gpu_requested": true,
+  "gpu_flag_emitted": true,
+  "gpu_device_ids": [
+    0
+  ],
+  "nvcc_available": true,
+  "pycuda_available": true,
+  "gpu_warning": null,
+  "startup_error": false,
+  "error_message": null,
+  "host": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_version": "3.13.12"
+  }
+}

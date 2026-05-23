@@ -37,3 +37,39 @@
 | NP-002 | https://github.com/CYberkra/MyGPR | codex/research-gprmax-autotune | 9e0a0c2001cdbc61d67015a37d9dabaf66455a3c | field/NP-002_no_prior_processing_safety_pilot/ | NP-001 high-risk no-prior set (3 lines) | no-prior processing safety pilot | no | yes | n/a | Uses NP-001 warnings to define conservative no-prior behavior: warn first, block aggressive automatic recommendation paths, block amplitude/target claims, and require manual review; no AutoTune or processing pipeline execution. | field/NP-002_no_prior_processing_safety_pilot/reports/no_prior_processing_safety_pilot_report.md |
 | DS-001 | https://github.com/CYberkra/MyGPR | codex/research-gprmax-autotune | 9e0a0c2001cdbc61d67015a37d9dabaf66455a3c | field/DS-001_local_field_dataset_inventory/ | Local dataset root `02_Preprocessed_Standard` (YingShan/YaAn) | local dataset inventory / raw QC audit | no | yes | n/a | Inventory-only artifact with recursive file scan, metadata hashes, H5/model asset summary, and lightweight field-line preview/decay diagnostics; no AutoTune run, no underground correctness claim, and no large raw data committed. | field/DS-001_local_field_dataset_inventory/reports/local_field_dataset_inventory_report.md |
 
+## GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic
+
+Path:
+gprmax/GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic/
+
+Source repo:
+https://github.com/CYberkra/MyGPR
+
+Source commit:
+12848a580aa0b8086576ecb946a7beef138349de
+
+Artifact role:
+synthetic_complete_2d_paired_diagnostic
+
+Scene:
+scene_002_flat_damp_sand_pec_shallow
+
+Shapes:
+- raw: [936, 41]
+- background: [936, 41]
+- target_response: [936, 41]
+
+Requested / actual trace count:
+- requested_num_runs: 41
+- actual_raw_trace_count: 41
+- actual_background_trace_count: 41
+
+Final backend:
+GPU via scripts/run_gprmax_gpu_env.bat
+
+Excluded native outputs:
+.out, .h5, .vti, .vtk, .vtu, .npy
+
+Claim boundary:
+synthetic scene_002 only; small-scale complete 2D paired diagnostic; not field validation; not AutoTune evaluation; not AutoTune superiority evidence; not paper-candidate benchmark; not full CLT-GPR dataset replication.
+

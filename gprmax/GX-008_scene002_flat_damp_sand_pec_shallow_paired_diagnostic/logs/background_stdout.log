@@ -1,0 +1,2038 @@
+
+=== Electromagnetic modelling software based on the Finite-Difference Time-Domain (FDTD) method 
+
+    www.gprmax.com   __  __
+     __ _ _ __  _ __|  \/  | __ ___  __
+    / _` | '_ \| '__| |\/| |/ _` \ \/ /
+   | (_| | |_) | |  | |  | | (_| |>  <
+    \__, | .__/|_|  |_|  |_|\__,_/_/\_\
+    |___/|_|
+                     v3.1.6 (Big Smoke)
+
+ Copyright (C) 2015-2023: The University of Edinburgh
+ Authors: Craig Warren and Antonis Giannopoulos
+
+ gprMax is free software: you can redistribute it and/or modify it under the
+  terms of the GNU General Public License as published by the Free Software
+  Foundation, either version 3 of the License, or (at your option) any later
+  version.
+ gprMax is distributed in the hope that it will be useful, but WITHOUT ANY
+  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+  A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ You should have received a copy of the GNU General Public License along with
+  gprMax.  If not, see www.gnu.org/licenses.
+
+Host: DESKTOP-DGLCK4J | Dell Inc. Dell G15 5511 | 0 x unknown (8 cores, 16 cores with Hyper-Threading) | 15.8GiB RAM | Windows 10 (64-bit)
+GPU(s) detected: 0 - NVIDIA GeForce RTX 3060 Laptop GPU, 6GiB
+
+--- Model 1/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 1, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 30.02cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 86.38it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 39.87it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background1.vti:   0%| | 0.00/6.Writing geometry view file 1/1, gx008_scene002_background1.vti: 100%|¨€| 6.00M/6
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only1.out
+
+Running simulation, model 1/41:   0%|                  | 0/936 [00:00<?, ?it/s]Running simulation, model 1/41:  14%|¨‚     | 134/936 [00:00<00:00, 1338.45it/s]Running simulation, model 1/41:  31%|¨€¨‚    | 292/936 [00:00<00:00, 1479.04it/s]Running simulation, model 1/41:  47%|¨€¨€¨‚   | 440/936 [00:00<00:00, 1438.04it/s]Running simulation, model 1/41:  62%|¨€¨€¨€¨ƒ  | 584/936 [00:00<00:00, 1356.27it/s]Running simulation, model 1/41:  77%|¨€¨€¨€¨€¨„ | 721/936 [00:00<00:00, 1238.28it/s]Running simulation, model 1/41:  90%|¨€¨€¨€¨€¨€¨…| 847/936 [00:00<00:00, 1218.22it/s]Running simulation, model 1/41: 100%|¨€¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1286.37it/s]
+Memory (RAM) used: ~247MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.741057
+
+--- Model 2/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 2, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 20.97cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 71.59it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 28.34it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background2.vti:   0%| | 0.00/6.Writing geometry view file 1/1, gx008_scene002_background2.vti: 100%|¨€| 6.00M/6
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only2.out
+
+Running simulation, model 2/41:   0%|                  | 0/936 [00:00<?, ?it/s]Running simulation, model 2/41:  17%|¨€     | 158/936 [00:00<00:00, 1565.06it/s]Running simulation, model 2/41:  34%|¨€¨€    | 315/936 [00:00<00:00, 1475.36it/s]Running simulation, model 2/41:  49%|¨€¨€¨   | 463/936 [00:00<00:00, 1435.53it/s]Running simulation, model 2/41:  65%|¨€¨€¨€¨  | 607/936 [00:00<00:00, 1318.68it/s]Running simulation, model 2/41:  80%|¨€¨€¨€¨€¨‚ | 749/936 [00:00<00:00, 1314.21it/s]Running simulation, model 2/41:  95%|¨€¨€¨€¨€¨€¨ƒ| 889/936 [00:00<00:00, 1338.87it/s]Running simulation, model 2/41: 100%|¨€¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1356.91it/s]
+Memory (RAM) used: ~248MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.733794
+
+--- Model 3/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 3, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 28.87cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 91.26it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 35.34it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background3.vti:   0%| | 0.00/6.Writing geometry view file 1/1, gx008_scene002_background3.vti: 100%|¨€| 6.00M/6
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only3.out
+
+Running simulation, model 3/41:   0%|                  | 0/936 [00:00<?, ?it/s]Running simulation, model 3/41:  19%|¨€¨‡    | 179/936 [00:00<00:00, 1594.39it/s]Running simulation, model 3/41:  36%|¨€¨€¨‡   | 339/936 [00:00<00:00, 1472.44it/s]Running simulation, model 3/41:  52%|¨€¨€¨€   | 487/936 [00:00<00:00, 1360.90it/s]Running simulation, model 3/41:  67%|¨€¨€¨€¨€  | 630/936 [00:00<00:00, 1381.20it/s]Running simulation, model 3/41:  82%|¨€¨€¨€¨€¨ | 769/936 [00:00<00:00, 1312.75it/s]Running simulation, model 3/41:  97%|¨€¨€¨€¨€¨€¨‚| 905/936 [00:00<00:00, 1309.70it/s]Running simulation, model 3/41: 100%|¨€¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1359.78it/s]
+Memory (RAM) used: ~248MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.736378
+
+--- Model 4/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 4, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 28.40cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 101.72it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 35.53it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background4.vti:   0%| | 0.00/6.Writing geometry view file 1/1, gx008_scene002_background4.vti: 100%|¨€| 6.00M/6
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only4.out
+
+Running simulation, model 4/41:   0%|                  | 0/936 [00:00<?, ?it/s]Running simulation, model 4/41:  20%|¨€¨‡    | 184/936 [00:00<00:00, 1821.74it/s]Running simulation, model 4/41:  39%|¨€¨€¨†   | 367/936 [00:00<00:00, 1418.45it/s]Running simulation, model 4/41:  55%|¨€¨€¨€¨†  | 515/936 [00:00<00:00, 1332.61it/s]Running simulation, model 4/41:  70%|¨€¨€¨€¨€¨‡ | 651/936 [00:00<00:00, 1331.68it/s]Running simulation, model 4/41:  84%|¨€¨€¨€¨€¨€ | 786/936 [00:00<00:00, 1296.35it/s]Running simulation, model 4/41:  98%|¨€¨€¨€¨€¨€¨| 917/936 [00:00<00:00, 1288.36it/s]Running simulation, model 4/41: 100%|¨€¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1345.54it/s]
+Memory (RAM) used: ~248MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.740338
+
+--- Model 5/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 5, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 27.09cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 100.19it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 35.35it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background5.vti:   0%| | 0.00/6.Writing geometry view file 1/1, gx008_scene002_background5.vti: 100%|¨€| 6.00M/6
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only5.out
+
+Running simulation, model 5/41:   0%|                  | 0/936 [00:00<?, ?it/s]Running simulation, model 5/41:  19%|¨€¨‡    | 180/936 [00:00<00:00, 1798.63it/s]Running simulation, model 5/41:  38%|¨€¨€¨†   | 360/936 [00:00<00:00, 1496.36it/s]Running simulation, model 5/41:  55%|¨€¨€¨€¨†  | 513/936 [00:00<00:00, 1363.77it/s]Running simulation, model 5/41:  70%|¨€¨€¨€¨€¨‡ | 652/936 [00:00<00:00, 1312.33it/s]Running simulation, model 5/41:  84%|¨€¨€¨€¨€¨€ | 789/936 [00:00<00:00, 1301.72it/s]Running simulation, model 5/41:  99%|¨€¨€¨€¨€¨€¨| 923/936 [00:00<00:00, 1313.43it/s]Running simulation, model 5/41: 100%|¨€¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1361.52it/s]
+Memory (RAM) used: ~248MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.734907
+
+--- Model 6/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 6, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 29.72cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 89.63it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 40.16it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background6.vti:   0%| | 0.00/6.Writing geometry view file 1/1, gx008_scene002_background6.vti: 100%|¨€| 6.00M/6
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only6.out
+
+Running simulation, model 6/41:   0%|                  | 0/936 [00:00<?, ?it/s]Running simulation, model 6/41:  19%|¨€¨‡    | 181/936 [00:00<00:00, 1804.53it/s]Running simulation, model 6/41:  39%|¨€¨€¨†   | 362/936 [00:00<00:00, 1443.59it/s]Running simulation, model 6/41:  55%|¨€¨€¨€¨†  | 511/936 [00:00<00:00, 1370.59it/s]Running simulation, model 6/41:  70%|¨€¨€¨€¨€¨‡ | 651/936 [00:00<00:00, 1320.86it/s]Running simulation, model 6/41:  84%|¨€¨€¨€¨€¨€ | 785/936 [00:00<00:00, 1307.57it/s]Running simulation, model 6/41:  98%|¨€¨€¨€¨€¨€¨| 917/936 [00:00<00:00, 1297.53it/s]Running simulation, model 6/41: 100%|¨€¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1353.23it/s]
+Memory (RAM) used: ~248MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.741831
+
+--- Model 7/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 7, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 29.36cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 105.42it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 40.03it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background7.vti:   0%| | 0.00/6.Writing geometry view file 1/1, gx008_scene002_background7.vti: 100%|¨€| 6.00M/6
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only7.out
+
+Running simulation, model 7/41:   0%|                  | 0/936 [00:00<?, ?it/s]Running simulation, model 7/41:  19%|¨€¨‡    | 181/936 [00:00<00:00, 1677.26it/s]Running simulation, model 7/41:  37%|¨€¨€¨‡   | 349/936 [00:00<00:00, 1450.98it/s]Running simulation, model 7/41:  53%|¨€¨€¨€¨‡  | 496/936 [00:00<00:00, 1379.34it/s]Running simulation, model 7/41:  68%|¨€¨€¨€¨€  | 635/936 [00:00<00:00, 1303.69it/s]Running simulation, model 7/41:  83%|¨€¨€¨€¨€¨ | 779/936 [00:00<00:00, 1341.70it/s]Running simulation, model 7/41:  98%|¨€¨€¨€¨€¨€¨‚| 914/936 [00:00<00:00, 1289.01it/s]Running simulation, model 7/41: 100%|¨€¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1357.52it/s]
+Memory (RAM) used: ~248MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.737306
+
+--- Model 8/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 8, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 21.98cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 92.23it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 36.89it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background8.vti:   0%| | 0.00/6.Writing geometry view file 1/1, gx008_scene002_background8.vti: 100%|¨€| 6.00M/6
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only8.out
+
+Running simulation, model 8/41:   0%|                  | 0/936 [00:00<?, ?it/s]Running simulation, model 8/41:  19%|¨€     | 175/936 [00:00<00:00, 1749.93it/s]Running simulation, model 8/41:  37%|¨€¨€¨‡   | 350/936 [00:00<00:00, 1424.08it/s]Running simulation, model 8/41:  53%|¨€¨€¨€¨‡  | 497/936 [00:00<00:00, 1308.71it/s]Running simulation, model 8/41:  68%|¨€¨€¨€¨€  | 633/936 [00:00<00:00, 1292.63it/s]Running simulation, model 8/41:  82%|¨€¨€¨€¨€¨ | 765/936 [00:00<00:00, 1263.68it/s]Running simulation, model 8/41:  97%|¨€¨€¨€¨€¨€¨‚| 905/936 [00:00<00:00, 1301.98it/s]Running simulation, model 8/41: 100%|¨€¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1310.75it/s]
+Memory (RAM) used: ~248MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.753526
+
+--- Model 9/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 9, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 25.58cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 100.87it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 37.17it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background9.vti:   0%| | 0.00/6.Writing geometry view file 1/1, gx008_scene002_background9.vti: 100%|¨€| 6.00M/6
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only9.out
+
+Running simulation, model 9/41:   0%|                  | 0/936 [00:00<?, ?it/s]Running simulation, model 9/41:  19%|¨€     | 174/936 [00:00<00:00, 1730.89it/s]Running simulation, model 9/41:  37%|¨€¨€¨‡   | 348/936 [00:00<00:00, 1443.92it/s]Running simulation, model 9/41:  53%|¨€¨€¨€¨‡  | 496/936 [00:00<00:00, 1366.42it/s]Running simulation, model 9/41:  68%|¨€¨€¨€¨€  | 635/936 [00:00<00:00, 1366.24it/s]Running simulation, model 9/41:  83%|¨€¨€¨€¨€¨ | 773/936 [00:00<00:00, 1298.49it/s]Running simulation, model 9/41:  97%|¨€¨€¨€¨€¨€¨‚| 911/936 [00:00<00:00, 1321.84it/s]Running simulation, model 9/41: 100%|¨€¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1341.37it/s]
+Memory (RAM) used: ~248MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.738819
+
+--- Model 10/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 10, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 22.23cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 74.40it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 31.53it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background10.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background10.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only10.out
+
+Running simulation, model 10/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 10/41:  19%|¨    | 176/936 [00:00<00:00, 1745.79it/s]Running simulation, model 10/41:  38%|¨€¨   | 351/936 [00:00<00:00, 1453.60it/s]Running simulation, model 10/41:  53%|¨€¨€¨ƒ  | 500/936 [00:00<00:00, 1297.45it/s]Running simulation, model 10/41:  68%|¨€¨€¨€¨… | 633/936 [00:00<00:00, 1293.72it/s]Running simulation, model 10/41:  82%|¨€¨€¨€¨€ | 764/936 [00:00<00:00, 1294.75it/s]Running simulation, model 10/41:  96%|¨€¨€¨€¨€¨‚| 898/936 [00:00<00:00, 1300.55it/s]Running simulation, model 10/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1318.44it/s]
+Memory (RAM) used: ~248MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.751640
+
+--- Model 11/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 11, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 21.77cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 82.96it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 40.03it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background11.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background11.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only11.out
+
+Running simulation, model 11/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 11/41:  19%|¨    | 180/936 [00:00<00:00, 1761.52it/s]Running simulation, model 11/41:  38%|¨€¨   | 357/936 [00:00<00:00, 1480.21it/s]Running simulation, model 11/41:  54%|¨€¨€¨ƒ  | 508/936 [00:00<00:00, 1355.04it/s]Running simulation, model 11/41:  69%|¨€¨€¨€¨… | 646/936 [00:00<00:00, 1348.63it/s]Running simulation, model 11/41:  84%|¨€¨€¨€¨€¨‡| 782/936 [00:00<00:00, 1300.73it/s]Running simulation, model 11/41:  98%|¨€¨€¨€¨€¨| 917/936 [00:00<00:00, 1304.77it/s]Running simulation, model 11/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1346.93it/s]
+Memory (RAM) used: ~250MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.737448
+
+--- Model 12/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 12, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 23.69cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 91.00it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 36.87it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background12.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background12.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only12.out
+
+Running simulation, model 12/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 12/41:  20%|¨    | 183/936 [00:00<00:00, 1813.27it/s]Running simulation, model 12/41:  39%|¨€¨   | 365/936 [00:00<00:00, 1494.15it/s]Running simulation, model 12/41:  55%|¨€¨€¨‚  | 518/936 [00:00<00:00, 1361.44it/s]Running simulation, model 12/41:  70%|¨€¨€¨€¨„ | 657/936 [00:00<00:00, 1352.63it/s]Running simulation, model 12/41:  85%|¨€¨€¨€¨€¨‡| 794/936 [00:00<00:00, 1307.69it/s]Running simulation, model 12/41:  99%|¨€¨€¨€¨€¨| 927/936 [00:00<00:00, 1307.62it/s]Running simulation, model 12/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1363.55it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.733617
+
+--- Model 13/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 13, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 24.58cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 101.51it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 37.74it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background13.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background13.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only13.out
+
+Running simulation, model 13/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 13/41:  20%|¨    | 183/936 [00:00<00:00, 1672.94it/s]Running simulation, model 13/41:  38%|¨€¨   | 351/936 [00:00<00:00, 1470.64it/s]Running simulation, model 13/41:  53%|¨€¨€¨ƒ  | 500/936 [00:00<00:00, 1347.22it/s]Running simulation, model 13/41:  68%|¨€¨€¨€¨… | 637/936 [00:00<00:00, 1354.63it/s]Running simulation, model 13/41:  83%|¨€¨€¨€¨€¨‡| 774/936 [00:00<00:00, 1328.72it/s]Running simulation, model 13/41:  97%|¨€¨€¨€¨€¨‚| 908/936 [00:00<00:00, 1327.28it/s]Running simulation, model 13/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1354.09it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.734837
+
+--- Model 14/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 14, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 28.26cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 107.93it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 35.05it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background14.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background14.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only14.out
+
+Running simulation, model 14/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 14/41:  18%|¨    | 171/936 [00:00<00:00, 1700.12it/s]Running simulation, model 14/41:  37%|¨€¨‚   | 342/936 [00:00<00:00, 1454.26it/s]Running simulation, model 14/41:  52%|¨€¨€¨„  | 490/936 [00:00<00:00, 1382.34it/s]Running simulation, model 14/41:  67%|¨€¨€¨€¨† | 630/936 [00:00<00:00, 1308.44it/s]Running simulation, model 14/41:  81%|¨€¨€¨€¨€ | 762/936 [00:00<00:00, 1299.81it/s]Running simulation, model 14/41:  95%|¨€¨€¨€¨€¨‚| 893/936 [00:00<00:00, 1278.30it/s]Running simulation, model 14/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1334.33it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.744330
+
+--- Model 15/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 15, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 26.01cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 101.64it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 36.53it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background15.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background15.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only15.out
+
+Running simulation, model 15/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 15/41:  19%|¨    | 179/936 [00:00<00:00, 1784.69it/s]Running simulation, model 15/41:  38%|¨€¨   | 358/936 [00:00<00:00, 1434.29it/s]Running simulation, model 15/41:  54%|¨€¨€¨ƒ  | 506/936 [00:00<00:00, 1412.22it/s]Running simulation, model 15/41:  69%|¨€¨€¨€¨… | 650/936 [00:00<00:00, 1327.15it/s]Running simulation, model 15/41:  84%|¨€¨€¨€¨€¨‡| 785/936 [00:00<00:00, 1313.33it/s]Running simulation, model 15/41:  98%|¨€¨€¨€¨€¨| 918/936 [00:00<00:00, 1313.50it/s]Running simulation, model 15/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1348.47it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.736849
+
+--- Model 16/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 16, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 27.62cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 94.75it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 37.23it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background16.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background16.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only16.out
+
+Running simulation, model 16/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 16/41:  18%|¨    | 173/936 [00:00<00:00, 1727.95it/s]Running simulation, model 16/41:  37%|¨€¨‚   | 346/936 [00:00<00:00, 1393.33it/s]Running simulation, model 16/41:  52%|¨€¨€¨„  | 490/936 [00:00<00:00, 1406.67it/s]Running simulation, model 16/41:  68%|¨€¨€¨€¨… | 634/936 [00:00<00:00, 1366.45it/s]Running simulation, model 16/41:  82%|¨€¨€¨€¨€ | 772/936 [00:00<00:00, 1282.20it/s]Running simulation, model 16/41:  96%|¨€¨€¨€¨€¨‚| 902/936 [00:00<00:00, 1280.99it/s]Running simulation, model 16/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1355.10it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.737895
+
+--- Model 17/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 17, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 26.55cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 83.50it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 35.21it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background17.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background17.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only17.out
+
+Running simulation, model 17/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 17/41:  20%|¨    | 184/936 [00:00<00:00, 1712.45it/s]Running simulation, model 17/41:  38%|¨€¨   | 356/936 [00:00<00:00, 1457.83it/s]Running simulation, model 17/41:  54%|¨€¨€¨ƒ  | 504/936 [00:00<00:00, 1335.67it/s]Running simulation, model 17/41:  68%|¨€¨€¨€¨… | 639/936 [00:00<00:00, 1318.94it/s]Running simulation, model 17/41:  83%|¨€¨€¨€¨€¨‡| 775/936 [00:00<00:00, 1298.08it/s]Running simulation, model 17/41:  97%|¨€¨€¨€¨€¨‚| 910/936 [00:00<00:00, 1286.07it/s]Running simulation, model 17/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1350.06it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.739977
+
+--- Model 18/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 18, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 26.23cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 79.63it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 34.07it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background18.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background18.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only18.out
+
+Running simulation, model 18/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 18/41:  18%|¨    | 171/936 [00:00<00:00, 1704.24it/s]Running simulation, model 18/41:  37%|¨€¨‚   | 342/936 [00:00<00:00, 1480.04it/s]Running simulation, model 18/41:  53%|¨€¨€¨ƒ  | 492/936 [00:00<00:00, 1367.67it/s]Running simulation, model 18/41:  67%|¨€¨€¨€¨† | 631/936 [00:00<00:00, 1339.95it/s]Running simulation, model 18/41:  82%|¨€¨€¨€¨€ | 768/936 [00:00<00:00, 1331.77it/s]Running simulation, model 18/41:  96%|¨€¨€¨€¨€¨‚| 902/936 [00:00<00:00, 1293.01it/s]Running simulation, model 18/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1362.99it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.735123
+
+--- Model 19/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 19, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 29.17cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 95.80it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 41.05it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background19.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background19.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only19.out
+
+Running simulation, model 19/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 19/41:  19%|¨    | 178/936 [00:00<00:00, 1769.74it/s]Running simulation, model 19/41:  38%|¨€¨   | 355/936 [00:00<00:00, 1474.89it/s]Running simulation, model 19/41:  54%|¨€¨€¨ƒ  | 506/936 [00:00<00:00, 1391.01it/s]Running simulation, model 19/41:  69%|¨€¨€¨€¨… | 647/936 [00:00<00:00, 1347.74it/s]Running simulation, model 19/41:  84%|¨€¨€¨€¨€¨‡| 783/936 [00:00<00:00, 1311.37it/s]Running simulation, model 19/41:  98%|¨€¨€¨€¨€¨| 915/936 [00:00<00:00, 1310.64it/s]Running simulation, model 19/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1353.64it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.735399
+
+--- Model 20/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 20, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 25.73cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 92.97it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 32.74it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background20.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background20.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only20.out
+
+Running simulation, model 20/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 20/41:  18%|¨    | 170/936 [00:00<00:00, 1688.85it/s]Running simulation, model 20/41:  36%|¨€¨‚   | 339/936 [00:00<00:00, 1443.49it/s]Running simulation, model 20/41:  52%|¨€¨€¨„  | 486/936 [00:00<00:00, 1339.93it/s]Running simulation, model 20/41:  66%|¨€¨€¨€¨† | 622/936 [00:00<00:00, 1306.48it/s]Running simulation, model 20/41:  81%|¨€¨€¨€¨€ | 754/936 [00:00<00:00, 1271.74it/s]Running simulation, model 20/41:  96%|¨€¨€¨€¨€¨‚| 894/936 [00:00<00:00, 1286.62it/s]Running simulation, model 20/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1345.74it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.745825
+
+--- Model 21/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 21, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 26.18cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 78.70it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 32.11it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background21.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background21.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only21.out
+
+Running simulation, model 21/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 21/41:  19%|¨    | 177/936 [00:00<00:00, 1747.96it/s]Running simulation, model 21/41:  38%|¨€¨   | 352/936 [00:00<00:00, 1363.17it/s]Running simulation, model 21/41:  53%|¨€¨€¨ƒ  | 494/936 [00:00<00:00, 1353.01it/s]Running simulation, model 21/41:  68%|¨€¨€¨€¨… | 632/936 [00:00<00:00, 1320.28it/s]Running simulation, model 21/41:  82%|¨€¨€¨€¨€ | 766/936 [00:00<00:00, 1284.56it/s]Running simulation, model 21/41:  96%|¨€¨€¨€¨€¨‚| 896/936 [00:00<00:00, 1266.59it/s]Running simulation, model 21/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1303.41it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.770288
+
+--- Model 22/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 22, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 26.63cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 97.81it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 35.66it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background22.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background22.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only22.out
+
+Running simulation, model 22/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 22/41:  20%|¨    | 187/936 [00:00<00:00, 1802.07it/s]Running simulation, model 22/41:  39%|¨€¨   | 368/936 [00:00<00:00, 1429.75it/s]Running simulation, model 22/41:  55%|¨€¨€¨‚  | 516/936 [00:00<00:00, 1402.08it/s]Running simulation, model 22/41:  70%|¨€¨€¨€¨„ | 659/936 [00:00<00:00, 1330.19it/s]Running simulation, model 22/41:  85%|¨€¨€¨€¨€¨†| 798/936 [00:00<00:00, 1319.67it/s]Running simulation, model 22/41: 100%|¨€¨€¨€¨€¨| 932/936 [00:00<00:00, 1291.72it/s]Running simulation, model 22/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1350.06it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.733356
+
+--- Model 23/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 23, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 25.75cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 82.28it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 33.42it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background23.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background23.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only23.out
+
+Running simulation, model 23/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 23/41:  19%|¨    | 177/936 [00:00<00:00, 1765.75it/s]Running simulation, model 23/41:  38%|¨€¨   | 354/936 [00:00<00:00, 1455.94it/s]Running simulation, model 23/41:  54%|¨€¨€¨ƒ  | 503/936 [00:00<00:00, 1371.25it/s]Running simulation, model 23/41:  69%|¨€¨€¨€¨… | 642/936 [00:00<00:00, 1345.38it/s]Running simulation, model 23/41:  83%|¨€¨€¨€¨€¨‡| 778/936 [00:00<00:00, 1294.99it/s]Running simulation, model 23/41:  98%|¨€¨€¨€¨€¨| 919/936 [00:00<00:00, 1320.62it/s]Running simulation, model 23/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1348.33it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.736267
+
+--- Model 24/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 24, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 28.82cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 88.17it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 34.29it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background24.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background24.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only24.out
+
+Running simulation, model 24/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 24/41:  19%|¨    | 175/936 [00:00<00:00, 1745.83it/s]Running simulation, model 24/41:  37%|¨€¨‚   | 350/936 [00:00<00:00, 1494.30it/s]Running simulation, model 24/41:  54%|¨€¨€¨ƒ  | 502/936 [00:00<00:00, 1366.83it/s]Running simulation, model 24/41:  68%|¨€¨€¨€¨… | 641/936 [00:00<00:00, 1341.89it/s]Running simulation, model 24/41:  83%|¨€¨€¨€¨€¨‡| 776/936 [00:00<00:00, 1310.97it/s]Running simulation, model 24/41:  97%|¨€¨€¨€¨€¨‚| 908/936 [00:00<00:00, 1291.65it/s]Running simulation, model 24/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1332.80it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.740148
+
+--- Model 25/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 25, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 26.26cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 92.78it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 39.42it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background25.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background25.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only25.out
+
+Running simulation, model 25/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 25/41:  18%|¨    | 170/936 [00:00<00:00, 1688.81it/s]Running simulation, model 25/41:  36%|¨€¨‚   | 339/936 [00:00<00:00, 1454.71it/s]Running simulation, model 25/41:  52%|¨€¨€¨„  | 487/936 [00:00<00:00, 1388.53it/s]Running simulation, model 25/41:  67%|¨€¨€¨€¨† | 627/936 [00:00<00:00, 1337.76it/s]Running simulation, model 25/41:  82%|¨€¨€¨€¨€ | 767/936 [00:00<00:00, 1291.63it/s]Running simulation, model 25/41:  98%|¨€¨€¨€¨€¨| 914/936 [00:00<00:00, 1344.94it/s]Running simulation, model 25/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1368.06it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.736063
+
+--- Model 26/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 26, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 20.30cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 69.62it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 31.43it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background26.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background26.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only26.out
+
+Running simulation, model 26/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 26/41:  20%|¨    | 184/936 [00:00<00:00, 1833.14it/s]Running simulation, model 26/41:  39%|¨€¨   | 368/936 [00:00<00:00, 1443.96it/s]Running simulation, model 26/41:  55%|¨€¨€¨‚  | 518/936 [00:00<00:00, 1366.75it/s]Running simulation, model 26/41:  70%|¨€¨€¨€¨„ | 658/936 [00:00<00:00, 1308.75it/s]Running simulation, model 26/41:  85%|¨€¨€¨€¨€¨‡| 791/936 [00:00<00:00, 1255.44it/s]Running simulation, model 26/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1350.12it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.743467
+
+--- Model 27/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 27, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 21.11cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 98.29it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 36.59it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background27.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background27.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only27.out
+
+Running simulation, model 27/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 27/41:  20%|¨    | 184/936 [00:00<00:00, 1660.17it/s]Running simulation, model 27/41:  38%|¨€¨   | 351/936 [00:00<00:00, 1462.97it/s]Running simulation, model 27/41:  53%|¨€¨€¨ƒ  | 499/936 [00:00<00:00, 1391.75it/s]Running simulation, model 27/41:  68%|¨€¨€¨€¨… | 639/936 [00:00<00:00, 1351.90it/s]Running simulation, model 27/41:  83%|¨€¨€¨€¨€¨‡| 775/936 [00:00<00:00, 1266.39it/s]Running simulation, model 27/41:  98%|¨€¨€¨€¨€¨| 915/936 [00:00<00:00, 1307.27it/s]Running simulation, model 27/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1332.40it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.739896
+
+--- Model 28/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 28, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 29.52cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 100.25it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 36.35it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background28.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background28.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only28.out
+
+Running simulation, model 28/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 28/41:  20%|¨    | 183/936 [00:00<00:00, 1809.49it/s]Running simulation, model 28/41:  39%|¨€¨   | 364/936 [00:00<00:00, 1418.15it/s]Running simulation, model 28/41:  55%|¨€¨€¨ƒ  | 511/936 [00:00<00:00, 1425.48it/s]Running simulation, model 28/41:  70%|¨€¨€¨€¨„ | 657/936 [00:00<00:00, 1355.76it/s]Running simulation, model 28/41:  85%|¨€¨€¨€¨€¨‡| 795/936 [00:00<00:00, 1326.44it/s]Running simulation, model 28/41:  99%|¨€¨€¨€¨€¨| 929/936 [00:00<00:00, 1295.07it/s]Running simulation, model 28/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1356.64it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.734334
+
+--- Model 29/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 29, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 26.98cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 115.17it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 34.19it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background29.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background29.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only29.out
+
+Running simulation, model 29/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 29/41:  19%|¨    | 179/936 [00:00<00:00, 1772.61it/s]Running simulation, model 29/41:  38%|¨€¨   | 357/936 [00:00<00:00, 1503.31it/s]Running simulation, model 29/41:  54%|¨€¨€¨ƒ  | 510/936 [00:00<00:00, 1389.57it/s]Running simulation, model 29/41:  70%|¨€¨€¨€¨… | 651/936 [00:00<00:00, 1322.82it/s]Running simulation, model 29/41:  84%|¨€¨€¨€¨€¨‡| 785/936 [00:00<00:00, 1324.17it/s]Running simulation, model 29/41:  98%|¨€¨€¨€¨€¨| 918/936 [00:00<00:00, 1313.60it/s]Running simulation, model 29/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1369.22it/s]
+Memory (RAM) used: ~248MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.734778
+
+--- Model 30/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 30, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 27.23cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 84.87it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 34.29it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background30.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background30.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only30.out
+
+Running simulation, model 30/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 30/41:  19%|¨    | 178/936 [00:00<00:00, 1724.58it/s]Running simulation, model 30/41:  38%|¨€¨   | 351/936 [00:00<00:00, 1401.07it/s]Running simulation, model 30/41:  53%|¨€¨€¨ƒ  | 495/936 [00:00<00:00, 1329.39it/s]Running simulation, model 30/41:  67%|¨€¨€¨€¨† | 630/936 [00:00<00:00, 1264.69it/s]Running simulation, model 30/41:  82%|¨€¨€¨€¨€ | 772/936 [00:00<00:00, 1311.22it/s]Running simulation, model 30/41:  97%|¨€¨€¨€¨€¨‚| 905/936 [00:00<00:00, 1238.28it/s]Running simulation, model 30/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1314.30it/s]
+Memory (RAM) used: ~248MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.758910
+
+--- Model 31/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 31, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 27.66cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 97.08it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 37.17it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background31.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background31.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only31.out
+
+Running simulation, model 31/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 31/41:  13%|¨ƒ    | 124/936 [00:00<00:00, 1234.81it/s]Running simulation, model 31/41:  30%|¨€¨…   | 277/936 [00:00<00:00, 1389.99it/s]Running simulation, model 31/41:  44%|¨€¨€¨‡  | 416/936 [00:00<00:00, 1341.37it/s]Running simulation, model 31/41:  60%|¨€¨€¨€  | 565/936 [00:00<00:00, 1393.33it/s]Running simulation, model 31/41:  77%|¨€¨€¨€¨‚ | 725/936 [00:00<00:00, 1465.41it/s]Running simulation, model 31/41:  93%|¨€¨€¨€¨€¨ƒ| 872/936 [00:00<00:00, 1417.33it/s]Running simulation, model 31/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1257.56it/s]
+Memory (RAM) used: ~248MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.746314
+
+--- Model 32/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 32, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 25.44cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 73.09it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 28.05it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background32.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background32.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only32.out
+
+Running simulation, model 32/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 32/41:  16%|¨‚    | 149/936 [00:00<00:00, 1480.59it/s]Running simulation, model 32/41:  33%|¨€¨ƒ   | 312/936 [00:00<00:00, 1564.58it/s]Running simulation, model 32/41:  50%|¨€¨€¨„  | 469/936 [00:00<00:00, 1463.38it/s]Running simulation, model 32/41:  66%|¨€¨€¨€¨† | 622/936 [00:00<00:00, 1483.97it/s]Running simulation, model 32/41:  82%|¨€¨€¨€¨€ | 771/936 [00:00<00:00, 1453.37it/s]Running simulation, model 32/41:  98%|¨€¨€¨€¨€¨| 917/936 [00:00<00:00, 1419.43it/s]Running simulation, model 32/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1460.96it/s]
+Memory (RAM) used: ~248MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.681000
+
+--- Model 33/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 33, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 23.96cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 80.65it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 31.98it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background33.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background33.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only33.out
+
+Running simulation, model 33/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 33/41:  18%|¨    | 172/936 [00:00<00:00, 1712.49it/s]Running simulation, model 33/41:  37%|¨€¨‚   | 344/936 [00:00<00:00, 1611.95it/s]Running simulation, model 33/41:  54%|¨€¨€¨ƒ  | 506/936 [00:00<00:00, 1486.27it/s]Running simulation, model 33/41:  70%|¨€¨€¨€¨„ | 656/936 [00:00<00:00, 1449.66it/s]Running simulation, model 33/41:  86%|¨€¨€¨€¨€¨†| 802/936 [00:00<00:00, 1410.79it/s]Running simulation, model 33/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1457.63it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.679612
+
+--- Model 34/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 34, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 21.33cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 81.82it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 32.30it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background34.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background34.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only34.out
+
+Running simulation, model 34/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 34/41:  20%|¨    | 187/936 [00:00<00:00, 1866.52it/s]Running simulation, model 34/41:  40%|¨€¨   | 374/936 [00:00<00:00, 1554.90it/s]Running simulation, model 34/41:  57%|¨€¨€¨‚  | 533/936 [00:00<00:00, 1516.81it/s]Running simulation, model 34/41:  73%|¨€¨€¨€¨ƒ | 687/936 [00:00<00:00, 1467.92it/s]Running simulation, model 34/41:  89%|¨€¨€¨€¨€¨…| 835/936 [00:00<00:00, 1443.04it/s]Running simulation, model 34/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1473.43it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.677775
+
+--- Model 35/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 35, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 27.21cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 91.86it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 33.10it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background35.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background35.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only35.out
+
+Running simulation, model 35/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 35/41:  21%|¨€    | 200/936 [00:00<00:00, 1871.12it/s]Running simulation, model 35/41:  41%|¨€¨€   | 388/936 [00:00<00:00, 1575.50it/s]Running simulation, model 35/41:  59%|¨€¨€¨  | 548/936 [00:00<00:00, 1450.64it/s]Running simulation, model 35/41:  75%|¨€¨€¨€¨ƒ | 701/936 [00:00<00:00, 1476.89it/s]Running simulation, model 35/41:  91%|¨€¨€¨€¨€¨„| 850/936 [00:00<00:00, 1439.00it/s]Running simulation, model 35/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1462.42it/s]
+Memory (RAM) used: ~249MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.676704
+
+--- Model 36/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 36, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 23.37cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 82.81it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 33.89it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background36.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background36.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only36.out
+
+Running simulation, model 36/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 36/41:  20%|¨€    | 190/936 [00:00<00:00, 1887.71it/s]Running simulation, model 36/41:  40%|¨€¨€   | 379/936 [00:00<00:00, 1531.10it/s]Running simulation, model 36/41:  57%|¨€¨€¨‚  | 537/936 [00:00<00:00, 1421.57it/s]Running simulation, model 36/41:  73%|¨€¨€¨€¨ƒ | 682/936 [00:00<00:00, 1429.33it/s]Running simulation, model 36/41:  88%|¨€¨€¨€¨€¨…| 827/936 [00:00<00:00, 1427.66it/s]Running simulation, model 36/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1457.89it/s]
+Memory (RAM) used: ~250MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.682099
+
+--- Model 37/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 37, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 23.68cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 73.59it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 30.62it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background37.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background37.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only37.out
+
+Running simulation, model 37/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 37/41:  21%|¨€    | 196/936 [00:00<00:00, 1958.41it/s]Running simulation, model 37/41:  42%|¨€¨€   | 392/936 [00:00<00:00, 1570.78it/s]Running simulation, model 37/41:  59%|¨€¨€¨  | 554/936 [00:00<00:00, 1440.27it/s]Running simulation, model 37/41:  75%|¨€¨€¨€¨ƒ | 701/936 [00:00<00:00, 1446.09it/s]Running simulation, model 37/41:  91%|¨€¨€¨€¨€¨„| 848/936 [00:00<00:00, 1448.20it/s]Running simulation, model 37/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1464.67it/s]
+Memory (RAM) used: ~250MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.673016
+
+--- Model 38/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 38, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 25.93cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 89.05it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 32.66it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background38.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background38.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only38.out
+
+Running simulation, model 38/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 38/41:  21%|¨€    | 198/936 [00:00<00:00, 1748.39it/s]Running simulation, model 38/41:  40%|¨€¨   | 373/936 [00:00<00:00, 1610.58it/s]Running simulation, model 38/41:  57%|¨€¨€¨‚  | 535/936 [00:00<00:00, 1483.54it/s]Running simulation, model 38/41:  73%|¨€¨€¨€¨ƒ | 684/936 [00:00<00:00, 1444.89it/s]Running simulation, model 38/41:  89%|¨€¨€¨€¨€¨…| 829/936 [00:00<00:00, 1431.91it/s]Running simulation, model 38/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1485.79it/s]
+Memory (RAM) used: ~250MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.676094
+
+--- Model 39/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 39, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 23.38cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 94.38it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 31.05it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background39.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background39.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only39.out
+
+Running simulation, model 39/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 39/41:  20%|¨    | 183/936 [00:00<00:00, 1827.80it/s]Running simulation, model 39/41:  39%|¨€¨   | 366/936 [00:00<00:00, 1576.51it/s]Running simulation, model 39/41:  56%|¨€¨€¨‚  | 526/936 [00:00<00:00, 1498.64it/s]Running simulation, model 39/41:  72%|¨€¨€¨€¨„ | 677/936 [00:00<00:00, 1456.16it/s]Running simulation, model 39/41:  88%|¨€¨€¨€¨€¨…| 824/936 [00:00<00:00, 1412.98it/s]Running simulation, model 39/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1457.37it/s]
+Memory (RAM) used: ~250MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.677112
+
+--- Model 40/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 40, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 27.17cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 78.35it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 35.70it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background40.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background40.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only40.out
+
+Running simulation, model 40/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 40/41:  18%|¨    | 171/936 [00:00<00:00, 1709.94it/s]Running simulation, model 40/41:  37%|¨€¨‚   | 342/936 [00:00<00:00, 1675.48it/s]Running simulation, model 40/41:  54%|¨€¨€¨ƒ  | 510/936 [00:00<00:00, 1538.34it/s]Running simulation, model 40/41:  71%|¨€¨€¨€¨„ | 665/936 [00:00<00:00, 1503.90it/s]Running simulation, model 40/41:  87%|¨€¨€¨€¨€¨†| 817/936 [00:00<00:00, 1455.64it/s]Running simulation, model 40/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1482.83it/s]
+Memory (RAM) used: ~250MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.668062
+
+--- Model 41/41, input file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in 
+
+Constants/variables used/available for Python scripting: {c: 299792458.0, current_model_run: 41, e0: 8.8541878188e-12, inputfile: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only.in, m0: 1.25663706127e-06, number_model_runs: 41, z0: 376.7303134118051}
+
+Model title: GX-008 scene_002 flat damp_sand PEC shallow background_only draft
+Number of CPU (OpenMP) threads: 8
+GPU solving using: 0 - NVIDIA GeForce RTX 3060 Laptop GPU
+Spatial discretisation: 0.01 x 0.01 x 0.01m
+Domain size: 2 x 1 x 0.5m (200 x 100 x 50 = 1e+06 cells)
+Mode: 3D
+Time step (at CFL limit): 1.92583e-11 secs
+Time window: 1.8e-08 secs (936 iterations)
+Simple sources will step 0m, 0m, 0m for each model run.
+All receivers will step 0m, 0m, 0m for each model run.
+
+Waveform src_wave of type ricker with maximum amplitude scaling 1, frequency 9e+08Hz created.
+Hertzian dipole with polarity z at 0.2m, 0.5m, 0.1m, using waveform src_wave created.
+Receiver at 0.25m, 0.5m, 0.1m with output component(s) Ex, Ey, Ez, Hx, Hy, Hz created.
+Material damp_sand_like with eps_r=8, sigma=0.01 S/m; mu_r=1, sigma*=0 Ohm/m created.
+Geometry view from 0m, 0m, 0m, to 2m, 1m, 0.5m, discretisation 0.01m, 0.01m, 0.01m, with filename base gx008_scene002_background created.
+
+Memory (RAM) required: ~124MB host + ~124MB GPU
+
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]                                                                               Box from 0m, 0m, 0m, to 2m, 1m, 0.5m of material(s) damp_sand_like created, dielectric smoothing is on.
+Processing geometry related cmds:   0%|                | 0/1 [00:00<?, ?cmds/s]Processing geometry related cmds: 100%|¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 25.51cmds/s]
+
+PML: formulation: HORIPML, order: 1, thickness: 10
+Building PML boundaries:   0%|                           | 0/6 [00:00<?, ?it/s]Building PML boundaries: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 6/6 [00:00<00:00, 87.12it/s]
+
+Building main grid:   0%|                                | 0/2 [00:00<?, ?it/s]Building main grid: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:00<00:00, 31.90it/s]
+
+Materials:
+    |                |         |       | sigma |      | sigma*  | Dielectric 
+ ID | Name           | Type    | eps_r | [S/m] | mu_r | [Ohm/m] | smoothable 
+----+----------------+---------+-------+-------+------+---------+------------
+  0 | pec            | builtin | 1     | inf   | 1    | 0       | False      
+  1 | free_space     | builtin | 1     | 0     | 1    | 0       | True       
+  2 | damp_sand_like |         | 8     | 0.01  | 1    | 0       | True       
+
+WARNING: Potentially significant numerical dispersion. Estimated largest physical phase-velocity error is -7.55% in material 'damp_sand_like' whose wavelength sampled by 4 cells. Maximum significant frequency estimated as 2.49642e+09Hz
+
+Writing geometry view file 1/1, gx008_scene002_background41.vti:   0%| | 0.00/6Writing geometry view file 1/1, gx008_scene002_background41.vti: 100%|¨€| 6.00M/
+
+Output file: D:\CDUT-UavGPR-Controller\MyGPR\experiments\gprmax\GX-008\models\scene_002_flat_damp_sand_pec_shallow\background_only41.out
+
+Running simulation, model 41/41:   0%|                 | 0/936 [00:00<?, ?it/s]Running simulation, model 41/41:  20%|¨€    | 189/936 [00:00<00:00, 1883.81it/s]Running simulation, model 41/41:  40%|¨€¨€   | 378/936 [00:00<00:00, 1537.94it/s]Running simulation, model 41/41:  57%|¨€¨€¨‚  | 536/936 [00:00<00:00, 1456.42it/s]Running simulation, model 41/41:  73%|¨€¨€¨€¨ƒ | 684/936 [00:00<00:00, 1438.12it/s]Running simulation, model 41/41:  89%|¨€¨€¨€¨€¨…| 829/936 [00:00<00:00, 1439.58it/s]Running simulation, model 41/41: 100%|¨€¨€¨€¨€¨€| 936/936 [00:00<00:00, 1444.17it/s]
+Memory (RAM) used: ~250MB host + ~1.14GB GPU
+Solving time [HH:MM:SS]: 0:00:00.684008
+
+=== Simulation completed in [HH:MM:SS]: 0:04:12.726781 ========================
+
