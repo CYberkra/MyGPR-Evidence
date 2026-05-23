@@ -1,0 +1,64 @@
+[
+  {
+    "scene_id": "scene_001_flat_dry_sand_pec_shallow",
+    "parent_artifact": "gprmax/GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic/",
+    "at_bg_artifact": "autotune/AT-BG-003_GX008_scene001_background_suppression_diagnostic",
+    "trial_count": 17,
+    "selected_trial_id": "trial_003",
+    "selected_method": "mean_background_subtraction",
+    "selected_parameters": {
+      "mode": "moving_window_mean",
+      "window_size": 5,
+      "axis": "trace"
+    },
+    "selected_metrics": {
+      "mae": 0.029371318842451328,
+      "mse": 0.00880796154825314,
+      "rmse": 0.09385074079757251,
+      "psnr": 16.370642559430287
+    },
+    "warnings": [],
+    "claim_boundary": [
+      "synthetic paired GX-008 scene_001 only",
+      "background suppression diagnostic only",
+      "fixed workflow parameter recommendation slice",
+      "not full AutoTune",
+      "not production scoring",
+      "not field validation",
+      "not no-prior truth correctness",
+      "not AutoTune superiority evidence",
+      "not paper-candidate benchmark"
+    ]
+  },
+  {
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "parent_artifact": "gprmax/GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic/",
+    "at_bg_artifact": "autotune/AT-BG-004A_GX008_scene002_background_suppression_diagnostic",
+    "trial_count": 17,
+    "selected_trial_id": "trial_003",
+    "selected_method": "mean_background_subtraction",
+    "selected_parameters": {
+      "mode": "moving_window_mean",
+      "window_size": 5,
+      "axis": "trace"
+    },
+    "selected_metrics": {
+      "mae": 0.011964291100524606,
+      "mse": 0.0013645776488880094,
+      "rmse": 0.036940190157713174,
+      "psnr": 15.05181790956213
+    },
+    "warnings": [],
+    "claim_boundary": [
+      "synthetic paired GX-008 scene_002 only",
+      "background suppression diagnostic only",
+      "fixed workflow parameter recommendation slice",
+      "not full AutoTune",
+      "not production scoring",
+      "not field validation",
+      "not no-prior truth correctness",
+      "not AutoTune superiority evidence",
+      "not paper-candidate benchmark"
+    ]
+  }
+]

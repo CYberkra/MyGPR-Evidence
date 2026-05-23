@@ -109,3 +109,34 @@ trial_003
 Claim boundary:
 synthetic paired diagnostic only; background suppression only; not full AutoTune; not production scoring; not field validation; not AutoTune superiority evidence.
 
+## AT-BG-004B_GX008_scene001_scene002_background_suppression_comparison
+
+Path:
+autotune/AT-BG-004B_GX008_scene001_scene002_background_suppression_comparison/
+
+Role:
+synthetic_background_suppression_multi_scene_diagnostic_comparison
+
+Input artifacts:
+- autotune/AT-BG-003_GX008_scene001_background_suppression_diagnostic/
+- autotune/AT-BG-004A_GX008_scene002_background_suppression_diagnostic/
+
+Parent paired artifacts:
+- gprmax/GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic/
+- gprmax/GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic/
+
+Scene count:
+2
+
+Scope:
+background_suppression_only
+
+Candidate methods:
+mean / median / SVD
+
+Trials per scene:
+17
+
+Claim boundary:
+synthetic paired diagnostic comparison only; not full AutoTune; not production scoring; not field validation; not AutoTune superiority evidence.
+

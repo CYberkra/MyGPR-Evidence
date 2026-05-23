@@ -1,0 +1,44 @@
+{
+  "artifact_id": "AT-BG-004B_GX008_scene001_scene002_background_suppression_comparison",
+  "artifact_role": "synthetic_background_suppression_multi_scene_diagnostic_comparison",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "main",
+  "source_commits": [
+    "12848a580aa0b8086576ecb946a7beef138349de",
+    "817bf55f1e9cb3ed91da96693964b4492aa75d5a"
+  ],
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "evidence_branch": "main",
+  "input_artifacts": [
+    "autotune/AT-BG-003_GX008_scene001_background_suppression_diagnostic/",
+    "autotune/AT-BG-004A_GX008_scene002_background_suppression_diagnostic/"
+  ],
+  "parent_paired_artifacts": [
+    "gprmax/GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic/",
+    "gprmax/GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic/"
+  ],
+  "scene_count": 2,
+  "candidate_methods": [
+    "mean_background_subtraction",
+    "median_background_subtraction",
+    "svd_background_suppression"
+  ],
+  "trials_per_scene": 17,
+  "comparison_scope": "background_suppression_only",
+  "production_scoring_changed": false,
+  "ui_integration": false,
+  "gprmax_rerun": false,
+  "field_validation": false,
+  "autotune_superiority_evidence": false,
+  "claim_boundary": [
+    "synthetic paired GX-008 scene_001 and scene_002 only",
+    "background suppression diagnostic comparison only",
+    "fixed workflow parameter recommendation slice",
+    "not full AutoTune",
+    "not production scoring",
+    "not field validation",
+    "not no-prior truth correctness",
+    "not AutoTune superiority evidence",
+    "not paper-candidate benchmark"
+  ]
+}

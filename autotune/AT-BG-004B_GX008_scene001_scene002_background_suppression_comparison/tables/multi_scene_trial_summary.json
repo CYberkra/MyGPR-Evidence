@@ -1,0 +1,804 @@
+[
+  {
+    "scene_id": "scene_001_flat_dry_sand_pec_shallow",
+    "soil_condition": "dry_sand_like",
+    "artifact_id": "GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_003",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_mean",
+      "window_size": 5,
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "mae": 0.029371318842451328,
+    "mse": 0.00880796154825314,
+    "rmse": 0.09385074079757251,
+    "psnr": 16.370642559430287,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "recommended",
+    "rank_within_scene": 1,
+    "selected": true
+  },
+  {
+    "scene_id": "scene_001_flat_dry_sand_pec_shallow",
+    "soil_condition": "dry_sand_like",
+    "artifact_id": "GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_001",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "global_mean",
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "mae": 0.029371318842451418,
+    "mse": 0.00880796154825314,
+    "rmse": 0.09385074079757251,
+    "psnr": 16.370642559430287,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 2,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_001_flat_dry_sand_pec_shallow",
+    "soil_condition": "dry_sand_like",
+    "artifact_id": "GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_004",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_mean",
+      "window_size": 9,
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "mae": 0.02937131884245153,
+    "mse": 0.008807961548253139,
+    "rmse": 0.0938507407975725,
+    "psnr": 16.370642559430287,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 3,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_001_flat_dry_sand_pec_shallow",
+    "soil_condition": "dry_sand_like",
+    "artifact_id": "GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_005",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_mean",
+      "window_size": 15,
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "mae": 0.02937131884245209,
+    "mse": 0.008807961548253139,
+    "rmse": 0.0938507407975725,
+    "psnr": 16.370642559430287,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 4,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_001_flat_dry_sand_pec_shallow",
+    "soil_condition": "dry_sand_like",
+    "artifact_id": "GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_015",
+    "method": "svd_background_suppression",
+    "parameter_set": {
+      "remove_rank": 1
+    },
+    "candidate_group": "svd",
+    "mae": 0.029371318842452216,
+    "mse": 0.008807961548253144,
+    "rmse": 0.09385074079757252,
+    "psnr": 16.370642559430287,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 5,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_001_flat_dry_sand_pec_shallow",
+    "soil_condition": "dry_sand_like",
+    "artifact_id": "GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_016",
+    "method": "svd_background_suppression",
+    "parameter_set": {
+      "remove_rank": 2
+    },
+    "candidate_group": "svd",
+    "mae": 0.02937131884245224,
+    "mse": 0.008807961548253144,
+    "rmse": 0.09385074079757252,
+    "psnr": 16.370642559430287,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 6,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_001_flat_dry_sand_pec_shallow",
+    "soil_condition": "dry_sand_like",
+    "artifact_id": "GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_017",
+    "method": "svd_background_suppression",
+    "parameter_set": {
+      "remove_rank": 3
+    },
+    "candidate_group": "svd",
+    "mae": 0.029371318842452258,
+    "mse": 0.008807961548253144,
+    "rmse": 0.09385074079757252,
+    "psnr": 16.370642559430287,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 7,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_001_flat_dry_sand_pec_shallow",
+    "soil_condition": "dry_sand_like",
+    "artifact_id": "GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_006",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_mean",
+      "window_size": 21,
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "mae": 0.02937131884245227,
+    "mse": 0.008807961548253139,
+    "rmse": 0.0938507407975725,
+    "psnr": 16.370642559430287,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 8,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_001_flat_dry_sand_pec_shallow",
+    "soil_condition": "dry_sand_like",
+    "artifact_id": "GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_007",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_mean",
+      "window_size": 31,
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "mae": 0.029371318842453028,
+    "mse": 0.008807961548253139,
+    "rmse": 0.0938507407975725,
+    "psnr": 16.370642559430287,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 9,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_001_flat_dry_sand_pec_shallow",
+    "soil_condition": "dry_sand_like",
+    "artifact_id": "GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_008",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_mean",
+      "window_size": 41,
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "mae": 0.029371318842453344,
+    "mse": 0.008807961548253139,
+    "rmse": 0.0938507407975725,
+    "psnr": 16.370642559430287,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 10,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_001_flat_dry_sand_pec_shallow",
+    "soil_condition": "dry_sand_like",
+    "artifact_id": "GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_002",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "global_median",
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "mae": 0.029371318842451262,
+    "mse": 0.00880796154825314,
+    "rmse": 0.09385074079757251,
+    "psnr": 16.370642559430287,
+    "roi_energy_ratio": null,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 11,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_001_flat_dry_sand_pec_shallow",
+    "soil_condition": "dry_sand_like",
+    "artifact_id": "GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_009",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_median",
+      "window_size": 5,
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "mae": 0.029371318842451262,
+    "mse": 0.00880796154825314,
+    "rmse": 0.09385074079757251,
+    "psnr": 16.370642559430287,
+    "roi_energy_ratio": null,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 12,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_001_flat_dry_sand_pec_shallow",
+    "soil_condition": "dry_sand_like",
+    "artifact_id": "GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_010",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_median",
+      "window_size": 9,
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "mae": 0.029371318842451262,
+    "mse": 0.00880796154825314,
+    "rmse": 0.09385074079757251,
+    "psnr": 16.370642559430287,
+    "roi_energy_ratio": null,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 13,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_001_flat_dry_sand_pec_shallow",
+    "soil_condition": "dry_sand_like",
+    "artifact_id": "GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_011",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_median",
+      "window_size": 15,
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "mae": 0.029371318842451262,
+    "mse": 0.00880796154825314,
+    "rmse": 0.09385074079757251,
+    "psnr": 16.370642559430287,
+    "roi_energy_ratio": null,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 14,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_001_flat_dry_sand_pec_shallow",
+    "soil_condition": "dry_sand_like",
+    "artifact_id": "GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_012",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_median",
+      "window_size": 21,
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "mae": 0.029371318842451262,
+    "mse": 0.00880796154825314,
+    "rmse": 0.09385074079757251,
+    "psnr": 16.370642559430287,
+    "roi_energy_ratio": null,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 15,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_001_flat_dry_sand_pec_shallow",
+    "soil_condition": "dry_sand_like",
+    "artifact_id": "GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_013",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_median",
+      "window_size": 31,
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "mae": 0.029371318842451262,
+    "mse": 0.00880796154825314,
+    "rmse": 0.09385074079757251,
+    "psnr": 16.370642559430287,
+    "roi_energy_ratio": null,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 16,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_001_flat_dry_sand_pec_shallow",
+    "soil_condition": "dry_sand_like",
+    "artifact_id": "GX-008_scene001_flat_dry_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_014",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_median",
+      "window_size": 41,
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "mae": 0.029371318842451262,
+    "mse": 0.00880796154825314,
+    "rmse": 0.09385074079757251,
+    "psnr": 16.370642559430287,
+    "roi_energy_ratio": null,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 17,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "soil_condition": "damp_sand_like",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_003",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_mean",
+      "window_size": 5,
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "mae": 0.011964291100524606,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "recommended",
+    "rank_within_scene": 1,
+    "selected": true
+  },
+  {
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "soil_condition": "damp_sand_like",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_001",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "global_mean",
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "mae": 0.011964291100524714,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 2,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "soil_condition": "damp_sand_like",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_004",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_mean",
+      "window_size": 9,
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "mae": 0.01196429110052486,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 3,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "soil_condition": "damp_sand_like",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_005",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_mean",
+      "window_size": 15,
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "mae": 0.011964291100525428,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 4,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "soil_condition": "damp_sand_like",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_006",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_mean",
+      "window_size": 21,
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "mae": 0.011964291100525586,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 5,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "soil_condition": "damp_sand_like",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_015",
+    "method": "svd_background_suppression",
+    "parameter_set": {
+      "remove_rank": 1
+    },
+    "candidate_group": "svd",
+    "mae": 0.011964291100525663,
+    "mse": 0.001364577648888009,
+    "rmse": 0.03694019015771317,
+    "psnr": 15.051817909562134,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 6,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "soil_condition": "damp_sand_like",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_016",
+    "method": "svd_background_suppression",
+    "parameter_set": {
+      "remove_rank": 2
+    },
+    "candidate_group": "svd",
+    "mae": 0.011964291100525678,
+    "mse": 0.001364577648888009,
+    "rmse": 0.03694019015771317,
+    "psnr": 15.051817909562134,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 7,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "soil_condition": "damp_sand_like",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_017",
+    "method": "svd_background_suppression",
+    "parameter_set": {
+      "remove_rank": 3
+    },
+    "candidate_group": "svd",
+    "mae": 0.01196429110052572,
+    "mse": 0.001364577648888009,
+    "rmse": 0.03694019015771317,
+    "psnr": 15.051817909562134,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 8,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "soil_condition": "damp_sand_like",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_007",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_mean",
+      "window_size": 31,
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "mae": 0.011964291100526181,
+    "mse": 0.0013645776488880096,
+    "rmse": 0.03694019015771318,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 9,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "soil_condition": "damp_sand_like",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_008",
+    "method": "mean_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_mean",
+      "window_size": 41,
+      "axis": "trace"
+    },
+    "candidate_group": "mean",
+    "mae": 0.011964291100526506,
+    "mse": 0.0013645776488880098,
+    "rmse": 0.03694019015771318,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "warnings": [],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 10,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "soil_condition": "damp_sand_like",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_002",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "global_median",
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "mae": 0.011964291100524571,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 11,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "soil_condition": "damp_sand_like",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_009",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_median",
+      "window_size": 5,
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "mae": 0.011964291100524571,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 12,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "soil_condition": "damp_sand_like",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_010",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_median",
+      "window_size": 9,
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "mae": 0.011964291100524571,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 13,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "soil_condition": "damp_sand_like",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_011",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_median",
+      "window_size": 15,
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "mae": 0.011964291100524571,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 14,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "soil_condition": "damp_sand_like",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_012",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_median",
+      "window_size": 21,
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "mae": 0.011964291100524571,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 15,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "soil_condition": "damp_sand_like",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_013",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_median",
+      "window_size": 31,
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "mae": 0.011964291100524571,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 16,
+    "selected": false
+  },
+  {
+    "scene_id": "scene_002_flat_damp_sand_pec_shallow",
+    "soil_condition": "damp_sand_like",
+    "artifact_id": "GX-008_scene002_flat_damp_sand_pec_shallow_paired_diagnostic",
+    "trial_id": "trial_014",
+    "method": "median_background_subtraction",
+    "parameter_set": {
+      "mode": "moving_window_median",
+      "window_size": 41,
+      "axis": "trace"
+    },
+    "candidate_group": "median",
+    "mae": 0.011964291100524571,
+    "mse": 0.0013645776488880094,
+    "rmse": 0.036940190157713174,
+    "psnr": 15.05181790956213,
+    "roi_energy_ratio": null,
+    "warnings": [
+      {
+        "code": "target_to_processed_energy_ratio_denominator_zero",
+        "message": "target_to_processed_energy_ratio denominator is zero."
+      }
+    ],
+    "recommendation_label": "acceptable_alternative",
+    "rank_within_scene": 17,
+    "selected": false
+  }
+]
