@@ -11,9 +11,18 @@
   "requested_num_runs": 21,
   "actual_raw_trace_count": 21,
   "actual_background_trace_count": 21,
-  "source_shape_raw": [936, 21],
-  "source_shape_background": [936, 21],
-  "target_response_shape": [936, 21],
+  "source_shape_raw": [
+    936,
+    21
+  ],
+  "source_shape_background": [
+    936,
+    21
+  ],
+  "target_response_shape": [
+    936,
+    21
+  ],
   "target_response_generated": true,
   "preview_generated": true,
   "final_backend": "CPU",
@@ -47,5 +56,20 @@
     "gprmax/GX-007_scene001_complete_2d_diagnostic/figures/background_preview.png",
     "gprmax/GX-007_scene001_complete_2d_diagnostic/figures/target_response_preview.png",
     "gprmax/GX-007_scene001_complete_2d_diagnostic/figures/paired_preview_panel.png"
-  ]
+  ],
+  "standard_metrics": {
+    "source_commit": "370f2b02dc5cf9d8ade05d6ab6fbfd46d1d26f13",
+    "metrics_schema": "synthetic_paired_metrics_v1",
+    "metrics_files": [
+      "tables/standard_paired_metrics.json",
+      "tables/standard_paired_metrics_summary.json",
+      "reports/standard_metrics_report.md"
+    ],
+    "claim_boundary": [
+      "metrics apply to synthetic paired data only",
+      "not valid as no-prior field ground truth",
+      "not AutoTune evaluation by itself",
+      "not AutoTune superiority evidence"
+    ]
+  }
 }

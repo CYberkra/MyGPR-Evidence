@@ -1,0 +1,42 @@
+{
+  "raw_shape": [
+    936,
+    21
+  ],
+  "background_shape": [
+    936,
+    21
+  ],
+  "target_response_shape": [
+    936,
+    21
+  ],
+  "raw_min": -114.459053,
+  "raw_max": 92.86666107,
+  "raw_mean": -0.0032163747771761088,
+  "raw_std": 16.529135292540893,
+  "background_min": -114.459053,
+  "background_max": 92.86666107,
+  "background_mean": -0.003195463338380089,
+  "background_std": 16.528055452699185,
+  "target_response_min": -1.410355816,
+  "target_response_max": 1.685586018,
+  "target_response_mean": -2.0911438871291498e-05,
+  "target_response_std": 0.18893600829667076,
+  "raw_energy": 5370261.437874472,
+  "background_energy": 5369559.7853927845,
+  "target_response_energy": 701.6566087774397,
+  "target_to_background_energy_ratio": 0.00013067302289588223,
+  "target_to_raw_energy_ratio": 0.00013065594978838732,
+  "mean_abs_target_response": 0.06523294634276462,
+  "max_abs_target_response": 1.685586018,
+  "raw_background_mae": 0.06523294634353208,
+  "raw_background_mse": 0.035696815669874274,
+  "raw_background_rmse": 0.1889360094578963,
+  "raw_background_psnr": 55.64670820075655,
+  "sparsity_or_concentration_proxy": 25.83948928418988,
+  "abs_difference_mean": 0.06523294634353208,
+  "abs_difference_max": 1.685586018,
+  "roi_energy_ratio": null,
+  "warnings": []
+}
