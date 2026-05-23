@@ -1,0 +1,16 @@
+E:\gprMax\gprMax-v.3.1.7\gprMax\model_build_run.py:808: UserWarning: The CUDA compiler succeeded, but said the following:
+kernel.cu
+
+  kernels_fields = SourceModule(
+E:\gprMax\gprMax-v.3.1.7\gprMax\model_build_run.py:873: UserWarning: The CUDA compiler succeeded, but said the following:
+kernel.cu
+
+  kernels_pml_electric = SourceModule(
+E:\gprMax\gprMax-v.3.1.7\gprMax\model_build_run.py:887: UserWarning: The CUDA compiler succeeded, but said the following:
+kernel.cu
+
+  kernels_pml_magnetic = SourceModule(
+E:\gprMax\gprMax-v.3.1.7\gprMax\model_build_run.py:934: UserWarning: The CUDA compiler succeeded, but said the following:
+kernel.cu
+
+  kernels_sources = SourceModule(

@@ -1,0 +1,14 @@
+{
+  "campaign_id": "GX-008_paired_synthetic_mini_benchmark",
+  "scene_id": "scene_003_flat_dry_sand_pvc_shallow",
+  "status": "ready",
+  "issues": [],
+  "raw_shape": [
+    936,
+    41
+  ],
+  "background_shape": [
+    936,
+    41
+  ]
+}

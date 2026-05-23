@@ -1,0 +1,156 @@
+{
+  "raw_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008\\scene_003_flat_dry_sand_pvc_shallow\\raw_with_target\\converted\\raw_bscan.npy",
+  "background_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008\\scene_003_flat_dry_sand_pvc_shallow\\background_only\\converted\\background_bscan.npy",
+  "roi_json": "D:\\CDUT-UavGPR-Controller\\MyGPR\\experiments\\gprmax\\GX-008\\models\\scene_003_flat_dry_sand_pvc_shallow\\roi_draft.json",
+  "pair_result": {
+    "campaign_id": "GX-008_paired_synthetic_mini_benchmark",
+    "scene_id": "scene_003_flat_dry_sand_pvc_shallow",
+    "status": "success",
+    "output_dir": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008\\scene_003_flat_dry_sand_pvc_shallow\\paired_outputs",
+    "validation_summary_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008\\scene_003_flat_dry_sand_pvc_shallow\\paired_outputs\\paired_validation_summary.json",
+    "metrics_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008\\scene_003_flat_dry_sand_pvc_shallow\\paired_outputs\\paired_metrics.json",
+    "target_response_npy_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008\\scene_003_flat_dry_sand_pvc_shallow\\paired_outputs\\target_response.npy",
+    "target_response_csv_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008\\scene_003_flat_dry_sand_pvc_shallow\\paired_outputs\\target_response.csv",
+    "issues": [],
+    "metrics": {
+      "raw_shape": [
+        936,
+        41
+      ],
+      "background_shape": [
+        936,
+        41
+      ],
+      "target_response_shape": [
+        936,
+        41
+      ],
+      "raw_min": -122.58292388916016,
+      "raw_max": 70.84222412109375,
+      "raw_mean": -0.012150107737732507,
+      "raw_std": 16.631029896820785,
+      "background_min": -122.58292388916016,
+      "background_max": 70.84222412109375,
+      "background_mean": -0.012150009707356349,
+      "background_std": 16.631029390334618,
+      "target_response_min": -0.02245095930993557,
+      "target_response_max": 0.01614526007324457,
+      "target_response_mean": -9.803037615851142e-08,
+      "target_response_std": 0.004104715242731283,
+      "raw_energy": 10614467.846002787,
+      "background_energy": 10614467.199399613,
+      "target_response_energy": 0.6465852212735826,
+      "target_to_background_energy_ratio": 6.091546651631798e-08,
+      "target_to_raw_energy_ratio": 6.091546280552111e-08,
+      "mean_abs_target_response": 0.0013475111030173015,
+      "max_abs_target_response": 0.02245095930993557,
+      "raw_background_mae": 0.0013475111030173015,
+      "raw_background_mse": 1.68486872335205e-05,
+      "raw_background_rmse": 0.004104715243901884,
+      "raw_background_psnr": 89.5029388371074,
+      "sparsity_or_concentration_proxy": 16.661057010709698,
+      "abs_difference_mean": 0.0013475111030173015,
+      "abs_difference_max": 0.02245095930993557,
+      "roi_energy_ratio": null,
+      "warnings": [
+        {
+          "code": "roi_missing_ranges",
+          "message": "ROI must contain sample_range and trace_range [start, end]."
+        }
+      ]
+    }
+  },
+  "preview_result": {
+    "campaign_id": "GX-008_paired_synthetic_mini_benchmark",
+    "scene_id": "scene_003_flat_dry_sand_pvc_shallow",
+    "status": "success",
+    "output_dir": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008\\scene_003_flat_dry_sand_pvc_shallow\\paired_outputs",
+    "raw_preview_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008\\scene_003_flat_dry_sand_pvc_shallow\\paired_outputs\\raw_preview.png",
+    "background_preview_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008\\scene_003_flat_dry_sand_pvc_shallow\\paired_outputs\\background_preview.png",
+    "target_response_preview_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008\\scene_003_flat_dry_sand_pvc_shallow\\paired_outputs\\target_response_preview.png",
+    "paired_preview_panel_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008\\scene_003_flat_dry_sand_pvc_shallow\\paired_outputs\\paired_preview_panel.png",
+    "report_md_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008\\scene_003_flat_dry_sand_pvc_shallow\\paired_outputs\\paired_target_response_report.md",
+    "summary_json_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\gprmax\\GX-008\\scene_003_flat_dry_sand_pvc_shallow\\paired_outputs\\paired_report_summary.json",
+    "issues": [],
+    "metrics": {
+      "raw_shape": [
+        936,
+        41
+      ],
+      "background_shape": [
+        936,
+        41
+      ],
+      "target_response_shape": [
+        936,
+        41
+      ],
+      "raw_min": -122.58292388916016,
+      "raw_max": 70.84222412109375,
+      "raw_mean": -0.012150107737732507,
+      "raw_std": 16.631029896820785,
+      "background_min": -122.58292388916016,
+      "background_max": 70.84222412109375,
+      "background_mean": -0.012150009707356349,
+      "background_std": 16.631029390334618,
+      "target_response_min": -0.02245095930993557,
+      "target_response_max": 0.01614526007324457,
+      "target_response_mean": -9.803037615851142e-08,
+      "target_response_std": 0.004104715242731283,
+      "raw_energy": 10614467.846002787,
+      "background_energy": 10614467.199399613,
+      "target_response_energy": 0.6465852212735826,
+      "target_to_background_energy_ratio": 6.091546651631798e-08,
+      "target_to_raw_energy_ratio": 6.091546280552111e-08,
+      "mean_abs_target_response": 0.0013475111030173015,
+      "max_abs_target_response": 0.02245095930993557,
+      "raw_background_mae": 0.0013475111030173015,
+      "raw_background_mse": 1.68486872335205e-05,
+      "raw_background_rmse": 0.004104715243901884,
+      "raw_background_psnr": 89.5029388371074,
+      "sparsity_or_concentration_proxy": 16.661057010709698,
+      "abs_difference_mean": 0.0013475111030173015,
+      "abs_difference_max": 0.02245095930993557,
+      "roi_energy_ratio": null,
+      "warnings": [
+        {
+          "code": "roi_missing_ranges",
+          "message": "ROI must contain sample_range and trace_range [start, end]."
+        }
+      ]
+    }
+  },
+  "pair_metrics_keys": [
+    "abs_difference_max",
+    "abs_difference_mean",
+    "background_energy",
+    "background_max",
+    "background_mean",
+    "background_min",
+    "background_shape",
+    "background_std",
+    "max_abs_target_response",
+    "mean_abs_target_response",
+    "raw_background_mae",
+    "raw_background_mse",
+    "raw_background_psnr",
+    "raw_background_rmse",
+    "raw_energy",
+    "raw_max",
+    "raw_mean",
+    "raw_min",
+    "raw_shape",
+    "raw_std",
+    "roi_energy_ratio",
+    "sparsity_or_concentration_proxy",
+    "target_response_energy",
+    "target_response_max",
+    "target_response_mean",
+    "target_response_min",
+    "target_response_shape",
+    "target_response_std",
+    "target_to_background_energy_ratio",
+    "target_to_raw_energy_ratio",
+    "warnings"
+  ]
+}

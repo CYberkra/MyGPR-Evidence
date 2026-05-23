@@ -1,0 +1,47 @@
+{
+  "raw_shape": [
+    936,
+    41
+  ],
+  "background_shape": [
+    936,
+    41
+  ],
+  "target_response_shape": [
+    936,
+    41
+  ],
+  "raw_min": -122.58292388916016,
+  "raw_max": 70.84222412109375,
+  "raw_mean": -0.012150107737732507,
+  "raw_std": 16.631029896820785,
+  "background_min": -122.58292388916016,
+  "background_max": 70.84222412109375,
+  "background_mean": -0.012150009707356349,
+  "background_std": 16.631029390334618,
+  "target_response_min": -0.02245095930993557,
+  "target_response_max": 0.01614526007324457,
+  "target_response_mean": -9.803037615851142e-08,
+  "target_response_std": 0.004104715242731283,
+  "raw_energy": 10614467.846002787,
+  "background_energy": 10614467.199399613,
+  "target_response_energy": 0.6465852212735826,
+  "target_to_background_energy_ratio": 6.091546651631798e-08,
+  "target_to_raw_energy_ratio": 6.091546280552111e-08,
+  "mean_abs_target_response": 0.0013475111030173015,
+  "max_abs_target_response": 0.02245095930993557,
+  "raw_background_mae": 0.0013475111030173015,
+  "raw_background_mse": 1.68486872335205e-05,
+  "raw_background_rmse": 0.004104715243901884,
+  "raw_background_psnr": 89.5029388371074,
+  "sparsity_or_concentration_proxy": 16.661057010709698,
+  "abs_difference_mean": 0.0013475111030173015,
+  "abs_difference_max": 0.02245095930993557,
+  "roi_energy_ratio": null,
+  "warnings": [
+    {
+      "code": "roi_missing_ranges",
+      "message": "ROI must contain sample_range and trace_range [start, end]."
+    }
+  ]
+}

@@ -140,3 +140,43 @@ Trials per scene:
 Claim boundary:
 synthetic paired diagnostic comparison only; not full AutoTune; not production scoring; not field validation; not AutoTune superiority evidence.
 
+
+
+## GX-008_scene003_flat_dry_sand_pvc_shallow_paired_diagnostic
+
+Path:
+gprmax/GX-008_scene003_flat_dry_sand_pvc_shallow_paired_diagnostic/
+
+Source repo:
+https://github.com/CYberkra/MyGPR
+
+Source commit:
+25b491d3e254f7ed9f07159e8d555eb448994c8e
+
+Artifact role:
+synthetic_complete_2d_paired_diagnostic
+
+Scene:
+scene_003_flat_dry_sand_pvc_shallow
+
+Scene role:
+target material variation, PVC shallow target under dry sand
+
+Shapes:
+- raw: [936, 41]
+- background: [936, 41]
+- target_response: [936, 41]
+
+Requested / actual trace count:
+- requested_num_runs: 41
+- actual_raw_trace_count: 41
+- actual_background_trace_count: 41
+
+Final backend:
+GPU via scripts/run_gprmax_gpu_env.bat
+
+Excluded native outputs:
+.out, .h5, .vti, .vtk, .vtu, .npy
+
+Claim boundary:
+synthetic scene_003 only; small-scale complete 2D paired diagnostic; PVC material draft/citation pending; not field validation; not AutoTune evaluation; not AutoTune superiority evidence; not paper-candidate benchmark; not full CLT-GPR dataset replication.
