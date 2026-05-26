@@ -1,0 +1,12 @@
+{
+  "trace_closest_target_center_1based": 41,
+  "strongest_target_window_trace_1based": 41,
+  "max_target_response_location": [
+    520,
+    40
+  ],
+  "surface_window_energy": 1.1940562427703583e-10,
+  "target_window_energy": 2956.9140625,
+  "target_surface_energy_ratio": 24557939326976.0,
+  "target_roi_energy": 2955.59716796875
+}

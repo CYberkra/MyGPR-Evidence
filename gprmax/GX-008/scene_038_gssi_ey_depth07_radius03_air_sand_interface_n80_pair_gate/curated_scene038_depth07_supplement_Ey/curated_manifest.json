@@ -1,0 +1,90 @@
+{
+  "artifact_id": "GX-008-EVIDENCE-006-SCENE038-DEPTH-SENSITIVITY-SUPPLEMENT",
+  "scene_id": "scene_038_gssi_ey_depth07_radius03_air_sand_interface_n80_pair_gate",
+  "artifact_role": "single_variable_depth07_sensitivity_supplement",
+  "primary_scene_reference": "scene_037_gssi_ey_depth05_radius03_air_sand_interface_n80_geometry_gate",
+  "does_not_replace_primary_scene": true,
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "main",
+  "source_commit": "32fc97003bd0333776e757381e48082875ab1508",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "selected_component": "Ey",
+  "receiver_component_path": "rxs/rx1/Ey",
+  "pairing_definition": "target_response = raw_with_target - background_only",
+  "single_variable_change_from_scene037": {
+    "target_cover_depth_m": {
+      "scene037": 0.05,
+      "scene038": 0.07
+    },
+    "target_center_z_m": {
+      "scene037": 0.18,
+      "scene038": 0.16
+    },
+    "target_top_z_m": {
+      "scene037": 0.21,
+      "scene038": 0.19
+    },
+    "target_lower_z_m": {
+      "scene037": 0.15,
+      "scene038": 0.13
+    }
+  },
+  "unchanged_from_scene037": [
+    "air/sand interface",
+    "dry sand material",
+    "GSSI-like 1.5 GHz antenna",
+    "Ey receiver component",
+    "n80 scan",
+    "target x center",
+    "target radius03",
+    "PEC target",
+    "raw/background paired subtraction protocol"
+  ],
+  "shapes": {
+    "raw": [
+      3636,
+      80
+    ],
+    "background": [
+      3636,
+      80
+    ],
+    "target_response": [
+      3636,
+      80
+    ]
+  },
+  "metrics_summary": {
+    "raw_energy": 116912.25021293758,
+    "background_energy": 112964.74818742435,
+    "target_response_energy": 2957.0023831295566,
+    "target_to_raw_energy_ratio": 0.02529249396657608,
+    "target_to_background_energy_ratio": 0.02617632872711295,
+    "mean_abs_target_response": 0.016448358605592208,
+    "max_abs_target_response": 2.029122680425644,
+    "raw_background_rmse": 0.10082515689665042,
+    "raw_background_psnr": 33.88964461481177,
+    "roi_energy_ratio": 0.9995248194699562,
+    "trace_closest_target_center_1based": 41,
+    "strongest_target_window_trace_1based": 41,
+    "max_target_response_location_0based": [
+      520,
+      40
+    ]
+  },
+  "visual_assessment": {
+    "summary": "The scene_038 paired target_response remains clear, centered, and interpretable after increasing target cover depth from 0.05 m to 0.07 m. The strongest target-window trace remains aligned with trace 41, supporting its use as a depth-sensitivity supplement.",
+    "recommended_primary_supplement_figure": "target_response_crop_best_candidate.png",
+    "recommended_process_figure": "paired_preview_panel.png",
+    "recommended_waveform_figure": "trace_35_40_41_45_49_A_scan_overlay.png"
+  },
+  "claim_boundary": [
+    "single-variable synthetic depth sensitivity supplement only",
+    "does not replace scene_037 as primary active scene",
+    "not exact CLT-GPR replication",
+    "not finalized paper benchmark",
+    "not field validation",
+    "not AutoTune evaluation",
+    "not a target correctness claim without ROI/ground-truth review"
+  ]
+}
