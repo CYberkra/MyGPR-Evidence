@@ -1,0 +1,59 @@
+{
+  "artifact_id": "GX-008-EVIDENCE-003-SCENE037-CURATED-PACKAGING",
+  "scene_id": "scene_037_gssi_ey_depth05_radius03_air_sand_interface_n80_geometry_gate",
+  "artifact_role": "synthetic_air_sand_interface_paired_diagnostic_candidate",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_branch": "main",
+  "source_commit": "707ee62b9fbcb0f5ffc8ada71f0fd530886934b2",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "selected_component": "Ey",
+  "receiver_component_path": "rxs/rx1/Ey",
+  "pairing_definition": "target_response = raw_with_target - background_only",
+  "shapes": {
+    "raw": [3636, 80],
+    "background": [3636, 80],
+    "target_response": [3636, 80]
+  },
+  "geometry_summary": {
+    "domain_m": [1.0, 0.15, 0.40],
+    "grid_m": [0.002, 0.002, 0.002],
+    "dry_sand_z_range_m": [0.0, 0.260],
+    "air_z_range_m": [0.260, 0.400],
+    "soil_surface_z_m": 0.260,
+    "antenna_skid_bottom_z_m": 0.310,
+    "antenna_standoff_m": 0.050,
+    "target_type": "PEC cylinder along y",
+    "target_center_m": [0.50, null, 0.180],
+    "target_y_range_m": [0.002, 0.148],
+    "target_radius_m": 0.03,
+    "target_cover_depth_m": 0.05,
+    "trace_count": 80,
+    "target_center_trace_1based": 41
+  },
+  "metrics_summary": {
+    "raw_energy": 116247.83200056886,
+    "background_energy": 112964.74818742435,
+    "target_response_energy": 3554.8169202461177,
+    "target_to_raw_energy_ratio": 0.03057964057539346,
+    "target_to_background_energy_ratio": 0.03146837378283868,
+    "mean_abs_target_response": 0.01726872011216153,
+    "max_abs_target_response": 2.3664356414228678,
+    "raw_background_rmse": 0.110548203304583,
+    "raw_background_psnr": 33.08998897357791,
+    "roi_energy_ratio": 0.9979606645548237
+  },
+  "visual_assessment": {
+    "summary": "The curated target_response images show a clear centered hyperbola-like response after raw/background subtraction. The response is centered near trace 41, consistent with the target center trace.",
+    "recommended_primary_figure": "target_response_crop_best_candidate.png",
+    "recommended_process_figure": "paired_preview_panel.png",
+    "recommended_waveform_figure": "trace_35_40_41_45_49_A_scan_overlay.png"
+  },
+  "claim_boundary": [
+    "synthetic paired diagnostic result only",
+    "not exact CLT-GPR replication",
+    "not finalized paper benchmark",
+    "not field validation",
+    "not AutoTune evaluation",
+    "not a target correctness claim without ROI/ground-truth review"
+  ]
+}

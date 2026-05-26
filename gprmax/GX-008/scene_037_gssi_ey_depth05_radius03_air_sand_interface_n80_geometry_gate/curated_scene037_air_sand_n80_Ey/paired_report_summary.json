@@ -1,0 +1,55 @@
+{
+  "campaign_id": "GX-008",
+  "scene_id": "scene_037_gssi_ey_depth05_radius03_air_sand_interface_n80_geometry_gate",
+  "status": "success",
+  "output_dir": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\scratch\\GX-008_scene037_n80_pair\\paired_outputs",
+  "raw_preview_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\scratch\\GX-008_scene037_n80_pair\\paired_outputs\\raw_preview.png",
+  "background_preview_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\scratch\\GX-008_scene037_n80_pair\\paired_outputs\\background_preview.png",
+  "target_response_preview_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\scratch\\GX-008_scene037_n80_pair\\paired_outputs\\target_response_preview.png",
+  "paired_preview_panel_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\scratch\\GX-008_scene037_n80_pair\\paired_outputs\\paired_preview_panel.png",
+  "report_md_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\scratch\\GX-008_scene037_n80_pair\\paired_outputs\\paired_target_response_report.md",
+  "summary_json_path": "D:\\CDUT-UavGPR-Controller\\MyGPR-Evidence\\scratch\\GX-008_scene037_n80_pair\\paired_outputs\\paired_report_summary.json",
+  "issues": [],
+  "metrics": {
+    "raw_shape": [
+      3636,
+      80
+    ],
+    "background_shape": [
+      3636,
+      80
+    ],
+    "target_response_shape": [
+      3636,
+      80
+    ],
+    "raw_min": -3.545006036758423,
+    "raw_max": 4.989432334899902,
+    "raw_mean": -0.00012728111501743379,
+    "raw_std": 0.6321723423957601,
+    "background_min": -3.545006036758423,
+    "background_max": 4.989432334899902,
+    "background_mean": -0.00012631376728768423,
+    "background_std": 0.6231814675155579,
+    "target_response_min": -2.3664356414228678,
+    "target_response_max": 1.8722450733184814,
+    "target_response_mean": -9.673477297495484e-07,
+    "target_response_std": 0.11054820330035062,
+    "raw_energy": 116247.83200056886,
+    "background_energy": 112964.74818742435,
+    "target_response_energy": 3554.8169202461177,
+    "target_to_background_energy_ratio": 0.03146837378283868,
+    "target_to_raw_energy_ratio": 0.03057964057539346,
+    "mean_abs_target_response": 0.01726872011216153,
+    "max_abs_target_response": 2.3664356414228678,
+    "raw_background_mae": 0.01726872011216153,
+    "raw_background_mse": 0.012220905253871416,
+    "raw_background_rmse": 0.110548203304583,
+    "raw_background_psnr": 33.08998897357791,
+    "sparsity_or_concentration_proxy": 137.03596016686265,
+    "abs_difference_mean": 0.01726872011216153,
+    "abs_difference_max": 2.3664356414228678,
+    "roi_energy_ratio": 0.9979606645548237,
+    "warnings": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "campaign_id": "GX-008",
+  "scene_id": "scene_037_gssi_ey_depth05_radius03_air_sand_interface_n80_geometry_gate",
+  "status": "ready",
+  "issues": [],
+  "raw_shape": [
+    3636,
+    80
+  ],
+  "background_shape": [
+    3636,
+    80
+  ]
+}
