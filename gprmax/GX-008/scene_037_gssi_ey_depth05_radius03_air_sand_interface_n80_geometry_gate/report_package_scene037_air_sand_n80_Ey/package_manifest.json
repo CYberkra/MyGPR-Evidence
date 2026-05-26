@@ -1,0 +1,39 @@
+{
+  "package_id": "GX-008-EVIDENCE-005-SCENE037-REPORT-PACKAGE",
+  "scene_id": "scene_037_gssi_ey_depth05_radius03_air_sand_interface_n80_geometry_gate",
+  "artifact_role": "report_package_for_synthetic_paired_diagnostic_candidate",
+  "source_repo": "https://github.com/CYberkra/MyGPR",
+  "source_commit": "707ee62b9fbcb0f5ffc8ada71f0fd530886934b2",
+  "evidence_repo": "https://github.com/CYberkra/MyGPR-Evidence",
+  "evidence_base_commit": "f0e24b832d915f3fc431d043e52d5c11a4a27008",
+  "selected_component": "Ey",
+  "receiver_component_path": "rxs/rx1/Ey",
+  "primary_figure": "figure_01_main_target_response.png",
+  "process_figure": "figure_02_paired_process.png",
+  "ascan_support_figure": "figure_03_ascan_support.png",
+  "background_sanity_figure": "figure_04_background_sanity.png",
+  "context_figure": "figure_05_full_target_response_context.png",
+  "text_files": [
+    "captions.md",
+    "report_text_zh.md",
+    "report_text_en.md"
+  ],
+  "metrics_summary": {
+    "raw_shape": [3636, 80],
+    "background_shape": [3636, 80],
+    "target_response_shape": [3636, 80],
+    "target_response_energy": 3554.8169202461177,
+    "target_to_raw_energy_ratio": 0.03057964057539346,
+    "target_to_background_energy_ratio": 0.03146837378283868,
+    "raw_background_psnr": 33.08998897357791,
+    "roi_energy_ratio": 0.9979606645548237
+  },
+  "claim_boundary": [
+    "synthetic paired diagnostic result only",
+    "not exact CLT-GPR replication",
+    "not finalized paper benchmark",
+    "not field validation",
+    "not AutoTune evaluation",
+    "not a target correctness claim without ROI/ground-truth review"
+  ]
+}
